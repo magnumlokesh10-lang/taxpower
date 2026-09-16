@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<header class="header">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a href="index.html#home" class="navbar-logo" data-logo-home-link>
+      <div class="logo-wrapper">
+        <img src="asset/swt_icon/taxpower_icon.png" alt="" class="navbar-icon">
+        <sup class="sup-for-logo">&reg;</sup>
+      </div>
+      <div id="brand-box" class="brand-box">
+        <span class="brand-title">TaxPower<sup class="sup-for-title">&reg;</sup></span>
+        <span class="brand-subtitle">Software that Solves your Taxation Puzzle</span>
+      </div>
+    </a>
+
+    <div class="navbar-menu" id="navbarMenu">
+      <div class="navbar-links" id="navLinksContainer">
+        <div class="nav-sliding-bg" id="navSlideBg"></div>
+
+        <a href="index.html#home" class="nav-item" data-nav-page="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="index.html#taxpowergst" class="nav-item nav-item-org nav-dropdown-toggle"
+            data-nav-page="taxpowergst.html">
+            <span>TaxPower GST</span>
+            <span class="nav-dropdown-caret" aria-hidden="true"></span>
+          </a>
+          <div class="nav-dropdown-menu" aria-label="TaxPower GST submenu">
+            <a href="index.html#gst-return" class="nav-dropdown-link">TaxPower GST Returns</a>
+            <a href="index.html#gst-einvoice" class="nav-dropdown-link">TaxPower GST Billing</a>
+          </div>
+        </div>
+        <a href="index.html#taxpowertds" class="nav-item nav-item-org" data-nav-page="taxpowertds.html">TaxPower TDS</a>
+        <a href="index.html#pricing-banner" class="nav-item" data-nav-page="pricing.html">Pricing</a>
+        <a href="index.html#downloads" class="nav-item" data-nav-page="downloads.html">Downloads</a>
+        <a href="index.html#aboutus" class="nav-item" data-nav-page="aboutus.html">About us</a>
+        <a href="index.html#support" class="nav-item" data-nav-page="support.html">Support</a>
+
+        <a href="index.html#demo-enquiry" class="navbar-demo demo-mobile-only" id="navbarDemoMobile" data-demo-form-open title="Book Live Demo">
+          <span class="btn btn-orange">
+            <span class="text-initial">Book Live Demo</span>
+          </span>
+          <img src="asset/swt_icon/demo_icon.png" alt="" class="demo_btn" width="18" height="18">
+        </a>
+      </div>
+    </div>
+
+    <div class="header-right-actions">
+      <a href="index.html#demo-enquiry" class="navbar-demo demo-desktop-only" id="navbarDemoDesktop" data-demo-form-open title="Book Live Demo">
+        <span class="btn btn-orange">
+          <span class="text-initial">Book Live Demo</span>
+        </span>
+        <img src="asset/swt_icon/demo_icon.png" alt="" class="demo_btn" width="18" height="18">
+      </a>
+
+      <button type="button" class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation"
+        aria-controls="navbarMenu" aria-expanded="false">
+        <div class="hamburger-inner-box">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<button type="button" class="header-reveal-hint" id="headerRevealHint" aria-label="Show navigation">
+  <img src="asset/swt_icon/taxpower3dlg.png" alt="" aria-hidden="true">
+</button>
+
