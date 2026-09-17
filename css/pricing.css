@@ -121,17 +121,16 @@
 
 /* ----- Featured Suite Layout ----- */
 .featured-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px;
     margin-bottom: 56px;
-    flex-wrap: wrap;
+    width: min(1120px, 100%);
+    margin-inline: auto;
 }
 
 .featured-card-wrapper {
-    flex: 1;
-    min-width: 320px;
-    max-width: 460px;
+    min-width: 0;
 }
 
 /* ----- Module Pricing Grid ----- */
@@ -140,6 +139,8 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 36px 28px;
     margin-bottom: 48px;
+    width: min(1120px, 100%);
+    margin-inline: auto;
 }
 
 /* ----- Pricing Card Base ----- */
@@ -596,12 +597,17 @@
 
     .featured-grid {
         gap: 24px;
+        grid-template-columns: 1fr;
     }
 
     .featured-card-wrapper {
         min-width: 0;
         max-width: none;
         width: 100%;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
     }
 
     .pricing-card {
@@ -655,9 +661,39 @@
     }
 }
 
+/* ----- Narrow 3-Column Grid: keep price rows inside cards ----- */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .price-line {
+        white-space: normal;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .price-line-left {
+        flex-wrap: wrap;
+    }
+}
+
 /* ----- Tablet Grid ----- */
-@media (max-width: 900px) and (min-width: 601px) {
+@media (max-width: 991px) and (min-width: 601px) {
     .pricing-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .price-line {
+        white-space: normal;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .price-line-left {
+        flex-wrap: wrap;
+    }
+}
+
+/* ----- Featured Suites: stack below 768px ----- */
+@media (max-width: 767px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
     }
 }
