@@ -1750,6 +1750,11 @@ function initTaxPowerSite() {
 
     event.preventDefault();
 
+    if (typeof window.sendDemoEnquiryToBackend === 'function') {
+      setDemoStatus('Sending your enquiry...');
+      window.sendDemoEnquiryToBackend(form);
+    }
+
     setDemoStatus('Thank you! TaxPower team will contact you shortly.');
     if (submitBtn) {
       setSubmitCompletedState(submitBtn);
