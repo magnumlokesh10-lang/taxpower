@@ -48,20 +48,30 @@ window.TAXPOWER_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbz8GTac
     button.removeAttribute('aria-busy');
   }
 
-  window.sendDemoEnquiryToBackend = function sendDemoEnquiryToBackend(form) {
-    const endpoint = window.TAXPOWER_FORM_ENDPOINT;
-    const button = form.querySelector('.demo-submit-kicker-badge');
+  function sendToGoogleSheet(payload) {
+    const body = new URLSearchParams();
+    Object.keys(payload).forEach((key) => body.append(key, payload[key] == null ? '' : String(payload[key])));
 
+    return fetch('/api/public/enquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      body: body.toString(),
+    })
+      .then(function (res) { return res.ok; })
+      .catch(function (error) {
+        console.error('TaxPower: sheet save failed', error);
+        return false;
+      });
+  }
+
+  function sendToAppsScript(endpoint, payload) {
     if (!endpoint || endpoint.indexOf('script.google.com') === -1) {
       console.warn('TaxPower: Google Apps Script Web App URL is not configured in js/form-backend.js');
       return Promise.resolve(false);
     }
 
-    const payload = collectFormData(form);
     const body = new URLSearchParams();
     Object.keys(payload).forEach((key) => body.append(key, payload[key] == null ? '' : String(payload[key])));
-
-    setButtonLoading(button, true);
 
     return fetch(endpoint, {
       method: 'POST',
@@ -69,12 +79,26 @@ window.TAXPOWER_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbz8GTac
       headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
       body: body.toString(),
     })
-      .then(function () {
-        return true;
-      })
+      .then(function () { return true; })
       .catch(function (error) {
-        console.error('TaxPower: enquiry submission failed', error);
+        console.error('TaxPower: email/WhatsApp alert failed', error);
         return false;
+      });
+  }
+
+  window.sendDemoEnquiryToBackend = function sendDemoEnquiryToBackend(form) {
+    const endpoint = window.TAXPOWER_FORM_ENDPOINT;
+    const button = form.querySelector('.demo-submit-kicker-badge');
+    const payload = collectFormData(form);
+
+    setButtonLoading(button, true);
+
+    return Promise.all([
+      sendToGoogleSheet(payload),
+      sendToAppsScript(endpoint, payload),
+    ])
+      .then(function (results) {
+        return results[0] || results[1];
       })
       .finally(function () {
         setButtonLoading(button, false);

@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1789707512012,
+      "tag": "0000_crm_leads_and_admin_roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1789708646689,
+      "tag": "0001_add_lead_followup_and_conversion_fields",
+      "breakpoints": true
+    }
+  ]
+}
