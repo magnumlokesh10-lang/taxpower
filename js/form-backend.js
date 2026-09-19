@@ -1,4 +1,5 @@
-var TAXPOWER_CRM_ENDPOINT = 'https://project--f4ec6a54-c1de-46eb-9f9c-536798a0f1c4.lovable.app/api/public/lead';
+var TAXPOWER_CRM_ENDPOINT = 'https://crm-taxpower.lovable.app/api/public/lead';
+
 // Domain live hone ke baad upar wali line ko isse badal do:
 // var TAXPOWER_CRM_ENDPOINT = 'https://crm.taxpower.org/api/public/lead';
 
