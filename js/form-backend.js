@@ -70,7 +70,7 @@ window.TAXPOWER_FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbz8GTac
     const body = new URLSearchParams();
     Object.keys(payload).forEach((key) => body.append(key, payload[key] == null ? '' : String(payload[key])));
 
-    return fetch('/api/public/enquiry', {
+    return fetch(TAXPOWER_CRM_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
       body: body.toString(),
