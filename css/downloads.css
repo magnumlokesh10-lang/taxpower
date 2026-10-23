@@ -1,0 +1,364 @@
+/* Downloads banner aligned with the pricing frame; retain its search-style content. */
+.page-section.downloads-page { padding-top:18px; }
+.downloads-page > .section-inner { width:100%; max-width:none; }
+.downloads-page .downloads-banner { box-sizing:border-box; min-height:230px; border-radius:18px; margin-bottom:26px; }
+.downloads-page .downloads-banner-content { box-sizing:border-box; min-height:230px; padding:28px 34px; }
+.downloads-page .downloads-banner-search-field { max-width:100%; }
+.downloads-page .downloads-search-row { box-sizing:border-box; gap:12px; }
+.downloads-page .downloads-banner-search-field :is(h1,.original-h1) { margin:0; line-height:1.25; overflow-wrap:break-word; }
+.downloads-page .downloads-search-suggestion { box-sizing:border-box; }
+.downloads-page .downloads-table-wrap { width:min(1120px,100%); margin-inline:auto; }
+.downloads-page .utility-download-heading { max-width:100%; }
+@media(max-width:767px) {
+ .page-section.downloads-page { padding-top:14px; }
+ .downloads-page .downloads-banner { min-height:210px; margin-bottom:22px; }
+ .downloads-page .downloads-banner-content { min-height:210px; padding:25px 22px; }
+ .downloads-page .downloads-search-row { min-height:64px; padding:14px 18px; border-radius:16px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(22px,4.5vw,30px); }
+ .downloads-page .downloads-search-icon { width:36px; height:36px; flex-basis:36px; }
+ .downloads-page .downloads-search-icon svg { width:32px; height:32px; }
+ .downloads-page .downloads-search-suggestion { width:calc(100% - 16px); padding:12px 16px; font-size:15px; line-height:1.5; border-radius:14px; }
+}
+@media(max-width:480px) {
+ .downloads-page .downloads-banner { min-height:0; border-radius:14px; }
+ .downloads-page .downloads-banner-content { min-height:0; padding:24px 18px; }
+ .downloads-page .downloads-search-row { gap:8px; padding:12px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(20px,6vw,26px); }
+ .downloads-page .downloads-search-icon { width:28px; height:28px; flex-basis:28px; }
+ .downloads-page .downloads-search-icon svg { width:26px; height:26px; }
+ .downloads-page .downloads-search-suggestion { width:100%; font-size:14px; padding:11px 12px; }
+}
+
+/* Preserve the original photo and glass headings; add clear download actions. */
+.downloads-page .downloads-banner::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,#082c4899,#082c4833 70%,transparent); pointer-events:none; }
+.downloads-page .downloads-banner-content { position:relative; padding-right:25%; justify-content:center; }
+.downloads-page .downloads-banner-search-field { margin-top:0; }
+.downloads-page .downloads-search-row { min-height:64px; }
+.downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(23px,2.6vw,34px); }
+.downloads-page .downloads-search-suggestion { font-size:16px; padding:10px 22px; background:#713a194d; }
+.downloads-desktop-art { position:absolute; right:2%; top:50%; transform:translateY(-50%); width:21%; max-width:240px; pointer-events:none; }
+.downloads-banner-links { display:flex; flex-wrap:wrap; gap:9px; margin-top:13px; }
+.downloads-banner-links a { display:inline-flex; align-items:center; gap:18px; min-height:44px; padding:9px 14px; border:1px solid #b8e6f4b3; border-radius:9px; background:#f2fbfff2; color:#135570; font-size:12px; font-weight:700; text-decoration:none; transition:background .18s; }
+.downloads-banner-links a:hover { background:#d9f4ff; }
+.downloads-banner-links a:focus-visible { outline:3px solid #ffbd77; outline-offset:3px; }
+.downloads-art-arrow { animation:downloadsArrowNudge 2.8s ease-in-out infinite; }
+@keyframes downloadsArrowNudge { 0%,65%,100% { transform:translateY(0); } 35% { transform:translateY(5px); } }
+#software-downloads,#utility-downloads { scroll-margin-top:110px; }
+@media(max-width:900px) {
+ .downloads-page .downloads-banner-content { padding-right:22%; }
+ .downloads-desktop-art { width:19%; right:1%; }
+}
+@media(max-width:767px) {
+ .downloads-page .downloads-banner-content { padding-right:22px; }
+ .downloads-desktop-art { display:none; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(22px,4.5vw,30px); }
+ .downloads-page .downloads-search-suggestion { font-size:15px; padding:12px 16px; }
+}
+@media(max-width:480px) {
+ .downloads-page .downloads-banner-content { padding-right:18px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(20px,6vw,26px); }
+ .downloads-page .downloads-search-suggestion { font-size:14px; padding:11px 12px; }
+ .downloads-banner-links { width:100%; gap:7px; }
+ .downloads-banner-links a { justify-content:space-between; flex:1 1 auto; padding:9px 10px; gap:8px; font-size:11px; }
+}
+@media(prefers-reduced-motion:reduce) { .downloads-art-arrow { animation:none; } }
+
+/* Product download cards and compact supporting-utility tiles. */
+.download-products,.download-utilities { width:min(1120px,100%); margin:30px auto 0; }
+.download-utilities { margin-top:38px; }
+.download-section-heading { margin:0 0 20px; }
+.download-eyebrow { display:block; margin-bottom:7px; font-size:10px; font-weight:750; letter-spacing:.12em; color:#608493; }
+.downloads-page .download-section-heading h2 { margin:0; color:#0b3b3b; font-size:clamp(23px,2.5vw,32px); letter-spacing:-.035em; line-height:1.25; }
+.download-section-heading p { margin:8px 0 0; font-size:14px; line-height:1.6; }
+.download-product-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.download-product-card { --download-accent:#ed741c; --download-tint:#fff1e3; position:relative; isolation:isolate; display:flex; flex-direction:column; min-width:0; padding:25px; border:1px solid #e0e9ee; border-radius:16px; background:#fffffff5; box-shadow:0 8px 22px #183c4c0b; }
+.download-product-card::before { content:""; position:absolute; top:0; right:0; width:116px; height:116px; background:var(--download-tint); border-radius:0 16px 0 100%; z-index:-1; pointer-events:none; }
+.download-product-card--tds { --download-accent:#078bbf; --download-tint:#e9f7ff; }
+.download-product-card--mvat { --download-accent:#7760cf; --download-tint:#f2edff; }
+.download-product-logo { width:56px; height:56px; object-fit:contain; margin-bottom:16px; }
+.downloads-page .download-product-card h3 { color:#0b3b3b; font-size:24px; line-height:1.25; margin:0 0 8px; letter-spacing:-.03em; }
+.download-product-card > p { font-size:14px; line-height:1.55; margin:0 0 18px; }
+.download-product-badges { display:flex; flex-wrap:wrap; gap:7px; margin:auto 0 18px; padding-top:4px; }
+.download-product-badges span { padding:6px 9px; background:#f0f5f8; color:#456578; font-size:11px; border-radius:8px; white-space:nowrap; }
+.download-product-badges span:first-child { background:var(--download-tint); color:var(--download-accent); font-weight:700; }
+.download-setup-button { display:flex; align-items:center; justify-content:center; gap:10px; min-height:46px; padding:12px; border-radius:10px; color:#fff; background:var(--download-accent); font-size:14px; font-weight:700; text-decoration:none; transition:filter .18s; }
+.download-setup-button svg { width:21px; height:21px; }
+.download-setup-button:hover { filter:brightness(.94); }
+.download-setup-button:focus-visible,.download-utility-action:focus-visible { outline:3px solid #0b657f; outline-offset:4px; }
+.download-utility-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; }
+.download-utility-tile { display:flex; align-items:center; gap:12px; min-width:0; padding:17px 14px; border:1px solid #e0e9ee; border-radius:13px; background:#fffffff2; box-shadow:0 4px 12px #183c4c08; }
+.download-utility-icon { display:grid; place-items:center; width:40px; height:44px; flex:0 0 40px; color:#168fbd; }
+.download-utility-icon svg { width:40px; height:40px; }
+.download-utility-icon--net { background:#f1edff; color:#7857c7; border-radius:50%; height:40px; }
+.download-utility-icon--report,.download-utility-icon--sign { color:#ee862d; }
+.download-utility-icon--java { color:#147ea1; }
+.download-utility-icon--postgres { color:#396b8b; }
+.download-utility-copy { flex:1; min-width:0; }
+.downloads-page .download-utility-copy h3 { color:#163f50; font-size:13px; line-height:1.45; margin:0 0 4px; overflow-wrap:anywhere; }
+.download-utility-copy p { margin:0; font-size:11px; line-height:1.5; }
+.download-utility-meta { display:block; color:#658391; font-size:10px; margin-top:5px; }
+.download-utility-action { display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px; border-radius:9px; background:#eaf7ff; color:#008bca; transition:background .18s; }
+.download-utility-action:hover { background:#d7effb; }
+.download-utility-action svg { width:22px; height:22px; }
+@media(max-width:1000px) {
+ .download-product-card { padding:20px; }
+ .download-utility-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:767px) {
+ .download-product-grid { grid-template-columns:1fr; gap:14px; }
+ .download-product-card { padding:22px; }
+ .download-product-card > p { margin-bottom:13px; }
+ .download-product-logo { margin-bottom:12px; }
+}
+@media(max-width:540px) {
+ .download-utility-grid { grid-template-columns:1fr; }
+ .download-utility-tile { padding:15px; }
+ .downloads-page .download-utility-copy h3 { font-size:14px; }
+ .download-utilities { margin-top:28px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .download-setup-button,.download-utility-action { transition:none; }
+}
+
+/* Match the approved card preview and full-colour utility symbols. */
+.download-product-grid { gap:20px; }
+.download-product-card { padding:26px; border-radius:16px; }
+.download-product-card::before { width:132px; height:132px; }
+.download-product-card--gst { --download-accent:#ff7416; --download-tint:#fff3e7; }
+.download-product-card--tds { --download-accent:#0798f0; --download-tint:#ebf8ff; }
+.download-product-card--mvat { --download-accent:#7770ed; --download-tint:#f4efff; }
+.downloads-page .download-product-card h3 { font-size:clamp(23px,2.2vw,29px); font-weight:800; }
+.download-product-card > p { font-size:15px; min-height:47px; }
+.download-product-logo { width:42px; height:42px; margin-bottom:16px; }
+.download-product-badges { gap:8px; margin-bottom:19px; }
+.download-product-badges span { padding:8px 11px; font-size:12px; border-radius:10px; }
+.download-product-badges span:first-child { background:#fff2e5; color:#e86b12; font-weight:500; }
+.download-product-badges span:nth-child(2) { background:#eaf7ff; color:#058af1; }
+.download-setup-button { min-height:50px; font-size:15px; border-radius:11px; background:linear-gradient(115deg,var(--download-accent),var(--download-accent)); }
+.download-utility-tile { min-height:82px; background:#fff; }
+.download-utility-icon img { display:block; width:40px; height:40px; object-fit:contain; }
+.downloads-page .download-utility-copy h3 { font-size:13px; font-weight:750; }
+.download-utility-copy p { font-size:12px; }
+@media(max-width:767px) {
+ .download-product-card { padding:22px; }
+ .download-product-card > p { min-height:0; }
+}
+
+/* Final download polish: smaller logos and restrained interaction feedback. */
+.download-product-card { transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease; }
+.download-utility-tile { transition:border-color .2s ease,box-shadow .2s ease; }
+.download-setup-button { box-shadow:0 4px 10px #173e5012; transition:filter .18s ease,box-shadow .18s ease; }
+.download-setup-button svg,.download-utility-action svg { transition:transform .2s ease; }
+.download-product-card:focus-within { border-color:var(--download-accent); }
+.download-utility-tile:focus-within { border-color:#8ec9de; }
+.download-section-heading { padding-bottom:13px; border-bottom:1px solid #dbe9ef; }
+.download-utility-action { border:1px solid #d9eef8; }
+@media(hover:hover) and (pointer:fine) {
+ .download-product-card:hover { transform:translateY(-3px); border-color:var(--download-accent); box-shadow:0 12px 26px #183c4c12; }
+ .download-utility-tile:hover { border-color:#a2cfdf; box-shadow:0 5px 16px #183c4c0d; }
+ .download-setup-button:hover { box-shadow:0 5px 14px #173e5022; }
+ .download-setup-button:hover svg,.download-utility-action:hover svg { transform:translateY(2px); }
+}
+.download-setup-button:active,.download-utility-action:active { filter:brightness(.9); }
+@media(max-width:540px) {
+ .download-product-logo { width:38px; height:38px; }
+ .downloads-page .download-section-heading h2 { font-size:24px; }
+ .download-section-heading p { font-size:13px; }
+ .download-product-badges span { padding:7px 10px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .download-product-card,.download-utility-tile,.download-setup-button,.download-setup-button svg,.download-utility-action svg { transition:none; }
+ .download-product-card:hover,.download-setup-button:hover svg,.download-utility-action:hover svg { transform:none; }
+}
+
+/* Refined downloads banner only. */
+.downloads-page .downloads-banner { border:1px solid #cce2ed; box-shadow:0 8px 26px #254e6710; background:#f2faff; }
+.downloads-page .downloads-banner-background { inset:0; background-image:url('../asset/promo banner/dnwd_bnnr.webp'); background-position:center; }
+.downloads-page .downloads-banner::before { background:linear-gradient(100deg,#eff9fff5 0%,#eff9ffe8 44%,#eff9ff80 75%,#eff9ff33 100%); }
+.downloads-page .downloads-banner-content { padding:26px 28% 26px 34px; gap:0; }
+.downloads-page .downloads-banner-search-field { width:100%; gap:10px; }
+.downloads-page .downloads-search-row { min-height:64px; padding:14px 18px; gap:14px; border:1px solid #ffffffed; border-radius:14px; background:linear-gradient(115deg,#ffffffed,#e4f6ffc9); box-shadow:0 5px 16px #3776950d; }
+.downloads-page .downloads-banner-search-field :is(h1,.original-h1) { color:#0b3b3b; font-size:clamp(24px,2.5vw,35px); font-weight:800; letter-spacing:-.035em; line-height:1.25; }
+.downloads-page .downloads-search-icon { order:0; width:42px; height:42px; flex-basis:42px; margin-left:0; border-radius:12px; background:#d7f0fc; color:#008dbb; }
+.downloads-page .downloads-search-icon svg { width:27px; height:27px; }
+.downloads-page .downloads-search-suggestion { align-self:flex-start; width:100%; padding:10px 16px; text-align:left; color:#466679; border:1px solid #ffffffaa; border-radius:11px; background:#ffffffa6; font-size:15px; line-height:1.6; }
+.downloads-page .downloads-banner-links { margin-top:14px; gap:10px; }
+.downloads-page .downloads-banner-links a { border:1px solid #baddec; background:#ffffffed; color:#15607c; border-radius:9px; }
+.downloads-page .downloads-banner-links a:first-child { background:#078fbe; border-color:#078fbe; color:white; box-shadow:0 4px 12px #008bbb1c; }
+.downloads-page .downloads-banner-links a:first-child:hover { background:#087fa8; }
+.downloads-page .downloads-desktop-art { right:4%; width:20%; max-width:225px; }
+@media(max-width:900px) {
+ .downloads-page .downloads-banner-content { padding-right:25%; }
+ .downloads-page .downloads-desktop-art { right:2%; }
+}
+@media(max-width:767px) {
+ .downloads-page .downloads-banner-content { padding:24px 22px; }
+ .downloads-page .downloads-search-row { padding:13px 15px; gap:11px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(22px,4.5vw,30px); }
+ .downloads-page .downloads-banner::before { background:linear-gradient(100deg,#eff9fff5,#eff9ffdb); }
+}
+@media(max-width:480px) {
+ .downloads-page .downloads-banner-content { padding:20px 16px; }
+ .downloads-page .downloads-search-row { padding:12px; gap:10px; }
+ .downloads-page .downloads-search-icon { width:34px; height:34px; flex-basis:34px; border-radius:9px; }
+ .downloads-page .downloads-search-icon svg { width:23px; height:23px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:22px; }
+ .downloads-page .downloads-search-suggestion { font-size:13px; padding:10px 12px; }
+ .downloads-page .downloads-banner-links a { min-height:44px; font-size:12px; }
+}
+
+/* Stronger banner separation and a consistent heading hierarchy. */
+.downloads-page .downloads-banner { background:#d7eef8; border-color:#93c7de; box-shadow:0 8px 24px #1b6a8a1a; }
+.downloads-page .downloads-banner::before { background:linear-gradient(105deg,#c5e8f5f5 0%,#d0eaf5e6 43%,#d6ecf5a6 72%,#c3e3f54d 100%); }
+.downloads-page .downloads-search-row { background:linear-gradient(110deg,#d3effcf2,#bce4f3e6); border-color:#83bfd9; box-shadow:0 4px 14px #245b7610; }
+.downloads-page .downloads-search-icon { background:#078ab5; color:#fff; }
+.downloads-page .downloads-banner-search-field :is(h1,.original-h1) { color:#0a3d53; }
+.downloads-page .downloads-search-suggestion { background:#edf8ffd9; border-color:#aad2e3; color:#294f64; font-weight:500; }
+.downloads-page .download-section-heading { position:relative; padding:3px 0 15px 16px; border-bottom:1px solid #c6dfe9; }
+.downloads-page .download-section-heading::before { content:""; position:absolute; left:0; top:5px; bottom:15px; width:3px; border-radius:3px; background:linear-gradient(#f38b37,#f7bd73); }
+.downloads-page .download-utilities .download-section-heading::before { background:linear-gradient(#059fcf,#82d5e8); }
+.downloads-page .download-eyebrow { color:#786044; font-size:10px; letter-spacing:.13em; font-weight:750; }
+.downloads-page .download-utilities .download-eyebrow { color:#38748b; }
+.downloads-page .download-section-heading h2 { color:#123f50; font-weight:800; font-size:clamp(24px,2.6vw,33px); line-height:1.25; letter-spacing:-.03em; }
+.downloads-page .download-utilities .download-section-heading h2 { color:#096b8b; }
+.downloads-page .download-section-heading p { color:#4a697a; margin-top:7px; }
+.downloads-page .download-product-card h3 { font-size:clamp(23px,2.1vw,28px); font-weight:800; letter-spacing:-.025em; line-height:1.3; margin-bottom:9px; }
+.downloads-page .download-product-card--gst h3 { color:#ac4d16; }
+.downloads-page .download-product-card--tds h3 { color:#086b99; }
+.downloads-page .download-product-card--mvat h3 { color:#624baa; }
+@media(max-width:767px) {
+ .downloads-page .downloads-banner::before { background:linear-gradient(105deg,#c5e8f5f5,#d0eaf5e6); }
+}
+@media(max-width:540px) {
+ .downloads-page .download-section-heading { padding-left:13px; }
+ .downloads-page .download-section-heading h2 { font-size:24px; }
+ .downloads-page .download-product-card h3 { font-size:25px; }
+}
+
+/* Restore the intended search-query and search-suggestion visual. */
+.downloads-page .downloads-banner-search-field { gap:0; border:1px solid #91bfd3; border-radius:22px; background:#ffffffed; box-shadow:0 9px 24px #1c597923; overflow:hidden; }
+.downloads-page .downloads-search-row { border:0; border-radius:0; background:linear-gradient(110deg,#f7fcff,#e9f7ff); padding:17px 21px; box-shadow:none; gap:16px; min-height:73px; }
+.downloads-page .downloads-banner-search-field :is(h1,.original-h1) { order:1; color:#173f51; font-size:clamp(23px,2.45vw,33px); font-weight:700; letter-spacing:-.025em; }
+.downloads-page .downloads-search-icon { order:2; margin-left:auto; background:transparent; color:#078bbc; width:38px; height:38px; flex-basis:38px; border-radius:0; }
+.downloads-page .downloads-search-icon svg { width:32px; height:32px; stroke-width:1.9; }
+.downloads-page .downloads-search-suggestion { display:flex; align-items:center; gap:12px; width:100%; margin:0; padding:14px 21px; border:0; border-top:1px solid #d5e7ef; border-radius:0; background:#ffffffed; text-align:left; color:#4b6676; font-size:14px; font-weight:500; line-height:1.5; }
+.downloads-suggestion-icon { flex:0 0 18px; width:18px; height:18px; stroke:#7c9aa9; stroke-width:1.8; stroke-linecap:round; }
+.downloads-search-suggestion > span:first-of-type { flex:1; min-width:0; }
+.downloads-suggestion-return { flex-shrink:0; color:#8ca6b3; font-size:22px; }
+@media(max-width:767px) {
+ .downloads-page .downloads-banner-search-field { border-radius:17px; }
+ .downloads-page .downloads-search-row { padding:15px 16px; gap:10px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(22px,4.5vw,29px); }
+ .downloads-page .downloads-search-suggestion { padding:12px 16px; font-size:14px; gap:10px; }
+}
+@media(max-width:480px) {
+ .downloads-page .downloads-search-row { padding:14px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:21px; }
+ .downloads-page .downloads-search-icon { width:28px; height:28px; flex-basis:28px; }
+ .downloads-page .downloads-search-icon svg { width:26px; height:26px; }
+ .downloads-page .downloads-search-suggestion { padding:12px 14px; font-size:13px; align-items:flex-start; gap:8px; }
+ .downloads-suggestion-icon { margin-top:2px; }
+}
+
+/* Responsive search banner: clear query, quiet suggestion and equal tap targets. */
+.downloads-page .downloads-banner-search-field { min-width:0; box-shadow:0 6px 20px #174f701a; }
+.downloads-page .downloads-search-row { background:linear-gradient(110deg,#ffffff,#e8f6ff); }
+.downloads-page .downloads-search-suggestion { background:#f6fbff; }
+.downloads-page .downloads-search-suggestion > span:first-of-type { overflow-wrap:break-word; }
+.downloads-page .downloads-banner-links a { box-sizing:border-box; }
+@media(max-width:767px) {
+ .downloads-page .downloads-banner { min-height:0; border-radius:16px; }
+ .downloads-page .downloads-banner-content { min-height:0; height:auto; padding:23px 20px; }
+ .downloads-page .downloads-banner-search-field { width:100%; border-radius:16px; }
+ .downloads-page .downloads-search-row { min-height:0; padding:16px; align-items:center; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(22px,3.7vw,28px); line-height:1.35; text-wrap:balance; }
+ .downloads-page .downloads-search-suggestion { font-size:14px; line-height:1.6; align-items:flex-start; }
+ .downloads-suggestion-icon { margin-top:3px; }
+ .downloads-page .downloads-banner-links { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); width:100%; gap:10px; margin-top:14px; }
+ .downloads-page .downloads-banner-links a { justify-content:space-between; min-width:0; min-height:46px; padding:11px 13px; font-size:12px; }
+ .downloads-page .downloads-banner-links a span { flex-shrink:0; }
+}
+@media(max-width:480px) {
+ .downloads-page .downloads-banner-content { padding:18px 14px; }
+ .downloads-page .downloads-banner-search-field { border-radius:14px; }
+ .downloads-page .downloads-search-row { padding:14px 12px; gap:9px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(19px,5.3vw,23px); letter-spacing:-.025em; line-height:1.35; }
+ .downloads-page .downloads-search-icon { width:27px; height:27px; flex-basis:27px; }
+ .downloads-page .downloads-search-icon svg { width:25px; height:25px; }
+ .downloads-page .downloads-search-suggestion { padding:11px 12px; gap:8px; font-size:12px; line-height:1.65; }
+ .downloads-suggestion-icon { width:15px; height:15px; flex-basis:15px; }
+ .downloads-suggestion-return { font-size:18px; line-height:1.2; margin-top:2px; }
+ .downloads-page .downloads-banner-links { gap:8px; margin-top:12px; }
+ .downloads-page .downloads-banner-links a { padding:10px; font-size:11px; gap:6px; border-radius:9px; }
+}
+@media(max-width:350px) {
+ .downloads-page .downloads-banner-content { padding:15px 10px; }
+ .downloads-page .downloads-banner-links { grid-template-columns:1fr; }
+ .downloads-page .downloads-banner-links a { font-size:12px; }
+}
+
+/* Photo-led banner matching the pricing reference. */
+.downloads-page .downloads-banner { min-height:230px; border-color:#cbdfe9; background:#f6fafc; box-shadow:0 8px 26px #254e6710; }
+.downloads-page .downloads-banner::before { background:linear-gradient(90deg,#f7fbff 0%,#f7fbfff2 42%,#f7fbff8c 70%,#f7fbff18 100%); }
+.downloads-page .downloads-banner-content { min-height:230px; padding:28px 34px; justify-content:center; }
+.downloads-page .downloads-banner-search-field { width:min(820px,100%); border:0; border-radius:0; background:none; box-shadow:none; overflow:visible; gap:12px; }
+.downloads-page .downloads-search-row { width:fit-content; max-width:100%; min-height:0; padding:0; border:0; border-radius:0; background:none; box-shadow:none; gap:18px; }
+.downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(27px,3.1vw,40px); color:#087da5; font-weight:800; line-height:1.2; letter-spacing:-.035em; }
+.downloads-banner-brand { color:#cc6017; }
+.downloads-page .downloads-search-icon { color:#628492; width:28px; height:28px; flex-basis:28px; }
+.downloads-page .downloads-search-icon svg { width:26px; height:26px; }
+.downloads-page .downloads-search-suggestion { max-width:650px; padding:0; border:0; background:none; font-size:16px; line-height:1.65; color:#365566; font-weight:500; gap:9px; align-items:flex-start; }
+.downloads-page .downloads-suggestion-icon { margin-top:5px; }
+.downloads-page .downloads-suggestion-return { margin-top:3px; }
+.downloads-page .downloads-banner-links { display:flex; width:auto; margin-top:18px; gap:9px; }
+.downloads-page .downloads-banner-links a,
+.downloads-page .downloads-banner-links a:first-child { background:#ffffffe6; border:1px solid #cadfe9; color:#245363; box-shadow:none; font-size:12px; min-height:44px; padding:9px 13px; border-radius:8px; }
+.downloads-page .downloads-banner-links a:hover,
+.downloads-page .downloads-banner-links a:first-child:hover { background:#e8f6fd; border-color:#98cadc; }
+@media(max-width:767px) {
+ .downloads-page .downloads-banner { min-height:210px; }
+ .downloads-page .downloads-banner-content { min-height:210px; padding:25px 22px; }
+ .downloads-page .downloads-banner::before { background:linear-gradient(90deg,#f7fbfff5,#f7fbffdf 65%,#f7fbff9c); }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:30px; }
+ .downloads-page .downloads-search-suggestion { font-size:14px; }
+}
+@media(max-width:480px) {
+ .downloads-page .downloads-banner,.downloads-page .downloads-banner-content { min-height:0; }
+ .downloads-page .downloads-banner-content { padding:24px 18px; }
+ .downloads-page .downloads-banner-search-field :is(h1,.original-h1) { font-size:clamp(24px,7vw,30px); line-height:1.25; text-wrap:balance; }
+ .downloads-page .downloads-search-row { gap:10px; }
+ .downloads-page .downloads-search-icon { flex-basis:24px; width:24px; }
+ .downloads-page .downloads-search-icon svg { width:23px; height:23px; }
+ .downloads-page .downloads-search-suggestion { font-size:13px; }
+ .downloads-page .downloads-banner-links { flex-wrap:wrap; width:100%; gap:8px; }
+ .downloads-page .downloads-banner-links a { flex:1 1 auto; font-size:11px; padding:10px; }
+}
+
+/* Full-width translucent frames preserve the existing inner card widths. */
+.downloads-page .download-panel {
+ position:relative; isolation:isolate; width:100%; max-width:none;
+ margin:24px 0 0; padding:26px 0; border-radius:18px;
+}
+.download-panel::before {
+ content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+ border:1px solid #bdd9e099; border-radius:inherit;
+ background:linear-gradient(115deg,#fffaf16b,#e8f7ff66);
+ box-shadow:0 6px 22px #214d6408;
+}
+.download-utilities.download-panel::before { background:linear-gradient(115deg,#edf8ff66,#f7f0ff5c); }
+.downloads-page .download-panel > .download-section-heading,
+.downloads-page .download-panel > .download-product-grid,
+.downloads-page .download-panel > .download-utility-grid {
+ box-sizing:border-box; width:min(1120px,100%); margin-left:auto; margin-right:auto;
+}
+.downloads-page .download-panel > .download-section-heading { min-height:100px; padding-right:160px; margin-bottom:22px; }
+.download-panel-art { position:absolute; width:135px; height:101px; top:-6px; right:12px; pointer-events:none; opacity:.85; }
+@media(max-width:767px) {
+ .downloads-page .download-panel { padding:22px 0; border-radius:15px; margin-top:20px; }
+ .downloads-page .download-panel > .download-section-heading { padding-right:105px; min-height:88px; }
+ .download-panel-art { width:94px; height:76px; right:5px; top:0; }
+}
+@media(max-width:480px) {
+ .downloads-page .download-panel > .download-section-heading { padding-right:67px; }
+ .download-panel-art { width:62px; height:52px; right:1px; top:2px; }
+}
