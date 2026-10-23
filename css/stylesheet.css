@@ -5210,12 +5210,16 @@ body.demo-form-open {
 
 /* Home stays open once clicked, until another tab is clicked. */
 @media(min-width:1101px) {
- .header.nav-gradient-depth .nav-item.is-pinned-open { width:144px; max-width:144px; padding:0; color:#0b3b3b; }
- .header.nav-gradient-depth .nav-item.is-pinned-open::before { opacity:1; }
- .header.nav-gradient-depth .nav-item.is-pinned-open .nav-item-icon { transform:scale(0); opacity:0; }
- .header.nav-gradient-depth .nav-item.is-pinned-open .nav-item-label { position:absolute; width:auto; max-width:none; opacity:1; transform:scale(1); }
+ .header.nav-gradient-depth .nav-item.is-pinned-open,
+ .header.nav-gradient-depth .navbar-links .nav-item.h-current:not(.nav-item-always) { width:144px; max-width:144px; padding:0; color:#0b3b3b; }
+ .header.nav-gradient-depth .nav-item.is-pinned-open::before,
+ .header.nav-gradient-depth .navbar-links .nav-item.h-current:not(.nav-item-always)::before { opacity:1; }
+ .header.nav-gradient-depth .nav-item.is-pinned-open .nav-item-icon,
+ .header.nav-gradient-depth .navbar-links .nav-item.h-current:not(.nav-item-always) .nav-item-icon { transform:scale(0); opacity:0; }
+ .header.nav-gradient-depth .nav-item.is-pinned-open .nav-item-label,
+ .header.nav-gradient-depth .navbar-links .nav-item.h-current:not(.nav-item-always) .nav-item-label { position:absolute; width:auto; max-width:none; opacity:1; transform:scale(1); }
 }
-@media(min-width:1101px) and (max-width:1250px) { .header.nav-gradient-depth .nav-item.is-pinned-open { width:132px; } }
+@media(min-width:1101px) and (max-width:1250px) { .header.nav-gradient-depth .nav-item.is-pinned-open,.header.nav-gradient-depth .navbar-links .nav-item.h-current:not(.nav-item-always) { width:132px; } }
 
 /* Navigation never hides on scroll. */
 .header.navbar-scroll-hidden { transform:none !important; }
@@ -5242,3 +5246,14 @@ body.demo-form-open {
 .back-to-top svg { width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
 .back-to-top:hover { background:#f47a22; transform:translateY(-2px); }
 .back-to-top:focus-visible { outline:3px solid #f47a22; outline-offset:3px; }
+
+/* Dropdown hint: a small round chevron badge on the corner of tabs that open a menu. */
+@media(min-width:1101px) {
+ .header.nav-gradient-depth .nav-dropdown > .nav-item .nav-dropdown-caret,
+ .header.nav-gradient-depth .nav-dropdown > .nav-item.nav-item-always .nav-dropdown-caret { display:block; position:absolute; top:auto; right:-3px; bottom:-3px; width:16px; height:16px; border:1px solid #c5d6df; border-radius:50%; background:#fff; box-shadow:0 1px 4px #0b3b3b26; transform:none; opacity:1; z-index:3; pointer-events:none; }
+ .header.nav-gradient-depth .nav-dropdown > .nav-item .nav-dropdown-caret::after { content:""; position:absolute; left:50%; top:50%; width:4px; height:4px; border-right:1.8px solid #405d6b; border-bottom:1.8px solid #405d6b; transform:translate(-50%,-72%) rotate(45deg); }
+ .header.nav-gradient-depth .nav-dropdown > .nav-item.is-pinned-open .nav-dropdown-caret,
+ .header.nav-gradient-depth .nav-dropdown > .nav-item.h-current:not(.nav-item-always) .nav-dropdown-caret,
+ .header.nav-gradient-depth .nav-dropdown > .nav-item:is(:hover,:focus-visible) .nav-dropdown-caret,
+ .header.nav-gradient-depth .nav-dropdown:focus-within > .nav-item .nav-dropdown-caret { opacity:0; }
+}

@@ -135,25 +135,10 @@ document.addEventListener('click', (e) => {
   } catch (err) { /* storage can be blocked */ }
 });
 
-/* The tab you click stays open until you click another tab. */
+/* The tab for the page you are on stays open. */
 (() => {
-  const links = () => document.querySelector('.navbar-links');
-  function pin(target) {
-    document.querySelectorAll('.navbar-links .nav-item.is-pinned-open').forEach((el) => el.classList.remove('is-pinned-open'));
-    if (target && !target.classList.contains('nav-item-always')) target.classList.add('is-pinned-open');
-  }
-  document.addEventListener('click', (event) => {
-    const hit = event.target.closest('.navbar-links .nav-item, .navbar-links .nav-dropdown-link');
-    if (!hit || !links()) return;
-    pin(hit.matches('.nav-item') ? hit : hit.closest('.nav-dropdown')?.querySelector('.nav-item'));
-  }, true);
-  const start = () => {
-    const cur = document.querySelector('.navbar-links .nav-item.h-current');
-    if (cur && !document.querySelector('.navbar-links .is-pinned-open')) pin(cur);
-  };
-  start();
   const resourcePages = /\/(blog|gst-tds-due-dates|free-trial|system-requirements)(\/|\.html)?/;
-  if (resourcePages.test(location.pathname)) pin(document.querySelector('.resources-nav-dropdown > .nav-item'));
+  if (resourcePages.test(location.pathname)) document.querySelector('.resources-nav-dropdown > .nav-item')?.classList.add('is-pinned-open');
 })();
 
 /* Back-to-top arrow. */
