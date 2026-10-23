@@ -5267,3 +5267,6 @@ body.nav-hovering main *::after,
 body.nav-hovering section *,
 body.nav-hovering section *::before,
 body.nav-hovering section *::after { animation-play-state:paused !important; }
+
+/* Hero banner stays still (no floating animation). */
+.hero-promo-banner,.hero-promo-banner.hero-billingpromo { animation:none !important; transform:none !important; will-change:auto; }
