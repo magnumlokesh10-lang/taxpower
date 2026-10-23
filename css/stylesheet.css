@@ -5259,3 +5259,11 @@ body.demo-form-open {
 .footer-company-logo .se-logo-mark { width:48px; }
 .footer-company-logo .se-reg { width:11px; height:11px; border-width:1px; font-size:6.5px; }
 .header .resources-nav-dropdown .nav-dd-text small { text-wrap:balance; }
+
+/* Menu hover: pause looping page animations (resume on leave; nothing changes visually otherwise). */
+body.nav-hovering main *,
+body.nav-hovering main *::before,
+body.nav-hovering main *::after,
+body.nav-hovering section *,
+body.nav-hovering section *::before,
+body.nav-hovering section *::after { animation-play-state:paused !important; }

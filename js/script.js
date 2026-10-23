@@ -2041,3 +2041,11 @@ bootTaxPowerSite();
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
   update();
 })();
+
+/* While the pointer is on the navigation, hold the page's looping decorations still so the menu animates smoothly. */
+(() => {
+  const header = document.querySelector('.header');
+  if (!header || !window.matchMedia('(hover: hover)').matches) return;
+  header.addEventListener('pointerenter', () => document.body.classList.add('nav-hovering'));
+  header.addEventListener('pointerleave', () => document.body.classList.remove('nav-hovering'));
+})();
