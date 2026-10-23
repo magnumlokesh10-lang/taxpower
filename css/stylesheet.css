@@ -5271,9 +5271,9 @@ body.nav-hovering section *::after { animation-play-state:paused !important; }
 /* Hero banner stays still (no floating animation). */
 .hero-promo-banner,.hero-promo-banner.hero-billingpromo { animation:none !important; transform:none !important; will-change:auto; }
 
-/* The active tab carries the same colour effect as hover (it drifts twice, then rests). */
+/* The active tab carries the same colour effect as hover (the colour keeps drifting in a loop). */
 @media(min-width:1101px) {
- .header.nav-gradient-depth .navbar-links .nav-item:is(.h-current,.is-pinned-open)::before { opacity:1; animation:navGentleColorShift 3.8s ease-in-out 2 alternate both; }
+ .header.nav-gradient-depth .navbar-links .nav-item:is(.h-current,.is-pinned-open)::before { opacity:1; animation:navGentleColorShift 3.8s ease-in-out infinite alternate; }
  .header.nav-gradient-depth .navbar-links .nav-item:is(.h-current,.is-pinned-open) { box-shadow:0 0 14px 2px var(--nav-hover-glow),inset 0 0 7px #ffffff8c; color:#123F48; }
 }
 @media(prefers-reduced-motion:reduce) {
