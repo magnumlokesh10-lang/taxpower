@@ -1,5 +1,5 @@
 /* Standalone Vidarbha city pages and software feature pages. */
-.lp { --lp-ink:#103e50; --lp-blue:#087ba5; --lp-muted:#4f6b7a; position:relative; z-index:2; width:min(1120px,100%); margin:0 auto; padding:112px clamp(16px,3vw,24px) 40px; color:var(--lp-ink); font-family:'DM Sans',sans-serif; }
+.lp { --lp-ink:#103e50; --lp-blue:#087ba5; --lp-muted:#4f6b7a; position:relative; z-index:2; width:min(1120px,100%); margin:0 auto; padding:64px clamp(16px,3vw,24px) 40px; color:var(--lp-ink); font-family:'DM Sans',sans-serif; }
 .lp * { box-sizing:border-box; }
 .lp h1,.lp h2,.lp h3 { font-family:'Plus Jakarta Sans',sans-serif; color:var(--lp-ink); }
 .lp p { color:var(--lp-muted); font-size:15px; line-height:1.8; margin:0 0 14px; }
@@ -47,7 +47,7 @@
 .lp-contact strong { color:var(--lp-ink); }
 .lp-division { margin-bottom:22px; }
 .lp-division:last-child { margin-bottom:0; }
-@media(max-width:860px) { .lp-grid { grid-template-columns:1fr; } .lp-contact { grid-template-columns:1fr; } .lp { padding-top:96px; } }
+@media(max-width:860px) { .lp-grid { grid-template-columns:1fr; } .lp-contact { grid-template-columns:1fr; } .lp { padding-top:60px; } }
 @media(max-width:480px) { .lp-actions { align-items:stretch; flex-direction:column; } .lp-button { justify-content:space-between; } }
 
 /* Resource pages: tables, blog meta, due-date calendar. */
@@ -76,7 +76,47 @@
 .lp-due-body strong { color:var(--lp-ink); font-size:14.5px; }
 .lp-due-body small { color:var(--lp-muted); font-size:13px; line-height:1.55; }
 .lp-due-tag { align-self:flex-start; font-size:10.5px; font-weight:800; letter-spacing:.08em; padding:2px 8px; border-radius:6px; }
-.lp-due-tag--gst { background:#e4f5fc; color:#0a6f94; }
-.lp-due-tag--tds { background:#fff1e0; color:#a35a10; }
+.lp-due-tag--gst { background:#fff0dc; color:#b35a00; }
+.lp-due-tag--tds { background:#e3eefc; color:#1555b0; }
 .lp-due-item.is-hidden,.lp-month.is-hidden { display:none; }
 @media(max-width:480px) { .lp-due-item { grid-template-columns:64px 1fr; padding:12px; } .lp-toggle { margin-left:0; } }
+
+/* Income-Tax-style tax calendar: month grid + day table. GST orange, TDS blue. */
+.lp-sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.lp-toolbar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 18px; margin:0 0 16px; }
+.lp-views { display:inline-flex; border:1px solid #c7e0ea; border-radius:10px; overflow:hidden; background:#fff; }
+.lp-view { min-height:42px; padding:8px 18px; border:0; background:transparent; color:#0a6f94; font:700 13.5px 'DM Sans',sans-serif; cursor:pointer; }
+.lp-view.is-active { background:#087ba5; color:#fff; }
+.lp-search input { width:min(320px,100%); min-height:42px; padding:8px 14px; border:1px solid #bcd3de; border-radius:8px; font:14px 'DM Sans',sans-serif; color:var(--lp-ink); background:#fff; }
+.lp-filter--gst.is-active { background:#e8850f; border-color:#e8850f; color:#fff; }
+.lp-filter--tds.is-active { background:#1f6fd1; border-color:#1f6fd1; color:#fff; }
+.lp-filter--gst { border-color:#f2c48a; color:#b35a00; }
+.lp-filter--tds { border-color:#a9c9f2; color:#1555b0; }
+.lp-taxcal { display:grid; grid-template-columns:minmax(260px,320px) minmax(0,1fr); gap:24px; align-items:start; }
+.lp-taxcal[hidden],.lp-calendar[hidden] { display:none; }
+.lp-tc-left { border:1px solid #d6e8f0; border-radius:14px; padding:16px; background:#fff; }
+.lp-tc-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; font-family:'Plus Jakarta Sans',sans-serif; color:var(--lp-ink); }
+.lp-tc-nav { width:38px; height:38px; border:0; border-radius:50%; background:#eef6fa; color:#0a6f94; font-size:22px; line-height:1; cursor:pointer; }
+.lp-tc-nav:disabled { opacity:.35; cursor:default; }
+.lp-tc-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; text-align:center; }
+.lp-tc-dow { font-size:11px; color:#6a8796; padding:6px 0; font-weight:700; }
+.lp-tc-day { height:38px; border:1px solid transparent; border-radius:6px; background:transparent; color:var(--lp-ink); font:500 13.5px 'DM Sans',sans-serif; cursor:pointer; position:relative; }
+.lp-tc-day:disabled { cursor:default; color:#a3b6c0; }
+.lp-tc-day.has-gst { background:#fff0dc; color:#8a4500; font-weight:700; }
+.lp-tc-day.has-tds { background:#e3eefc; color:#1555b0; font-weight:700; }
+.lp-tc-day.has-gst.has-tds { background:linear-gradient(135deg,#fff0dc 50%,#e3eefc 50%); color:#243b55; }
+.lp-tc-day.is-today { border-color:#103e50; }
+.lp-tc-day.is-selected.has-gst { background:#e8850f; color:#fff; }
+.lp-tc-day.is-selected.has-tds { background:#1f6fd1; color:#fff; }
+.lp-tc-day.is-selected.has-gst.has-tds { background:linear-gradient(135deg,#e8850f 50%,#1f6fd1 50%); color:#fff; }
+.lp-tc-day.is-selected:not(.has-gst):not(.has-tds) { background:#103e50; color:#fff; }
+.lp-tc-day:focus-visible { outline:2px solid #087ba5; outline-offset:1px; }
+.lp-tc-legend { display:flex; flex-wrap:wrap; align-items:center; gap:4px 10px; margin:14px 0 0 !important; font-size:12.5px !important; }
+.lp-dot { display:inline-block; width:12px; height:12px; border-radius:3px; }
+.lp-dot--gst { background:#e8850f; } .lp-dot--tds { background:#1f6fd1; } .lp-dot--both { background:linear-gradient(135deg,#e8850f 50%,#1f6fd1 50%); }
+.lp-tc-right h3 { font-size:20px; margin:0 0 12px; }
+.lp-tc-table td:nth-child(2) { white-space:nowrap; }
+.lp-tc-empty { padding:18px; color:var(--lp-muted); font-size:14.5px; }
+.lp-due-tag--gst,.lp-due-tag--tds { display:inline-block; }
+@media(max-width:860px) { .lp-taxcal { grid-template-columns:1fr; } }
+.lp-toggle[hidden] { display:none; }

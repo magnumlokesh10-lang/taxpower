@@ -420,6 +420,8 @@ def due_page():
     months = {}
     for d, kind, title, desc in events:
         months.setdefault((d.year, d.month), []).append((d, kind, title, desc))
+    import json
+    DUE_JSON = json.dumps([{'d': d.isoformat(), 'k': k, 't': t, 'x': ds} for d, k, t, ds in events], ensure_ascii=False).replace('</', '<\\/')
     cal = ''
     for (y, m), items in sorted(months.items()):
         rows = ''.join(
@@ -436,13 +438,19 @@ def due_page():
                 ['Form 16A (Form 131)', 'Usually 15 August, 15 November, 15 February and 15 June']]
     body = (breadcrumb([('Home', 'home'), ('GST & TDS due dates', None)]) +
             '<section class="lp-panel lp-hero"><span class="lp-kicker">FY 2026-27 · APRIL 2026 TO MARCH 2027</span><h1>GST and TDS due dates calendar</h1>'
-            '<p class="lp-lead">Month-by-month standard due dates for GST returns, TDS and TCS deposits, TDS statements and certificates. Use the filters, hide dates that have passed and add the calendar to your phone or Outlook.</p>'
+            '<p class="lp-lead">Month-by-month standard due dates for GST returns, TDS and TCS deposits, TDS statements and certificates. Tap a date to see what is due, search for a return or switch to the month list. Add the calendar to your phone or Outlook.</p>'
             f'<div class="lp-actions"><a class="lp-button" href="{ICS_NAME}" download>Add to calendar (.ics) <span aria-hidden="true">↓</span></a><a class="lp-link" href="free-trial">Try TaxPower free for 30 days ↗</a></div>'
             f'<p class="lp-meta">Last checked {nice_date(PUBLISHED)}. Dates are standard statutory dates; extensions are notified separately.</p></section>'
-            '<section class="lp-panel" aria-labelledby="lp-cal-title"><h2 id="lp-cal-title">Due dates by month</h2>'
-            '<div class="lp-filters" role="group" aria-label="Filter due dates"><button type="button" class="lp-filter is-active" data-due-filter="all">All</button><button type="button" class="lp-filter" data-due-filter="GST">GST</button>'
-            '<button type="button" class="lp-filter" data-due-filter="TDS">TDS &amp; TCS</button><label class="lp-toggle"><input type="checkbox" data-due-past> Show dates that have passed</label></div>'
-            f'<div class="lp-calendar">{cal}</div></section>'
+            '<section class="lp-panel" aria-labelledby="lp-cal-title"><h2 id="lp-cal-title">Tax calendar</h2>'
+            '<div class="lp-toolbar"><div class="lp-views" role="tablist" aria-label="Choose view"><button type="button" role="tab" class="lp-view is-active" data-due-view="cal">Calendar view</button><button type="button" role="tab" class="lp-view" data-due-view="list">List by month</button></div>'
+            '<label class="lp-search"><span class="lp-sr">Search due dates</span><input type="search" placeholder="Search due date, e.g. GSTR-3B" data-due-search></label></div>'
+            '<div class="lp-filters" role="group" aria-label="Filter due dates"><button type="button" class="lp-filter is-active" data-due-filter="all">All</button><button type="button" class="lp-filter lp-filter--gst" data-due-filter="GST">GST</button>'
+            '<button type="button" class="lp-filter lp-filter--tds" data-due-filter="TDS">TDS &amp; TCS</button><label class="lp-toggle" data-due-pastwrap hidden><input type="checkbox" data-due-past> Show dates that have passed</label></div>'
+            '<div class="lp-taxcal" data-taxcal hidden><div class="lp-tc-left"><div class="lp-tc-head"><button type="button" class="lp-tc-nav" data-tc-prev aria-label="Previous month">‹</button><strong data-tc-month></strong><button type="button" class="lp-tc-nav" data-tc-next aria-label="Next month">›</button></div>'
+            '<div class="lp-tc-grid" data-tc-grid role="grid"></div><p class="lp-tc-legend"><span class="lp-dot lp-dot--gst"></span>GST <span class="lp-dot lp-dot--tds"></span>TDS &amp; TCS <span class="lp-dot lp-dot--both"></span>Both</p></div>'
+            '<div class="lp-tc-right"><h3 data-tc-title></h3><div class="lp-table-wrap"><table class="lp-table lp-tc-table"><thead><tr><th>Event</th><th>Type</th><th>Description</th></tr></thead><tbody data-tc-rows></tbody></table></div></div></div>'
+            f'<div class="lp-calendar" data-due-list>{cal}</div>'
+            f'<script type="application/json" id="lp-due-data">{DUE_JSON}</script></section>'
             '<section class="lp-panel"><h2>Quick reference: GST</h2>' + table_html(['Return or payment', 'Standard due date'], gst_rows) + '</section>'
             '<section class="lp-panel"><h2>Quick reference: TDS and TCS</h2>' + table_html(['Return, payment or certificate', 'Standard due date'], tds_rows) +
             '<p style="margin-top:14px">Income-tax Act, 2025 applies from 1 April 2026, so TDS and TCS forms and sections have new numbers. Forms 24Q, 26Q, 27Q and 27EQ became Forms 138, 140, 144 and 143. Form 16, 16A and 27D became Forms 130, 131 and 133.</p></section>'
