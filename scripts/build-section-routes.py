@@ -27,7 +27,7 @@ for node in sections.values():container.append(deepcopy(node))
 # Shared parts are present before JavaScript, so links are immediately crawlable.
 navdoc=html.fromstring((ROOT/'nav.html').read_text())
 slot=source.xpath('//*[@data-nav-slot]')[0];parent=slot.getparent();pos=parent.index(slot)
-for node in navdoc.xpath('//header | //button[@id="headerRevealHint"]'):
+for node in navdoc.xpath('//header | //button[@id="backToTop"]'):
     parent.insert(pos,deepcopy(node));pos+=1
 parent.remove(slot)
 slot=source.xpath('//*[@data-footer-slot]')[0];slot.getparent().replace(slot,html.fromstring((ROOT/'footer.html').read_text()))

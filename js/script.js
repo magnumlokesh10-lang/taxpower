@@ -322,7 +322,7 @@ function initTaxPowerSite() {
 
   // positions dynamic indicator block behind chosen targets element bounds
   function moveIndicator(element, shouldAnimate = true) {
-    if (!navSlidingBg || !element || window.innerWidth <= mobileBreakpoint) return;
+    if (!navSlidingBg || !element || window.innerWidth <= mobileBreakpoint || navSlidingBg.offsetParent === null) return;
 
     if (!shouldAnimate) {
       navSlidingBg.classList.add('is-positioning-instantly');
@@ -1864,11 +1864,7 @@ function initTaxPowerSite() {
   let isNavbarPinned = false;
 
 
-  function hideHeader() {
-    if (!isNavbarPinned && !navbarMenu?.classList.contains('active')) {
-      header?.classList.add('navbar-scroll-hidden');
-    }
-  }
+  function hideHeader() { /* The navigation always stays visible. */ }
 
   function resetHeaderInactivityTimer() {
     if (headerRevealTimer) {
@@ -1891,6 +1887,8 @@ function initTaxPowerSite() {
 
   function updateHeaderVisibility() {
     if (!header) return;
+    header.classList.remove('navbar-scroll-hidden');
+    return;
 
     if (isNavbarPinned || isNavClickScrolling) {
       header.classList.remove('navbar-scroll-hidden');
@@ -2023,13 +2021,32 @@ bootTaxPowerSite();
   window.addEventListener('load', observe);
 })();
 
-/* Keep Home open after it is clicked; close it again when another tab is clicked. */
+/* The tab you click stays open until you click another tab. */
 (() => {
-  const home = () => document.querySelector('.navbar-links .nav-item[data-nav-page="index.html"]');
+  const links = () => document.querySelector('.navbar-links');
+  function pin(target) {
+    document.querySelectorAll('.navbar-links .nav-item.is-pinned-open').forEach((el) => el.classList.remove('is-pinned-open'));
+    if (target && !target.classList.contains('nav-item-always')) target.classList.add('is-pinned-open');
+  }
   document.addEventListener('click', (event) => {
-    const item = event.target.closest('.navbar-links .nav-item, .navbar-links .nav-dropdown-link');
-    const h = home();
-    if (!item || !h) return;
-    h.classList.toggle('is-pinned-open', item === h);
+    const hit = event.target.closest('.navbar-links .nav-item, .navbar-links .nav-dropdown-link');
+    if (!hit || !links()) return;
+    pin(hit.matches('.nav-item') ? hit : hit.closest('.nav-dropdown')?.querySelector('.nav-item'));
   }, true);
+  const start = () => {
+    const cur = document.querySelector('.navbar-links .nav-item.h-current');
+    if (cur && !document.querySelector('.navbar-links .is-pinned-open')) pin(cur);
+  };
+  window.addEventListener('load', () => setTimeout(start, 300));
+})();
+
+/* Back-to-top arrow. */
+(() => {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+  const lift = () => { if (document.getElementById('quickEnquiryRoot')) btn.classList.add('is-lifted'); };
+  const update = () => { btn.hidden = window.scrollY < 480; lift(); };
+  window.addEventListener('scroll', update, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+  update();
 })();

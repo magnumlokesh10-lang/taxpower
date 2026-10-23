@@ -54,7 +54,7 @@ def shared(xpath_root, source_file, selector):
     return '\n'.join(out)
 
 
-NAV = shared(None, 'nav.html', '//header | //button[@id="headerRevealHint"]')
+NAV = shared(None, 'nav.html', '//header | //button[@id="backToTop"]')
 FOOTER = shared(None, 'footer.html', None)
 
 

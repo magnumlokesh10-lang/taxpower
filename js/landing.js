@@ -3,7 +3,6 @@
   const header = document.querySelector('.header');
   const menu = document.getElementById('navbarMenu');
   const burger = document.getElementById('hamburgerBtn');
-  const hint = document.getElementById('headerRevealHint');
   const dropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
   const mobile = () => window.innerWidth <= 1180 || window.matchMedia('(hover: none)').matches;
 
@@ -33,15 +32,6 @@
       toggle.setAttribute('aria-expanded', String(!wasOpen));
     });
   });
-
-  let lastY = window.scrollY;
-  window.addEventListener('scroll', () => {
-    if (!header || menu?.classList.contains('active')) return;
-    const y = window.scrollY;
-    header.classList.toggle('navbar-scroll-hidden', y > 80 && y > lastY);
-    lastY = y;
-  }, { passive: true });
-  hint?.addEventListener('click', () => { header?.classList.remove('navbar-scroll-hidden'); header?.classList.add('navbar-stay-visible'); });
 
   window.addEventListener('resize', () => { if (window.innerWidth > 1100) setMenu(false); });
 })();
@@ -144,3 +134,36 @@ document.addEventListener('click', (e) => {
     sessionStorage.setItem('taxpower_demo_context', JSON.stringify({ purpose: a.getAttribute('data-demo-purpose'), product: a.getAttribute('data-demo-product') }));
   } catch (err) { /* storage can be blocked */ }
 });
+
+/* The tab you click stays open until you click another tab. */
+(() => {
+  const links = () => document.querySelector('.navbar-links');
+  function pin(target) {
+    document.querySelectorAll('.navbar-links .nav-item.is-pinned-open').forEach((el) => el.classList.remove('is-pinned-open'));
+    if (target && !target.classList.contains('nav-item-always')) target.classList.add('is-pinned-open');
+  }
+  document.addEventListener('click', (event) => {
+    const hit = event.target.closest('.navbar-links .nav-item, .navbar-links .nav-dropdown-link');
+    if (!hit || !links()) return;
+    pin(hit.matches('.nav-item') ? hit : hit.closest('.nav-dropdown')?.querySelector('.nav-item'));
+  }, true);
+  const start = () => {
+    const cur = document.querySelector('.navbar-links .nav-item.h-current');
+    if (cur && !document.querySelector('.navbar-links .is-pinned-open')) pin(cur);
+  };
+  start();
+  const resourcePages = /\/(blog|gst-tds-due-dates|free-trial|system-requirements)(\/|\.html)?/;
+  if (resourcePages.test(location.pathname)) pin(document.querySelector('.resources-nav-dropdown > .nav-item'));
+})();
+
+/* Back-to-top arrow. */
+(() => {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+  const lift = () => { if (document.getElementById('quickEnquiryRoot')) btn.classList.add('is-lifted'); };
+  const update = () => { btn.hidden = window.scrollY < 480; lift(); };
+  window.addEventListener('scroll', update, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+  update();
+})();
+

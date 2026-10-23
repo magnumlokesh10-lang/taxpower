@@ -5216,3 +5216,29 @@ body.demo-form-open {
  .header.nav-gradient-depth .nav-item.is-pinned-open .nav-item-label { position:absolute; width:auto; max-width:none; opacity:1; transform:scale(1); }
 }
 @media(min-width:1101px) and (max-width:1250px) { .header.nav-gradient-depth .nav-item.is-pinned-open { width:132px; } }
+
+/* Navigation never hides on scroll. */
+.header.navbar-scroll-hidden { transform:none !important; }
+.header-reveal-hint { display:none !important; }
+
+/* Lighter, smoother hover: no live blur behind the bar, own layer, contained layout. */
+.navbar { backdrop-filter:none !important; -webkit-backdrop-filter:none !important; background:rgba(255,255,255,.92) !important; }
+.header.nav-gradient-depth .navbar { background:rgba(255,255,255,.94) !important; }
+.header { will-change:transform; }
+.navbar-links { contain:layout style; }
+@media(min-width:1101px) {
+ .nav-gradient-depth .nav-item { transition:width .32s cubic-bezier(.22,1,.36,1),color .2s ease !important; }
+ .nav-gradient-depth .nav-item::before { transition:opacity .22s ease !important; }
+ .nav-gradient-depth .nav-item .nav-item-icon { transition:transform .22s ease,opacity .18s ease !important; }
+ .nav-gradient-depth .nav-item .nav-item-label { transition:opacity .2s ease,transform .26s cubic-bezier(.22,1,.36,1) !important; }
+ .header.nav-gradient-depth .nav-item:is(:hover,:focus-visible) .nav-item-label { transition-delay:.05s !important; }
+ .nav-dropdown-menu { transition:opacity .16s ease,visibility .16s ease,transform .2s cubic-bezier(.22,1,.36,1) !important; }
+}
+
+/* Back to top. */
+.back-to-top { position:fixed; right:22px; bottom:calc(22px + env(safe-area-inset-bottom,0px)); z-index:999; width:48px; height:48px; display:grid; place-items:center; border:0; border-radius:14px; background:#103e50; color:#fff; cursor:pointer; box-shadow:0 8px 20px #103e5040; transition:background .2s ease,transform .2s ease; }
+.back-to-top[hidden] { display:none; }
+.back-to-top.is-lifted { bottom:calc(84px + env(safe-area-inset-bottom,0px)); }
+.back-to-top svg { width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+.back-to-top:hover { background:#f47a22; transform:translateY(-2px); }
+.back-to-top:focus-visible { outline:3px solid #f47a22; outline-offset:3px; }
