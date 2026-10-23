@@ -433,7 +433,7 @@ function initTaxPowerSite() {
       const linkUrl = new URL(href, document.baseURI);
       const currentUrl = new URL(window.location.href);
       const isSameOrigin = linkUrl.origin === currentUrl.origin;
-      const isIndexTarget = linkUrl.pathname.endsWith('/index.html') || linkUrl.pathname === '/' || linkUrl.pathname === currentUrl.pathname;
+      const isIndexTarget = linkUrl.pathname.endsWith('/index.html') || linkUrl.pathname === new URL(document.baseURI).pathname || linkUrl.pathname === currentUrl.pathname;
 
       if (isSameOrigin && isIndexTarget && linkUrl.hash && isIndexPage()) {
         return linkUrl.hash;

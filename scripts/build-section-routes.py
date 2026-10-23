@@ -4,12 +4,14 @@ then run python scripts/build-section-routes.py (requires lxml and Pillow).
 """
 from pathlib import Path
 from copy import deepcopy
-import json,re
+import json,re,os
 from urllib.parse import urlsplit,unquote
 from lxml import html,etree
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://taxpower.co/'
+# Site root for <base href>. '/' on taxpower.co; set TAXPOWER_BASE_PATH=/repo-name/ to preview a GitHub project page.
+BASE_PATH='/'+os.environ.get('TAXPOWER_BASE_PATH','/').strip('/')+'/' if os.environ.get('TAXPOWER_BASE_PATH','/').strip('/') else '/'
 config=json.loads((ROOT/'scripts/seo-routes.json').read_text())
 variants=json.loads((ROOT/'scripts/image-variants.json').read_text())
 source=html.fromstring((ROOT/'_site-source/index.html').read_text())
@@ -93,7 +95,7 @@ for route,meta in config.items():
     schema=etree.Element('script',{'type':'application/ld+json','id':'site-structured-data','data-route':route});schema.text=json.dumps({'@context':'https://schema.org','@graph':graph});head.append(schema)
     # Both .html resolution and directory resolution serve the same static page.
     for filename,nested in [(route+'.html',False),(route+'/index.html',True)]+([('index.html',False)] if route=='home' else []):
-        output=deepcopy(doc);base=etree.Element('base',{'href':'/'});output.find('head').insert(0,base)
+        output=deepcopy(doc);base=etree.Element('base',{'href':BASE_PATH});output.find('head').insert(0,base)
         path=ROOT/filename;path.parent.mkdir(exist_ok=True);rendered='<!DOCTYPE html>\n'+html.tostring(output,encoding='unicode',method='html')
         path.write_text('\n'.join(line.rstrip() for line in rendered.splitlines())+'\n')
 # Metadata for client-side navigation uses the same source as the static HTML.

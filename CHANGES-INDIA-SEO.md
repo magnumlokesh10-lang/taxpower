@@ -18,3 +18,6 @@ Original repo (magnumlokesh10-lang/taxpower.co) was NOT modified. This is a sepa
 - Google Business Profile, Search Console sitemap submit, reviews, backlinks (e.g. Magnum dealer listing).
 - Original guides/blog content (needs accurate, current tax content from a CA/owner).
 - The jsdom test suite (`tests/seo-routes.cjs`) could not be run here (npm registry blocked); equivalent checks were run with Python and a real Chromium screenshot.
+
+## Previewing under a project-page path (github.io/<repo>/)
+Build with `TAXPOWER_BASE_PATH=/<repo>/ python scripts/build-section-routes.py` (for example `/taxpower/`). Plain `python scripts/build-section-routes.py` builds for the domain root (`/`) and is what taxpower.co needs. Rebuild without the variable before going live on the domain.
