@@ -2007,3 +2007,29 @@ bootTaxPowerSite();
 
 
 
+
+/* Pause looping CSS animations in sections that are off screen, so the page stays light while the menu is used. */
+(() => {
+  if (!('IntersectionObserver' in window)) return;
+  const seen = new WeakSet();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => entry.target.classList.toggle('tp-offscreen', !entry.isIntersecting));
+  }, { rootMargin: '120px 0px' });
+  const observe = () => document.querySelectorAll('main, body > section, section[id]').forEach((el) => {
+    if (!seen.has(el)) { seen.add(el); io.observe(el); }
+  });
+  observe();
+  document.addEventListener('taxpower:sections-loaded', observe);
+  window.addEventListener('load', observe);
+})();
+
+/* Keep Home open after it is clicked; close it again when another tab is clicked. */
+(() => {
+  const home = () => document.querySelector('.navbar-links .nav-item[data-nav-page="index.html"]');
+  document.addEventListener('click', (event) => {
+    const item = event.target.closest('.navbar-links .nav-item, .navbar-links .nav-dropdown-link');
+    const h = home();
+    if (!item || !h) return;
+    h.classList.toggle('is-pinned-open', item === h);
+  }, true);
+})();

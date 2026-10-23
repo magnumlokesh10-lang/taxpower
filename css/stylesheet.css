@@ -5194,3 +5194,25 @@ body.demo-form-open {
 @media(max-width:1180px) {.header.nav-gradient-depth .nav-dropdown .nav-dropdown-menu {min-width:0;width:auto;}}
 .header.nav-gradient-depth .resources-nav-dropdown .nav-dropdown-menu {min-width:350px;}
 @media(max-width:1180px) {.header.nav-gradient-depth .resources-nav-dropdown .nav-dropdown-menu {min-width:0;}}
+.tp-offscreen,.tp-offscreen *,.tp-offscreen *::before,.tp-offscreen *::after { animation-play-state:paused !important; }
+
+/* Resources tab: its own hover colour (amber), like the other tabs. */
+.nav-gradient-depth [data-nav-page="resources.html"] { --nav-from:#FFE9CF; --nav-to:#FFF3E3; --nav-glow:#f5a54a44; }
+.header.nav-gradient-depth [data-nav-page="resources.html"] { --nav-from:#FFD9AE; --nav-to:#FFEBD2; --nav-hover-glow:#f5a54a4d; --nav-rich:#FBC688; }
+
+/* Hint that a tab opens a menu: small chevron. */
+@media(min-width:1101px) {
+ .header.nav-gradient-depth .nav-dropdown > .nav-item .nav-dropdown-caret { display:block; position:absolute; right:9px; bottom:7px; width:5px; height:5px; border-right:1.6px solid #6b8794; border-bottom:1.6px solid #6b8794; transform:rotate(45deg); opacity:.75; pointer-events:none; transition:opacity .15s; }
+ .header.nav-gradient-depth .nav-dropdown > .nav-item.nav-item-always .nav-dropdown-caret { bottom:auto; top:6px; right:8px; width:4px; height:4px; }
+ .header.nav-gradient-depth .nav-dropdown > .nav-item:is(:hover,:focus-visible) .nav-dropdown-caret,
+ .header.nav-gradient-depth .nav-dropdown:focus-within > .nav-item .nav-dropdown-caret { opacity:0; }
+}
+
+/* Home stays open once clicked, until another tab is clicked. */
+@media(min-width:1101px) {
+ .header.nav-gradient-depth .nav-item.is-pinned-open { width:144px; max-width:144px; padding:0; color:#0b3b3b; }
+ .header.nav-gradient-depth .nav-item.is-pinned-open::before { opacity:1; }
+ .header.nav-gradient-depth .nav-item.is-pinned-open .nav-item-icon { transform:scale(0); opacity:0; }
+ .header.nav-gradient-depth .nav-item.is-pinned-open .nav-item-label { position:absolute; width:auto; max-width:none; opacity:1; transform:scale(1); }
+}
+@media(min-width:1101px) and (max-width:1250px) { .header.nav-gradient-depth .nav-item.is-pinned-open { width:132px; } }

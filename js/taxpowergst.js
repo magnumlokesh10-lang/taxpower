@@ -984,7 +984,23 @@
         }
       );
 
-      gradient.start();
+      // Render the WebGL gradient only while it is on screen and the tab is visible,
+      // otherwise it keeps the GPU busy and makes navigation hovers stutter.
+      let onScreen = true;
+      const sync = () => {
+        const shouldRun = onScreen && !document.hidden;
+        if (shouldRun && !gradient.isPlaying) gradient.start();
+        else if (!shouldRun && gradient.isPlaying) gradient.stop();
+      };
+      if ('IntersectionObserver' in window) {
+        onScreen = false;
+        new IntersectionObserver((entries) => {
+          onScreen = entries.some((entry) => entry.isIntersecting);
+          sync();
+        }, { rootMargin: '80px' }).observe(container);
+      }
+      document.addEventListener('visibilitychange', sync);
+      sync();
     } catch (error) {
       container.dataset.gradientInitialized = "";
       canvas.remove();
