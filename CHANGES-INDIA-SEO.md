@@ -6,7 +6,7 @@ Original repo (magnumlokesh10-lang/taxpower.co) was NOT modified. This is a sepa
 - `scripts/seo-routes.json`: new titles + descriptions for all 11 routes (all-India targeting, Nagpur/Maharashtra as home base).
 - `_site-source/index.html`: removed stale `github.io` canonical, old "#1 / 10,000+ businesses" description, meta keywords; lang `en-IN`; fixed "Filling" -> "Filing"; replaced "India's leading" with a factual phrase.
 - `_site-source/taxpowergst.html`: descriptive alt text on 5 screenshots; "Filling" -> "Filing".
-- `_site-source/aboutus.html` + `css/aboutus.css`: new "GST & TDS software for every state in India" section (Maharashtra home-state card, 36 states/UTs with GST codes, demo/price links). The state list was checked against the enquiry form's list at edit time.
+- `_site-source/aboutus.html` + `css/aboutus.css`: new short "Use TaxPower anywhere in India" band (Nagpur, Maharashtra home base, demo/price links). No state table.
 - `scripts/build-section-routes.py`: Siddharth Enterprises schema is now Organization + LocalBusiness with areaServed India; WebSite inLanguage en-IN; SoftwareApplication gets description/subcategory; og:locale en_IN; aboutus.css cache-bust.
 - Rebuilt with `python scripts/build-section-routes.py` (generated HTML, js/section-routes.js, sitemap.xml, robots.txt are build output).
 - `CNAME` removed from this copy so a preview repo does not claim taxpower.co. Restore it (content: `taxpower.co`) when going live.
