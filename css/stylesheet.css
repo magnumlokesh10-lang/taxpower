@@ -5169,3 +5169,13 @@ body.demo-form-open {
   content:"™";position:absolute;top:12px;right:10px;
   font-family:Arial,sans-serif;font-size:8px;font-weight:600;line-height:1;color:#0754c9;pointer-events:none
 }
+
+/* Footer: Vidarbha and software-guide links (not in the main menu). */
+.footer-seo-links{display:grid;grid-template-columns:1.4fr 1fr;gap:18px 40px;margin:0 clamp(22px,3vw,42px);padding:20px 0;border-top:1px solid #ddebf0}
+.footer-seo-group h2{margin:0 0 8px;color:#244758;font-size:13px;font-family:'Plus Jakarta Sans',sans-serif}
+.footer-seo-group{display:flex;flex-wrap:wrap;gap:2px 16px;align-items:center}
+.footer-seo-group h2{flex:0 0 100%}
+.footer-seo-group a{color:#2f6179;font-size:12.5px;line-height:1.5;padding:6px 0;text-decoration:none}
+.footer-seo-group a:hover,.footer-seo-group a:focus-visible{color:#087ba5;text-decoration:underline}
+@media(max-width:800px){.footer-seo-links{grid-template-columns:1fr}}
+@media(max-width:480px){.footer-seo-links{margin:0 20px}}

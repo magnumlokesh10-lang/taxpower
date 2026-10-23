@@ -21,3 +21,9 @@ Original repo (magnumlokesh10-lang/taxpower.co) was NOT modified. This is a sepa
 
 ## Previewing under a project-page path (github.io/<repo>/)
 Build with `TAXPOWER_BASE_PATH=/<repo>/ python scripts/build-section-routes.py` (for example `/taxpower/`). Plain `python scripts/build-section-routes.py` builds for the domain root (`/`) and is what taxpower.co needs. Rebuild without the variable before going live on the domain.
+
+## Vidarbha city pages and software guides
+- `scripts/landing-pages.json`: all content for 1 Vidarbha hub, 11 district pages and 6 software guides. Edit text here, then run both build scripts (`python scripts/build-section-routes.py` then `python scripts/build-landing-pages.py`; use `TAXPOWER_BASE_PATH=/taxpower/` for the preview only).
+- Standalone pages (own H1, schema, canonical, sitemap entry): `gst-tds-software-vidarbha`, `gst-tds-software-<district>`, `gst-return-filing-software`, `gstr-2b-itc-reconciliation-software`, `e-invoice-e-way-bill-software`, `gst-billing-software`, `tds-return-filing-software`, `form-16-form-16a-certificate-software`.
+- Not in the top menu. Linked from the footer ("Serving Vidarbha", "Software guides"), the About page India band, and from each other.
+- Only confirmed claims are used: Marathi/Hindi support, online demo and training, free trial (no number of days stated), Vidarbha authorization. Review the local-context paragraphs for each district and add real details (clients, local CA groups).

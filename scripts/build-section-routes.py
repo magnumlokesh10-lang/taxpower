@@ -68,7 +68,7 @@ for img in source.xpath('//img[@src]'):
 # Lightweight illustration variants referenced by CSS are updated separately.
 for el in source.xpath('//script[@src] | //link[@href]'):
     key='src' if el.tag=='script' else 'href';value=el.get(key)
-    if value.startswith(('js/','css/')):el.set(key,value.split('?')[0]+('?v=20261023-india-coverage' if value.startswith('css/aboutus.css') else '?v=20261017-seo'))
+    if value.startswith(('js/','css/')):el.set(key,value.split('?')[0]+('?v=20261023-india-coverage' if value.startswith('css/aboutus.css') else '?v=20261023-vidarbha' if value.startswith('css/stylesheet.css') else '?v=20261017-seo'))
 source.xpath('//h1[@class="visually-hidden original-h1"]')
 organization={'@type':['Organization','LocalBusiness'],'@id':BASE+'#siddharth','name':'Siddharth Enterprises','description':'Authorized TaxPower dealer in Nagpur, Maharashtra selling TaxPower GST, Billing and TDS software across India.','areaServed':{'@type':'Country','name':'India'},'url':BASE+'aboutus','logo':BASE+'asset/swt_icon/siddharth-enterprises-logo.webp','email':'support@taxpower.co','telephone':['+919145073173','+917755912821'],'address':{'@type':'PostalAddress','streetAddress':'Plot No.14, Godawari Apartment, Amar Nagar Road, T-Point Hingna, Hingna MIDC','addressLocality':'Nagpur','addressRegion':'Maharashtra','postalCode':'440016','addressCountry':'IN'}}
 for route,meta in config.items():
@@ -103,7 +103,9 @@ routing=ROOT/'js/section-routes.js';js=routing.read_text();js=re.sub(r'  const t
 js=re.sub(r'  const routeMetadata = \{.*?\};\n','',js,flags=re.S)
 js=js.replace('  function updateTitle() {','  const routeMetadata = '+json.dumps(config,indent=2)+';\n  function updateTitle() {')
 routing.write_text(js)
+landing=json.loads((ROOT/'scripts/landing-pages.json').read_text())
+landing_slugs=[landing['hub']['slug']]+[c['slug'] for c in landing['cities']]+[f['slug'] for f in landing['features']]
 canonical_routes=[r for r,m in config.items() if not m.get('canonical')]
-(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+BASE+r+'</loc></url>\n' for r in canonical_routes)+'</urlset>\n')
+(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+BASE+r+'</loc></url>\n' for r in canonical_routes+landing_slugs)+'</urlset>\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+BASE+'sitemap.xml\n')
 print('Built',len(config),'routes with static content, metadata, headings and schema.')

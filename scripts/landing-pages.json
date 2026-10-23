@@ -1,0 +1,279 @@
+{
+  "dealer": {
+    "phones": ["9145073173", "7755912821"],
+    "email": "support@taxpower.co",
+    "address": "Plot No.14, Godawari Apartment, Amar Nagar Road, T-Point Hingna, Hingna MIDC, Nagpur – 440016"
+  },
+  "hub": {
+    "slug": "gst-tds-software-vidarbha",
+    "title": "TaxPower GST & TDS Software in Vidarbha | Siddharth Enterprises",
+    "description": "Buy TaxPower GST, Billing and TDS software anywhere in Vidarbha: Nagpur, Amravati, Akola, Chandrapur and more. Marathi and Hindi support, online demo and free trial.",
+    "h1": "GST & TDS software for every district in Vidarbha",
+    "lead": "Siddharth Enterprises, Nagpur is authorized by Magnum Infosystem, the developer of TaxPower, to sell TaxPower GST, Billing and TDS software across Vidarbha. CAs, tax consultants, traders, contractors and manufacturers in all 11 districts can book a demo, ask for a free trial and get support in Marathi or Hindi.",
+    "services_title": "What you get in every Vidarbha district",
+    "outside_title": "Not in Vidarbha?",
+    "outside": "We also sell TaxPower to CAs and businesses in other parts of India. Send an enquiry from any state and we will arrange an online demo."
+  },
+  "cities": [
+    {
+      "slug": "gst-tds-software-nagpur", "name": "Nagpur", "division": "Nagpur division",
+      "towns": ["Hingna", "Butibori", "Kamptee", "Katol", "Umred"],
+      "intro": "Siddharth Enterprises is based in Hingna MIDC, Nagpur, so TaxPower GST, Billing and TDS software is sold and supported by a team in your own city. CAs, tax consultants, traders and manufacturers in Nagpur can book a demo, ask for a free trial and get training in Marathi or Hindi.",
+      "context": "Nagpur has a large community of CAs and tax consultants, wholesale trading areas such as Itwari and Kalamna, and industrial areas such as Hingna, Butibori and MIHAN. That mix means GST returns for many GSTINs at once, ITC reconciliation for traders and manufacturers, and e-invoice and e-way bill work for businesses that dispatch goods every day. TaxPower keeps these jobs in one desktop workspace.",
+      "gst": "Prepare and upload returns for many clients, download GSTR-1, 2A and 2B data in one click and track filing status and ARN for every dealer. Suited to Nagpur CA practices that handle many GSTINs.",
+      "billing": "Create GST invoices, generate e-invoices and e-way bills in bulk and download e-way bills from the portal. Suited to Nagpur traders and manufacturers who dispatch goods daily.",
+      "tds": "Prepare 24Q, 26Q, 27Q and 27EQ returns, validate PAN and FVU files and email Form 16 and 16A certificates for Nagpur employers, contractors and deductors.",
+      "faq_q": "Can I visit the TaxPower dealer office in Nagpur?",
+      "faq_a": "Our office is at Plot No.14, Godawari Apartment, Amar Nagar Road, T-Point Hingna, Hingna MIDC, Nagpur – 440016. Please call 9145073173 or 7755912821 before you visit so that someone is available for your demo.",
+      "nearby": ["wardha", "bhandara", "chandrapur", "amravati"]
+    },
+    {
+      "slug": "gst-tds-software-amravati", "name": "Amravati", "division": "Amravati division",
+      "towns": ["Badnera", "Achalpur", "Morshi", "Daryapur"],
+      "intro": "Amravati CAs, tax consultants and business owners can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Demos and training are held online in Marathi or Hindi, so you do not need to travel to Nagpur.",
+      "context": "Amravati is the divisional headquarters of western Vidarbha, with an MIDC industrial area, agri-processing units and active trade in cotton, soybean and oranges across the district. Local practices often file returns for several GSTINs, reconcile purchases against GSTR-2B and prepare TDS returns for employers and contractors.",
+      "gst": "File and track GST returns for many dealers from one dashboard, with one-click download of GSTR-1, 2A and 2B data for your Amravati clients.",
+      "billing": "Raise GST invoices and generate e-invoices and e-way bills in bulk for goods moving from Amravati units and traders to buyers in other districts and states.",
+      "tds": "Prepare TDS and TCS returns, check PAN and challan details before filing and email Form 16 and 16A to deductees in Amravati.",
+      "faq_q": "Do you serve towns such as Badnera, Achalpur and Morshi?",
+      "faq_a": "Yes. Demo, installation help, training and support are online and in Marathi or Hindi, so they work the same in Badnera, Achalpur, Morshi, Daryapur or anywhere else in Amravati district.",
+      "nearby": ["akola", "buldhana", "yavatmal", "wardha", "nagpur"]
+    },
+    {
+      "slug": "gst-tds-software-akola", "name": "Akola", "division": "Amravati division",
+      "towns": ["Akot", "Murtizapur", "Balapur", "Patur"],
+      "intro": "Akola businesses and CAs can get TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Ask for an online demo and a free trial, and get support in Marathi or Hindi.",
+      "context": "Akola is known for cotton, pulses and oilseed trading and processing, with dal mills and oil mills among its typical businesses. For these units, accurate sales and purchase invoices, e-way bills for goods moving between mills and markets, and ITC reconciliation matter every month, alongside TDS work for employers and contractors.",
+      "gst": "Track GST return status and ARN for all your Akola dealers in one place and reconcile purchase books with GSTR-2B to review ITC differences before filing.",
+      "billing": "Generate e-invoices and e-way bills in bulk, or create an e-way bill from an IRN, for mills and traders in Akola that dispatch goods regularly.",
+      "tds": "Prepare regular and correction TDS returns, manage challans and track return status for deductors in Akola.",
+      "faq_q": "Is the demo available for Akola, Akot and Murtizapur?",
+      "faq_a": "Yes. We run the demo online, so it is the same for Akola city, Akot, Murtizapur, Balapur, Patur and the rest of the district. Book it from the demo form or call 9145073173.",
+      "nearby": ["washim", "buldhana", "amravati"]
+    },
+    {
+      "slug": "gst-tds-software-washim", "name": "Washim", "division": "Amravati division",
+      "towns": ["Risod", "Mangrulpir", "Karanja", "Malegaon"],
+      "intro": "If you are in Washim district, you do not need to go to a bigger city to buy GST and TDS software. Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, offers an online demo, a free trial and support in Marathi or Hindi.",
+      "context": "Washim has an agriculture-based economy, with traders, small processors and service providers in Washim, Risod, Mangrulpir, Karanja and Malegaon. Smaller practices usually need software that handles GST returns, billing and TDS without a complicated setup, and help available by phone when a question comes up.",
+      "gst": "Prepare and upload major GST returns from the software and check filing status and ARN for each of your Washim clients without logging in to the portal one client at a time.",
+      "billing": "Keep sales, purchases, receipts and payments in one billing workspace and generate e-invoices and e-way bills when your business needs them.",
+      "tds": "Prepare 24Q and 26Q returns, validate PAN and FVU files and send Form 16 and 16A certificates by email.",
+      "faq_q": "Will I get help in my own language in Washim?",
+      "faq_a": "Yes. Support and training are available in Marathi and Hindi, by phone and online, so you can ask questions in the language you work in.",
+      "nearby": ["akola", "yavatmal", "buldhana"]
+    },
+    {
+      "slug": "gst-tds-software-buldhana", "name": "Buldhana", "division": "Amravati division",
+      "towns": ["Khamgaon", "Malkapur", "Chikhli", "Mehkar", "Shegaon"],
+      "intro": "CAs and businesses in Buldhana district can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, with an online demo, a free trial and support in Marathi or Hindi.",
+      "context": "Buldhana district has several trading towns, including Khamgaon, Malkapur, Chikhli, Mehkar and Shegaon, where agricultural produce, cotton and general trade drive much of the business. Traders there deal with high invoice volumes, e-way bills for goods in transit and regular ITC checks.",
+      "gst": "Download GSTR-1, 2A and 2B data in one click, review differences against your purchase register and export audit-ready Excel reports for Buldhana clients.",
+      "billing": "Create GST invoices quickly, select several invoices together to generate e-invoices and e-way bills, and keep customer and item masters ready for repeat billing.",
+      "tds": "Prepare TDS and TCS returns, import challans and check invalid or inoperative PANs before you file.",
+      "faq_q": "Can traders in Khamgaon and Malkapur use TaxPower Billing?",
+      "faq_a": "Yes. TaxPower GST Billing supports invoices, e-invoices and e-way bills. Ask for an online demo and we will show the billing workflow in Marathi or Hindi using your kind of invoices.",
+      "nearby": ["akola", "washim"]
+    },
+    {
+      "slug": "gst-tds-software-yavatmal", "name": "Yavatmal", "division": "Amravati division",
+      "towns": ["Pusad", "Wani", "Darwha", "Digras", "Umarkhed"],
+      "intro": "Yavatmal CAs, contractors and traders can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Book an online demo, ask for a free trial and get support in Marathi or Hindi.",
+      "context": "Yavatmal district combines cotton and agricultural trade with contractors, transporters and suppliers in towns such as Pusad, Wani, Darwha, Digras and Umarkhed. Contractor and transporter payments mean regular TDS returns, and trading units need dependable GST invoicing and e-way bills.",
+      "gst": "Keep GST return filing status for all your dealers in one view, with filing dates and ARN tracking, and export the list to Excel or PDF.",
+      "billing": "Generate GST invoices, e-invoices and e-way bills, and download e-way bills from the portal to review document details in one place.",
+      "tds": "Review tax payable, challan utilisation, short deductions and interest before filing, and track every regular and correction return in one register.",
+      "faq_q": "I am in Pusad or Wani. Do I need to travel for installation or training?",
+      "faq_a": "No. Installation help and training are online, so the process is the same in Pusad, Wani, Darwha or Yavatmal city. Call 9145073173 or send an enquiry to start.",
+      "nearby": ["wardha", "amravati", "washim", "chandrapur"]
+    },
+    {
+      "slug": "gst-tds-software-wardha", "name": "Wardha", "division": "Nagpur division",
+      "towns": ["Hinganghat", "Pulgaon", "Arvi", "Seloo"],
+      "intro": "Wardha CAs and business owners can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Nagpur is close, but you do not need to travel: demo, training and support are online in Marathi or Hindi.",
+      "context": "Wardha district has cotton trading and processing in Hinganghat, small manufacturers, traders in Wardha, Pulgaon and Arvi, and many educational and medical institutions. Institutions and employers need accurate salary TDS returns and Form 16, while traders need GST invoicing and reconciliation.",
+      "gst": "Reconcile purchase books with auto-drafted GSTR-2B, review mismatches and prepare returns for Wardha clients from one GST workspace.",
+      "billing": "Manage sales and purchase entries, receipts and payments, and generate e-invoices and e-way bills for traders and processors.",
+      "tds": "Prepare Form 24Q (salary TDS) returns and email Form 16 certificates directly to employees. Useful for institutions and employers in Wardha.",
+      "faq_q": "Is TaxPower useful for institutions and employers in Wardha?",
+      "faq_a": "Yes. TaxPower TDS supports salary TDS returns (Form 24Q / Form 138), PAN and FVU validation and Form 16 certificates that can be emailed to employees. Ask for a demo to see the salary return workflow.",
+      "nearby": ["nagpur", "amravati", "yavatmal", "chandrapur"]
+    },
+    {
+      "slug": "gst-tds-software-bhandara", "name": "Bhandara", "division": "Nagpur division",
+      "towns": ["Tumsar", "Sakoli", "Pauni", "Lakhani"],
+      "intro": "Bhandara businesses and CAs can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, with an online demo, a free trial and support in Marathi or Hindi.",
+      "context": "Bhandara sits in the paddy belt, with rice mills, agri traders and vendors to local industry in Bhandara, Tumsar, Sakoli and Pauni. Mills and traders need regular invoicing with e-way bills for dispatches, and ITC reconciliation so purchase credits are claimed correctly.",
+      "gst": "Compare purchase book data with GSTR-2B, spot tax differences and keep a filing-status list for every Bhandara dealer you handle.",
+      "billing": "Create invoices and generate e-invoices and e-way bills in bulk, including e-way bill generation by IRN, for mills and traders dispatching goods.",
+      "tds": "Prepare 26Q returns for non-salary payments such as contractors, validate PAN and FVU files and issue Form 16A.",
+      "faq_q": "Do rice mills and traders in Bhandara need the TDS module too?",
+      "faq_a": "That depends on the payments you make. Businesses that deduct tax on contractor or professional payments file TDS returns, and TaxPower TDS covers these. We can show only the modules you need during the demo.",
+      "nearby": ["nagpur", "gondia", "chandrapur"]
+    },
+    {
+      "slug": "gst-tds-software-gondia", "name": "Gondia", "division": "Nagpur division",
+      "towns": ["Tirora", "Goregaon", "Arjuni Morgaon", "Amgaon"],
+      "intro": "Gondia CAs, rice mill owners and traders can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Demo, training and support are online in Marathi or Hindi, with a free trial available.",
+      "context": "Gondia is one of Maharashtra's main rice-milling districts, with mills, dealers and transporters in Gondia, Tirora, Goregaon and Amgaon. Heavy dispatch volumes make quick invoicing, bulk e-way bill generation and tidy GST records important, and local CAs often handle the returns of many such clients.",
+      "gst": "Handle many mill and trader GSTINs from one dashboard, with return status, ARN tracking and Excel export for Gondia CAs.",
+      "billing": "Select several invoices together and generate e-invoices and e-way bills, or create bulk JSON files for upload.",
+      "tds": "Manage TDS and TCS returns for deductors in Gondia, with challan import and e-filing and TRACES access from the dashboard.",
+      "faq_q": "Can a Gondia CA manage many client GSTINs in TaxPower?",
+      "faq_a": "Yes. TaxPower GST is built for CAs and tax consultants who handle several dealers. You can track return status and filing dates for all dealers in one view. Ask for a demo with your client mix.",
+      "nearby": ["bhandara", "nagpur", "gadchiroli"]
+    },
+    {
+      "slug": "gst-tds-software-chandrapur", "name": "Chandrapur", "division": "Nagpur division",
+      "towns": ["Ballarpur", "Warora", "Bhadravati", "Rajura", "Brahmapuri"],
+      "intro": "Chandrapur CAs, contractors and industrial suppliers can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Book an online demo, ask for a free trial and get support in Marathi or Hindi.",
+      "context": "Chandrapur district has coal, power, cement and paper industries around Chandrapur, Ballarpur, Warora and Bhadravati. The suppliers, transporters and contractors that work with them make a lot of payments that attract TDS, and issue many invoices, so TDS returns, challan checks and GST billing are everyday work.",
+      "gst": "Reconcile GSTR-2B, track return status for all dealers and export reports section-wise, party-wise and rate-wise for Chandrapur clients.",
+      "billing": "Generate GST invoices, e-invoices and e-way bills in bulk for suppliers and transporters serving Chandrapur industries.",
+      "tds": "Check tax payable, challan utilisation, short deductions and invalid PANs, then prepare 26Q returns for contractor payments and issue Form 16A.",
+      "faq_q": "Is TaxPower TDS suitable for contractors and suppliers in Chandrapur?",
+      "faq_a": "Yes. TaxPower TDS supports regular and correction returns, PAN and FVU validation, challan management and certificates. We will walk through the workflow online, in Marathi or Hindi, before you decide.",
+      "nearby": ["nagpur", "gadchiroli", "wardha", "yavatmal", "bhandara"]
+    },
+    {
+      "slug": "gst-tds-software-gadchiroli", "name": "Gadchiroli", "division": "Nagpur division",
+      "towns": ["Armori", "Desaiganj", "Aheri", "Chamorshi", "Sironcha"],
+      "intro": "Gadchiroli district is spread out, so an online demo and phone support matter. Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, offers a free trial, online demo and training in Marathi or Hindi for CAs, contractors and businesses in Gadchiroli.",
+      "context": "Business in Gadchiroli district includes contractors, forest-produce traders and cooperative bodies in towns such as Gadchiroli, Armori, Desaiganj, Aheri and Chamorshi. Contractor payments need TDS returns and certificates, and traders need GST returns and billing, often without a large accounts team.",
+      "gst": "Download GSTR-1, 2A and 2B data in one click and prepare returns from a single dashboard, which saves time when you serve clients across a wide area.",
+      "billing": "Keep billing, customer masters and item records in one workspace and generate e-invoices and e-way bills when needed.",
+      "tds": "Prepare TDS returns, import challans, check PAN and challan problems before filing and email certificates to deductees.",
+      "faq_q": "Gadchiroli is far from Nagpur. How do I get support?",
+      "faq_a": "Support is by phone and online. Call 9145073173 or 7755912821, or send an enquiry, and we will arrange the demo, installation help and training remotely in Marathi or Hindi.",
+      "nearby": ["chandrapur", "gondia", "nagpur"]
+    }
+  ],
+  "features": [
+    {
+      "slug": "gst-return-filing-software",
+      "title": "GST Return Filing Software for CAs | TaxPower GST",
+      "description": "Prepare, upload and track GST returns for many GSTINs. Download GSTR-1, 2A and 2B in one click and export audit-ready reports. Book a free TaxPower GST demo.",
+      "h1": "GST return filing software for CAs and businesses",
+      "kicker": "TAXPOWER GST · RETURNS",
+      "lead": "TaxPower GST is a desktop GST software that brings return preparation, portal upload, data download and filing-status tracking into one dashboard. It is designed for CAs, tax consultants and corporate tax teams who handle more than one GSTIN.",
+      "sections": [
+        {"h": "All GST returns in one view", "p": "Open every GST return form from a single dashboard instead of moving between screens. TaxPower GST connects to the GST portal, so major returns can be uploaded straight from the software.", "bullets": ["All GST return forms in a single view", "Direct GST portal integration", "Upload major GST returns directly from the software"]},
+        {"h": "Download GSTR-1, 2A and 2B in one click", "p": "Auto-download return data for your clients rather than fetching each file by hand. The downloaded data feeds the same reports and reconciliation tools, so you work from one set of figures.", "bullets": ["One-click download of GSTR-1, 2A, 2B and other returns data", "Data ready for preview, reports and reconciliation"]},
+        {"h": "Track filing status and ARN for every dealer", "p": "A CA with many clients needs to know which returns are filed and which are pending. The filing-status dashboard lists return status, filing date and ARN for all your dealers and lets you search and filter.", "bullets": ["Return status for all dealers within minutes", "Filing date and ARN tracking", "Quick search and advanced filters", "Export to Excel or PDF"]},
+        {"h": "Audit-ready GST reports", "p": "The report engine gives a form-wise preview and Excel exports for audit and reconciliation work.", "bullets": ["GSTR form-wise instant preview and audit-ready Excel exports", "Compare GSTR-3B with GSTR-1 in one preview", "Section-wise, party-wise and rate-wise summaries", "Annual, monthly and quarterly summaries", "TDS/TCS (2X), ITC reconciliation and liability reports"]}
+      ],
+      "faq": [
+        {"q": "Is TaxPower GST desktop software?", "a": "Yes. TaxPower GST is a desktop solution for Windows that connects to the GST portal for upload and download."},
+        {"q": "Can I manage many GSTINs?", "a": "Yes. The filing-status dashboard is built so CAs and tax consultants can follow the return status of all their dealers together."},
+        {"q": "Where can I buy TaxPower GST in Maharashtra?", "a": "Siddharth Enterprises, Nagpur is the authorized TaxPower dealer for Vidarbha and sells to customers across India. Book a demo or ask for a quotation."}
+      ],
+      "related": ["gstr-2b-itc-reconciliation-software", "gst-billing-software", "e-invoice-e-way-bill-software"],
+      "product": "TaxPower GST Return"
+    },
+    {
+      "slug": "gstr-2b-itc-reconciliation-software",
+      "title": "GSTR-2B ITC Reconciliation Software | TaxPower GST",
+      "description": "Reconcile purchase books with auto-drafted GSTR-2B, spot tax differences and compare GSTR-1 with e-invoices. See TaxPower GST ITC reconciliation in a free demo.",
+      "h1": "GSTR-2B and ITC reconciliation software",
+      "kicker": "TAXPOWER GST · ITC RECONCILIATION",
+      "lead": "Input tax credit depends on what your suppliers have reported. TaxPower GST compares your purchase register with the auto-drafted GSTR-2B, so you can see matched invoices, tax differences and missing invoices before you claim credit.",
+      "sections": [
+        {"h": "How the ITC reconciliation works", "p": "The workflow follows the steps a CA already uses, with the comparison done by the software.", "bullets": ["Import the purchase register", "Compare it with GSTR-2B", "Review the differences invoice by invoice"]},
+        {"h": "GSTR-2 and 2B reconciliation to protect your claim", "p": "TaxPower GST reconciles GSTR-2 purchase book data with auto-drafted GSTR-2B so that you can maximise your ITC claim and avoid compliance loss. Matched invoices are separated from those that need review, so your time goes to the exceptions."},
+        {"h": "GSTR-1 and e-invoice reconciliation", "p": "Sales-side checks matter as well. TaxPower GST compares GSTR-1 return data with generated e-invoices so you can quickly spot missing invoices, tax differences and mismatches.", "bullets": ["Load e-invoice data and compare with GSTR-1", "Check tax differences", "Review the invoices that do not match"]},
+        {"h": "Reports for review and reference", "p": "ITC reconciliation and liability reports can be previewed and exported to Excel, so the work can be shared with a client or kept as an audit record."}
+      ],
+      "faq": [
+        {"q": "What does GSTR-2B reconciliation compare?", "a": "It compares the purchase invoices in your books with the invoices in your auto-drafted GSTR-2B and highlights matches and differences."},
+        {"q": "Can I also reconcile sales invoices?", "a": "Yes. GSTR-1 data can be compared with e-invoice data to find missing invoices and tax differences."},
+        {"q": "Can I see this on my own data?", "a": "Book a demo and tell us your type of work. We will walk through the reconciliation flow online in English, Hindi or Marathi."}
+      ],
+      "related": ["gst-return-filing-software", "e-invoice-e-way-bill-software", "gst-billing-software"],
+      "product": "TaxPower GST Return"
+    },
+    {
+      "slug": "e-invoice-e-way-bill-software",
+      "title": "E-Invoice & E-Way Bill Software | TaxPower GST Billing",
+      "description": "Generate e-invoices and e-way bills in bulk, create e-way bills from an IRN, make bulk JSON files and download e-way bills from the portal with TaxPower GST Billing.",
+      "h1": "E-invoice and e-way bill software",
+      "kicker": "TAXPOWER GST BILLING · E-INVOICE & E-WAY BILL",
+      "lead": "TaxPower GST Billing lets you select several invoices and generate e-invoices and e-way bills together. It is meant for businesses that raise many invoices and dispatch goods regularly.",
+      "sections": [
+        {"h": "Select invoices, generate together", "p": "Choose multiple invoices and generate e-invoices with e-way bills in one go, rather than one invoice at a time.", "bullets": ["Bulk e-invoice and e-way bill generation", "E-way bill generation by IRN", "Bulk JSON file creation"]},
+        {"h": "Download e-way bills from the portal", "p": "Download e-way bills from the portal and review document details in one place.", "bullets": ["Filter by date and record type", "Review, print and export e-way bills"]},
+        {"h": "Everything starts from organised billing records", "p": "E-invoices come from clean invoices. TaxPower GST Billing keeps sales and purchase entries, receipts, payments and your customer, supplier, item and transporter masters in the same workspace, so the data used for e-invoices and e-way bills is already organised."},
+        {"h": "Check e-invoices against your GST return", "p": "E-invoice data can be compared with GSTR-1 in TaxPower GST to find missing invoices and tax differences before filing."}
+      ],
+      "faq": [
+        {"q": "Can I create e-way bills without e-invoices?", "a": "TaxPower GST Billing supports e-way bill workflows as well as e-invoices. Book a demo and tell us your dispatch process so we can show the right flow."},
+        {"q": "Is bulk generation possible?", "a": "Yes. You can select multiple invoices and generate e-invoices with e-way bills together, or create bulk JSON files."},
+        {"q": "Who sells TaxPower GST Billing in Vidarbha?", "a": "Siddharth Enterprises, Nagpur, the authorized TaxPower dealer for Vidarbha. Ask for an online demo and a free trial."}
+      ],
+      "related": ["gst-billing-software", "gstr-2b-itc-reconciliation-software", "gst-return-filing-software"],
+      "product": "TaxPower Billing"
+    },
+    {
+      "slug": "gst-billing-software",
+      "title": "GST Billing Software with E-Invoice | TaxPower GST Billing",
+      "description": "GST billing software for sales, purchases, receipts and payments with e-invoice, e-way bill, masters and reports in one workspace. Book a TaxPower Billing demo.",
+      "h1": "GST billing software for everyday invoicing",
+      "kicker": "TAXPOWER GST BILLING",
+      "lead": "TaxPower GST Billing keeps your everyday billing work organised in one easy-to-use workspace: sales and purchase entries, receipts and payments, e-invoices, e-way bills, masters and reports.",
+      "sections": [
+        {"h": "A dashboard for daily billing", "p": "Manage sales, purchases, receipts and payments from one billing dashboard.", "bullets": ["Sales and purchase entries", "Receipts and payments", "E-invoice and e-way bill workflows"]},
+        {"h": "Masters ready for the next invoice", "p": "Keep customer, supplier and item details ready so that the next billing entry takes less typing.", "bullets": ["Customer and supplier masters", "Item, transporter and ledger records"]},
+        {"h": "Billing reports", "p": "Review billing records in detailed numerical reports for everyday checking and reference."},
+        {"h": "From billing to GST filing", "p": "When billing and returns sit in the same family of software, invoice data is easier to carry into GST work. Sales invoices can later be compared with GSTR-1 and e-invoice data in TaxPower GST."}
+      ],
+      "faq": [
+        {"q": "Does TaxPower GST Billing support e-invoices and e-way bills?", "a": "Yes. It includes e-invoice and e-way bill generation, including bulk generation from selected invoices."},
+        {"q": "Is billing sold separately from GST returns and TDS?", "a": "Prices depend on the products you choose. See the pricing page or request a quotation for the combination you need."},
+        {"q": "Can I get a trial?", "a": "A free trial is available. Ask for it when you book your demo."}
+      ],
+      "related": ["e-invoice-e-way-bill-software", "gst-return-filing-software", "gstr-2b-itc-reconciliation-software"],
+      "product": "TaxPower Billing"
+    },
+    {
+      "slug": "tds-return-filing-software",
+      "title": "TDS Return Filing Software: 24Q, 26Q, 27Q, 27EQ | TaxPower",
+      "description": "Prepare 24Q, 26Q, 27Q and 27EQ TDS and TCS returns, validate PAN and FVU, import challans and use TRACES from one desktop workspace. Book a TaxPower TDS demo.",
+      "h1": "TDS return filing software for deductors, CAs and consultants",
+      "kicker": "TAXPOWER TDS · RETURNS",
+      "lead": "TaxPower TDS helps you automate TDS and TCS compliance from preparation to filing. Prepare returns, generate FVU files and manage challans, TRACES and certificates in one desktop workspace.",
+      "sections": [
+        {"h": "Returns it covers", "p": "TaxPower TDS handles regular and correction returns for TDS and TCS, with old and new form numbers shown side by side.", "bullets": ["Form 24Q / Form 138: salary TDS", "Form 26Q / Form 140: non-salary TDS", "Form 27Q / Form 144: non-resident TDS", "Form 27EQ / Form 143: TCS return"]},
+        {"h": "PAN and FVU validation, e-filing and TRACES", "p": "Validate PAN and FVU files before upload and open e-filing and TRACES from the same dashboard, with challans imported from TRACES / NSDL BIN."},
+        {"h": "Checks before you file", "p": "The computation and compliance screen puts the common problem areas together.", "bullets": ["Tax payable and challan utilisation", "Invalid and inoperative PANs", "Unverified or mismatched challans", "Short deductions and missing salary details", "Interest, late fees and outstanding balances"]},
+        {"h": "Return register and dashboard", "p": "Track returns across deductors with filing dates, due dates, status, token numbers, ARN and correction revisions, and export the register when you need it."}
+      ],
+      "faq": [
+        {"q": "Does TaxPower TDS support correction returns?", "a": "Yes. It manages regular and correction returns, with correction revisions visible in the return dashboard."},
+        {"q": "Can I handle several deductors?", "a": "Yes. The client dashboard and return register are organised so you can track returns across deductors."},
+        {"q": "Who supports TaxPower TDS in Maharashtra?", "a": "Siddharth Enterprises, Nagpur, the authorized TaxPower dealer for Vidarbha, with support in Marathi and Hindi."}
+      ],
+      "related": ["form-16-form-16a-certificate-software", "gst-return-filing-software", "gst-billing-software"],
+      "product": "TaxPower TDS"
+    },
+    {
+      "slug": "form-16-form-16a-certificate-software",
+      "title": "Form 16 & Form 16A Software with Email | TaxPower TDS",
+      "description": "Generate Form 16, 16A and 27D certificates and email them to employees and deductees. Request Conso files and justification reports from TRACES in TaxPower TDS.",
+      "h1": "Form 16 and Form 16A certificate software",
+      "kicker": "TAXPOWER TDS · CERTIFICATES",
+      "lead": "After a TDS return is filed, deductors still have to give certificates to employees and deductees. TaxPower TDS handles certificates and can email them directly.",
+      "sections": [
+        {"h": "Certificates supported", "p": "TaxPower TDS supports the old and new form numbers for the certificates most deductors need.", "bullets": ["Form 16 / 130", "Form 16A / 131", "Form 27D / 133"]},
+        {"h": "Direct mail to employees and deductees", "p": "Email certificates to employees and deductees directly from the software, rather than sending each file manually."},
+        {"h": "TRACES activity in one place", "p": "Request Conso files, download certificates and access Justification Reports. TaxPower TDS tracks request availability and download status in one place, so you do not have to remember what you have requested."},
+        {"h": "Part of the complete TDS workflow", "p": "Certificates come at the end of return filing. TaxPower TDS keeps the return, challans, PAN validation and TRACES activity linked, so certificates follow from the same data."}
+      ],
+      "faq": [
+        {"q": "Can I email Form 16 to employees from the software?", "a": "Yes. TaxPower TDS has a certificate direct-mail feature for employees and deductees."},
+        {"q": "Which certificates are supported?", "a": "Form 16 / 130, Form 16A / 131 and Form 27D / 133."},
+        {"q": "Can I see the certificate workflow before buying?", "a": "Yes. Book a demo and ask for a free trial."}
+      ],
+      "related": ["tds-return-filing-software", "gst-return-filing-software", "gst-billing-software"],
+      "product": "TaxPower TDS"
+    }
+  ]
+}

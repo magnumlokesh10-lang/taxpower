@@ -1,0 +1,51 @@
+/* Standalone Vidarbha city pages and software feature pages. */
+.lp { --lp-ink:#103e50; --lp-blue:#087ba5; --lp-muted:#4f6b7a; position:relative; z-index:2; width:min(1120px,100%); margin:0 auto; padding:112px clamp(16px,3vw,24px) 40px; color:var(--lp-ink); font-family:'DM Sans',sans-serif; }
+.lp * { box-sizing:border-box; }
+.lp h1,.lp h2,.lp h3 { font-family:'Plus Jakarta Sans',sans-serif; color:var(--lp-ink); }
+.lp p { color:var(--lp-muted); font-size:15px; line-height:1.8; margin:0 0 14px; }
+.lp a { color:#0a6f94; }
+.lp-breadcrumb { display:flex; flex-wrap:wrap; gap:6px; font-size:12.5px; color:#527386; margin:0 0 18px; }
+.lp-breadcrumb a { text-decoration:none; }
+.lp-breadcrumb a:hover { text-decoration:underline; }
+.lp-breadcrumb span[aria-current] { color:#2c5a70; font-weight:600; }
+.lp-panel { margin-top:26px; padding:clamp(22px,4vw,44px); border:1px solid #cce4ed; border-radius:20px; background:#ffffffd9; }
+.lp-hero { margin-top:0; background:radial-gradient(ellipse at 90% 20%,#bceefc80,transparent 55%),linear-gradient(120deg,#fffaf3e6,#edfaffe6); }
+.lp-kicker { display:inline-flex; align-items:center; gap:10px; color:#397c94; font-size:11px; font-weight:750; letter-spacing:.14em; margin-bottom:16px; text-transform:uppercase; }
+.lp-kicker::before { content:""; width:22px; height:2px; background:#0595bb; }
+.lp h1 { font-size:clamp(30px,4.2vw,50px); line-height:1.14; letter-spacing:-.04em; margin:0 0 18px; }
+.lp h2 { font-size:clamp(22px,2.6vw,30px); line-height:1.25; letter-spacing:-.025em; margin:0 0 14px; }
+.lp h3 { font-size:17px; line-height:1.35; margin:0 0 8px; }
+.lp-lead { font-size:17px !important; color:#28576b !important; font-weight:500; max-width:760px; }
+.lp-actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px 22px; margin-top:22px; }
+.lp-button { display:inline-flex; align-items:center; gap:14px; min-height:48px; padding:12px 20px; border-radius:10px; background:#087ba5; color:#fff !important; font-weight:700; font-size:14px; text-decoration:none; box-shadow:0 5px 14px #0b749b2b; transition:background .2s; }
+.lp-button:hover { background:#086b8f; }
+.lp-link { display:inline-flex; align-items:center; min-height:44px; font-weight:700; font-size:14px; text-decoration:none; }
+.lp-link:hover { text-decoration:underline; }
+.lp-highlights { list-style:none; display:flex; flex-wrap:wrap; gap:8px 22px; padding:0; margin:20px 0 0; }
+.lp-highlights li { font-size:13.5px; font-weight:600; color:#2c5a70; }
+.lp-highlights li::before { content:"✓ "; color:#0a8a5b; }
+.lp-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.lp-card { padding:22px; border:1px solid #d6e8f0; border-radius:16px; background:#fff; }
+.lp-card p { font-size:14px; margin-bottom:12px; }
+.lp-card a.lp-more { font-weight:700; font-size:13.5px; text-decoration:none; }
+.lp-card a.lp-more:hover { text-decoration:underline; }
+.lp-bullets { margin:0 0 6px; padding-left:20px; color:var(--lp-muted); font-size:14.5px; line-height:1.75; }
+.lp-section + .lp-section { margin-top:28px; }
+.lp-section p:last-child { margin-bottom:0; }
+.lp-faq details { border-top:1px solid #dcebf1; padding:2px 0; }
+.lp-faq details:last-child { border-bottom:1px solid #dcebf1; }
+.lp-faq summary { cursor:pointer; padding:14px 0; font-weight:700; font-size:15.5px; color:var(--lp-ink); font-family:'Plus Jakarta Sans',sans-serif; }
+.lp-faq details p { padding-bottom:12px; }
+.lp-chips { display:flex; flex-wrap:wrap; gap:8px 10px; margin:0; padding:0; list-style:none; }
+.lp-chips a { display:inline-flex; align-items:center; min-height:40px; padding:8px 16px; border:1px solid #c7e0ea; border-radius:22px; background:#fff; font-size:13.5px; font-weight:600; text-decoration:none; }
+.lp-chips a:hover { background:#e9f6fb; }
+.lp-lang { padding:16px 20px; border-left:4px solid #f4a04e; background:#fff7ec; border-radius:0 12px 12px 0; margin-top:22px; }
+.lp-lang p { margin:0 0 4px; font-size:14.5px; color:#5a4631; }
+.lp-lang p:last-child { margin-bottom:0; }
+.lp-contact { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.lp-contact address { font-style:normal; color:var(--lp-muted); font-size:14.5px; line-height:1.8; }
+.lp-contact strong { color:var(--lp-ink); }
+.lp-division { margin-bottom:22px; }
+.lp-division:last-child { margin-bottom:0; }
+@media(max-width:860px) { .lp-grid { grid-template-columns:1fr; } .lp-contact { grid-template-columns:1fr; } .lp { padding-top:96px; } }
+@media(max-width:480px) { .lp-actions { align-items:stretch; flex-direction:column; } .lp-button { justify-content:space-between; } }
