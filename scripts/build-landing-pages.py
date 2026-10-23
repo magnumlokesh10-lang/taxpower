@@ -80,9 +80,7 @@ def cta(product, label='Book a free demo'):
             f'{esc(label)} <span aria-hidden="true">↗</span></a><a class="lp-link" href="pricing">See TaxPower prices ↗</a></div>')
 
 
-LANG_NOTE = ('<div class="lp-lang"><p lang="mr">TaxPower GST, TDS आणि बिलिंग सॉफ्टवेअरचा डेमो मराठी किंवा हिंदीत मिळवा.</p>'
-             '<p lang="hi">TaxPower GST, TDS और बिलिंग सॉफ्टवेयर का डेमो हिंदी या मराठी में पाएं।</p></div>')
-HIGHLIGHTS = '<ul class="lp-highlights"><li>Support in Marathi and Hindi</li><li>Online demo and training</li><li>Free trial available</li></ul>'
+HIGHLIGHTS = '<ul class="lp-highlights"><li>Demo &amp; support in Hindi, Marathi or English</li><li>Online demo and training</li><li>Free trial available</li></ul>'
 
 
 def breadcrumb(trail):
@@ -123,7 +121,7 @@ def city_page(c):
         breadcrumb([('Home', 'home'), ('Vidarbha', hub['slug']), (n, None)]) +
         f'<section class="lp-panel lp-hero"><span class="lp-kicker">Authorized TaxPower dealer · {esc(c["division"])}</span>'
         f'<h1>GST &amp; TDS software in {esc(n)}</h1><p class="lp-lead">{esc(c["intro"])}</p>'
-        + cta('TaxPower Software', f'Book a demo in {n}') + HIGHLIGHTS + LANG_NOTE + '</section>'
+        + cta('TaxPower Software', f'Book a demo in {n}') + HIGHLIGHTS + '</section>'
         f'<section class="lp-panel" aria-labelledby="lp-use-title"><h2 id="lp-use-title">TaxPower for {esc(n)} CAs and businesses</h2><p>{esc(c["context"])}</p>'
         '<div class="lp-grid">'
         f'<article class="lp-card"><h3>GST returns &amp; ITC</h3><p>{esc(c["gst"])}</p><a class="lp-more" href="gst-return-filing-software">GST return filing software ↗</a></article>'
@@ -133,7 +131,7 @@ def city_page(c):
         f'<section class="lp-panel" aria-labelledby="lp-how-title"><h2 id="lp-how-title">How buying TaxPower works in {esc(n)}</h2>'
         '<ol class="lp-bullets"><li><strong>Book a demo.</strong> We show the software online, using the kind of work you do.</li>'
         '<li><strong>Try it.</strong> A free trial is available on request.</li>'
-        '<li><strong>Get set up and trained.</strong> Installation help and training are online, in Marathi or Hindi.</li>'
+        '<li><strong>Get set up and trained.</strong> Installation help and training are online, in Hindi, Marathi or English.</li>'
         '<li><strong>Stay supported.</strong> Call for help with updates, licensing and renewals.</li></ol>'
         '<div class="lp-actions"><a class="lp-link" href="pricing">See TaxPower prices ↗</a><a class="lp-link" href="downloads">Downloads ↗</a></div></section>'
         + faq_block(faqs, f'TaxPower in {n}: common questions') +
@@ -142,7 +140,7 @@ def city_page(c):
         '<p style="margin-top:16px">Outside Vidarbha? We sell TaxPower across India. Send an enquiry from any state and we will arrange an online demo.</p></section>'
         + contact_block())
     meta = {'title': f'GST & TDS Software in {n} | TaxPower Dealer, Vidarbha',
-            'description': f'Buy TaxPower GST, Billing and TDS software in {n}, Vidarbha from authorized dealer Siddharth Enterprises. Marathi and Hindi support, online demo, free trial.'}
+            'description': f'Buy TaxPower GST, Billing and TDS software in {n}, Vidarbha from authorized dealer Siddharth Enterprises. Hindi, Marathi and English support, online demo, free trial.'}
     return body, meta, faqs, [('Home', 'home'), ('Vidarbha', hub['slug']), (n, c['slug'])], {
         '@type': 'Service', 'serviceType': 'GST, Billing and TDS software sales, demo and support',
         'name': f'TaxPower GST & TDS software in {n}', 'provider': {'@id': BASE + '#siddharth'},
@@ -157,9 +155,9 @@ def hub_page():
     body = (
         breadcrumb([('Home', 'home'), ('Vidarbha', None)]) +
         f'<section class="lp-panel lp-hero"><span class="lp-kicker">Authorized TaxPower dealer · Vidarbha</span><h1>{esc(hub["h1"])}</h1>'
-        f'<p class="lp-lead">{esc(hub["lead"])}</p>' + cta('TaxPower Software', 'Book a demo in Vidarbha') + HIGHLIGHTS + LANG_NOTE + '</section>'
+        f'<p class="lp-lead">{esc(hub["lead"])}</p>' + cta('TaxPower Software', 'Book a demo in Vidarbha') + HIGHLIGHTS + '</section>'
         f'<section class="lp-panel" aria-labelledby="lp-services-title"><h2 id="lp-services-title">{esc(hub["services_title"])}</h2><div class="lp-grid">'
-        '<article class="lp-card"><h3>Marathi and Hindi support</h3><p>Ask questions, get training and request support in the language you work in, by phone or online.</p></article>'
+        '<article class="lp-card"><h3>Hindi, Marathi and English support</h3><p>Ask questions, get training and request support in Hindi, Marathi or English, whichever you are comfortable with, by phone or online.</p></article>'
         '<article class="lp-card"><h3>Online demo and training</h3><p>We show TaxPower GST, Billing and TDS online and train your team remotely, so district distance does not matter.</p></article>'
         '<article class="lp-card"><h3>Free trial</h3><p>Ask for a free trial when you book the demo. Installation, renewal and bundle prices are on the pricing page.</p></article>'
         '</div></section>'

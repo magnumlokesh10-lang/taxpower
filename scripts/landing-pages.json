@@ -7,9 +7,9 @@
   "hub": {
     "slug": "gst-tds-software-vidarbha",
     "title": "TaxPower GST & TDS Software in Vidarbha | Siddharth Enterprises",
-    "description": "Buy TaxPower GST, Billing and TDS software anywhere in Vidarbha: Nagpur, Amravati, Akola, Chandrapur and more. Marathi and Hindi support, online demo and free trial.",
+    "description": "Buy TaxPower GST, Billing and TDS software anywhere in Vidarbha: Nagpur, Amravati, Akola, Chandrapur and more. Hindi, Marathi and English support, online demo and free trial.",
     "h1": "GST & TDS software for every district in Vidarbha",
-    "lead": "Siddharth Enterprises, Nagpur is authorized by Magnum Infosystem, the developer of TaxPower, to sell TaxPower GST, Billing and TDS software across Vidarbha. CAs, tax consultants, traders, contractors and manufacturers in all 11 districts can book a demo, ask for a free trial and get support in Marathi or Hindi.",
+    "lead": "Siddharth Enterprises, Nagpur is authorized by Magnum Infosystem, the developer of TaxPower, to sell TaxPower GST, Billing and TDS software across Vidarbha. CAs, tax consultants, traders, contractors and manufacturers in all 11 districts can book a demo, ask for a free trial and get support in Hindi, Marathi or English.",
     "services_title": "What you get in every Vidarbha district",
     "outside_title": "Not in Vidarbha?",
     "outside": "We also sell TaxPower to CAs and businesses in other parts of India. Send an enquiry from any state and we will arrange an online demo."
@@ -18,7 +18,7 @@
     {
       "slug": "gst-tds-software-nagpur", "name": "Nagpur", "division": "Nagpur division",
       "towns": ["Hingna", "Butibori", "Kamptee", "Katol", "Umred"],
-      "intro": "Siddharth Enterprises is based in Hingna MIDC, Nagpur, so TaxPower GST, Billing and TDS software is sold and supported by a team in your own city. CAs, tax consultants, traders and manufacturers in Nagpur can book a demo, ask for a free trial and get training in Marathi or Hindi.",
+      "intro": "Siddharth Enterprises is based in Hingna MIDC, Nagpur, so TaxPower GST, Billing and TDS software is sold and supported by a team in your own city. CAs, tax consultants, traders and manufacturers in Nagpur can book a demo, ask for a free trial and get training in Hindi, Marathi or English.",
       "context": "Nagpur has a large community of CAs and tax consultants, wholesale trading areas such as Itwari and Kalamna, and industrial areas such as Hingna, Butibori and MIHAN. That mix means GST returns for many GSTINs at once, ITC reconciliation for traders and manufacturers, and e-invoice and e-way bill work for businesses that dispatch goods every day. TaxPower keeps these jobs in one desktop workspace.",
       "gst": "Prepare and upload returns for many clients, download GSTR-1, 2A and 2B data in one click and track filing status and ARN for every dealer. Suited to Nagpur CA practices that handle many GSTINs.",
       "billing": "Create GST invoices, generate e-invoices and e-way bills in bulk and download e-way bills from the portal. Suited to Nagpur traders and manufacturers who dispatch goods daily.",
@@ -30,19 +30,19 @@
     {
       "slug": "gst-tds-software-amravati", "name": "Amravati", "division": "Amravati division",
       "towns": ["Badnera", "Achalpur", "Morshi", "Daryapur"],
-      "intro": "Amravati CAs, tax consultants and business owners can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Demos and training are held online in Marathi or Hindi, so you do not need to travel to Nagpur.",
+      "intro": "Amravati CAs, tax consultants and business owners can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Demos and training are held online in Hindi, Marathi or English, so you do not need to travel to Nagpur.",
       "context": "Amravati is the divisional headquarters of western Vidarbha, with an MIDC industrial area, agri-processing units and active trade in cotton, soybean and oranges across the district. Local practices often file returns for several GSTINs, reconcile purchases against GSTR-2B and prepare TDS returns for employers and contractors.",
       "gst": "File and track GST returns for many dealers from one dashboard, with one-click download of GSTR-1, 2A and 2B data for your Amravati clients.",
       "billing": "Raise GST invoices and generate e-invoices and e-way bills in bulk for goods moving from Amravati units and traders to buyers in other districts and states.",
       "tds": "Prepare TDS and TCS returns, check PAN and challan details before filing and email Form 16 and 16A to deductees in Amravati.",
       "faq_q": "Do you serve towns such as Badnera, Achalpur and Morshi?",
-      "faq_a": "Yes. Demo, installation help, training and support are online and in Marathi or Hindi, so they work the same in Badnera, Achalpur, Morshi, Daryapur or anywhere else in Amravati district.",
+      "faq_a": "Yes. Demo, installation help, training and support are online and in Hindi, Marathi or English, so they work the same in Badnera, Achalpur, Morshi, Daryapur or anywhere else in Amravati district.",
       "nearby": ["akola", "buldhana", "yavatmal", "wardha", "nagpur"]
     },
     {
       "slug": "gst-tds-software-akola", "name": "Akola", "division": "Amravati division",
       "towns": ["Akot", "Murtizapur", "Balapur", "Patur"],
-      "intro": "Akola businesses and CAs can get TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Ask for an online demo and a free trial, and get support in Marathi or Hindi.",
+      "intro": "Akola businesses and CAs can get TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Ask for an online demo and a free trial, and get support in Hindi, Marathi or English.",
       "context": "Akola is known for cotton, pulses and oilseed trading and processing, with dal mills and oil mills among its typical businesses. For these units, accurate sales and purchase invoices, e-way bills for goods moving between mills and markets, and ITC reconciliation matter every month, alongside TDS work for employers and contractors.",
       "gst": "Track GST return status and ARN for all your Akola dealers in one place and reconcile purchase books with GSTR-2B to review ITC differences before filing.",
       "billing": "Generate e-invoices and e-way bills in bulk, or create an e-way bill from an IRN, for mills and traders in Akola that dispatch goods regularly.",
@@ -54,31 +54,31 @@
     {
       "slug": "gst-tds-software-washim", "name": "Washim", "division": "Amravati division",
       "towns": ["Risod", "Mangrulpir", "Karanja", "Malegaon"],
-      "intro": "If you are in Washim district, you do not need to go to a bigger city to buy GST and TDS software. Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, offers an online demo, a free trial and support in Marathi or Hindi.",
+      "intro": "If you are in Washim district, you do not need to go to a bigger city to buy GST and TDS software. Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, offers an online demo, a free trial and support in Hindi, Marathi or English.",
       "context": "Washim has an agriculture-based economy, with traders, small processors and service providers in Washim, Risod, Mangrulpir, Karanja and Malegaon. Smaller practices usually need software that handles GST returns, billing and TDS without a complicated setup, and help available by phone when a question comes up.",
       "gst": "Prepare and upload major GST returns from the software and check filing status and ARN for each of your Washim clients without logging in to the portal one client at a time.",
       "billing": "Keep sales, purchases, receipts and payments in one billing workspace and generate e-invoices and e-way bills when your business needs them.",
       "tds": "Prepare 24Q and 26Q returns, validate PAN and FVU files and send Form 16 and 16A certificates by email.",
       "faq_q": "Will I get help in my own language in Washim?",
-      "faq_a": "Yes. Support and training are available in Marathi and Hindi, by phone and online, so you can ask questions in the language you work in.",
+      "faq_a": "Yes. Support and training are available in Hindi, Marathi and English, by phone and online, so you can ask questions in whichever language you are comfortable with.",
       "nearby": ["akola", "yavatmal", "buldhana"]
     },
     {
       "slug": "gst-tds-software-buldhana", "name": "Buldhana", "division": "Amravati division",
       "towns": ["Khamgaon", "Malkapur", "Chikhli", "Mehkar", "Shegaon"],
-      "intro": "CAs and businesses in Buldhana district can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, with an online demo, a free trial and support in Marathi or Hindi.",
+      "intro": "CAs and businesses in Buldhana district can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, with an online demo, a free trial and support in Hindi, Marathi or English.",
       "context": "Buldhana district has several trading towns, including Khamgaon, Malkapur, Chikhli, Mehkar and Shegaon, where agricultural produce, cotton and general trade drive much of the business. Traders there deal with high invoice volumes, e-way bills for goods in transit and regular ITC checks.",
       "gst": "Download GSTR-1, 2A and 2B data in one click, review differences against your purchase register and export audit-ready Excel reports for Buldhana clients.",
       "billing": "Create GST invoices quickly, select several invoices together to generate e-invoices and e-way bills, and keep customer and item masters ready for repeat billing.",
       "tds": "Prepare TDS and TCS returns, import challans and check invalid or inoperative PANs before you file.",
       "faq_q": "Can traders in Khamgaon and Malkapur use TaxPower Billing?",
-      "faq_a": "Yes. TaxPower GST Billing supports invoices, e-invoices and e-way bills. Ask for an online demo and we will show the billing workflow in Marathi or Hindi using your kind of invoices.",
+      "faq_a": "Yes. TaxPower GST Billing supports invoices, e-invoices and e-way bills. Ask for an online demo and we will show the billing workflow in Hindi, Marathi or English using your kind of invoices.",
       "nearby": ["akola", "washim"]
     },
     {
       "slug": "gst-tds-software-yavatmal", "name": "Yavatmal", "division": "Amravati division",
       "towns": ["Pusad", "Wani", "Darwha", "Digras", "Umarkhed"],
-      "intro": "Yavatmal CAs, contractors and traders can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Book an online demo, ask for a free trial and get support in Marathi or Hindi.",
+      "intro": "Yavatmal CAs, contractors and traders can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Book an online demo, ask for a free trial and get support in Hindi, Marathi or English.",
       "context": "Yavatmal district combines cotton and agricultural trade with contractors, transporters and suppliers in towns such as Pusad, Wani, Darwha, Digras and Umarkhed. Contractor and transporter payments mean regular TDS returns, and trading units need dependable GST invoicing and e-way bills.",
       "gst": "Keep GST return filing status for all your dealers in one view, with filing dates and ARN tracking, and export the list to Excel or PDF.",
       "billing": "Generate GST invoices, e-invoices and e-way bills, and download e-way bills from the portal to review document details in one place.",
@@ -90,7 +90,7 @@
     {
       "slug": "gst-tds-software-wardha", "name": "Wardha", "division": "Nagpur division",
       "towns": ["Hinganghat", "Pulgaon", "Arvi", "Seloo"],
-      "intro": "Wardha CAs and business owners can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Nagpur is close, but you do not need to travel: demo, training and support are online in Marathi or Hindi.",
+      "intro": "Wardha CAs and business owners can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Nagpur is close, but you do not need to travel: demo, training and support are online in Hindi, Marathi or English.",
       "context": "Wardha district has cotton trading and processing in Hinganghat, small manufacturers, traders in Wardha, Pulgaon and Arvi, and many educational and medical institutions. Institutions and employers need accurate salary TDS returns and Form 16, while traders need GST invoicing and reconciliation.",
       "gst": "Reconcile purchase books with auto-drafted GSTR-2B, review mismatches and prepare returns for Wardha clients from one GST workspace.",
       "billing": "Manage sales and purchase entries, receipts and payments, and generate e-invoices and e-way bills for traders and processors.",
@@ -102,7 +102,7 @@
     {
       "slug": "gst-tds-software-bhandara", "name": "Bhandara", "division": "Nagpur division",
       "towns": ["Tumsar", "Sakoli", "Pauni", "Lakhani"],
-      "intro": "Bhandara businesses and CAs can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, with an online demo, a free trial and support in Marathi or Hindi.",
+      "intro": "Bhandara businesses and CAs can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, with an online demo, a free trial and support in Hindi, Marathi or English.",
       "context": "Bhandara sits in the paddy belt, with rice mills, agri traders and vendors to local industry in Bhandara, Tumsar, Sakoli and Pauni. Mills and traders need regular invoicing with e-way bills for dispatches, and ITC reconciliation so purchase credits are claimed correctly.",
       "gst": "Compare purchase book data with GSTR-2B, spot tax differences and keep a filing-status list for every Bhandara dealer you handle.",
       "billing": "Create invoices and generate e-invoices and e-way bills in bulk, including e-way bill generation by IRN, for mills and traders dispatching goods.",
@@ -114,7 +114,7 @@
     {
       "slug": "gst-tds-software-gondia", "name": "Gondia", "division": "Nagpur division",
       "towns": ["Tirora", "Goregaon", "Arjuni Morgaon", "Amgaon"],
-      "intro": "Gondia CAs, rice mill owners and traders can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Demo, training and support are online in Marathi or Hindi, with a free trial available.",
+      "intro": "Gondia CAs, rice mill owners and traders can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Demo, training and support are online in Hindi, Marathi or English, with a free trial available.",
       "context": "Gondia is one of Maharashtra's main rice-milling districts, with mills, dealers and transporters in Gondia, Tirora, Goregaon and Amgaon. Heavy dispatch volumes make quick invoicing, bulk e-way bill generation and tidy GST records important, and local CAs often handle the returns of many such clients.",
       "gst": "Handle many mill and trader GSTINs from one dashboard, with return status, ARN tracking and Excel export for Gondia CAs.",
       "billing": "Select several invoices together and generate e-invoices and e-way bills, or create bulk JSON files for upload.",
@@ -126,25 +126,25 @@
     {
       "slug": "gst-tds-software-chandrapur", "name": "Chandrapur", "division": "Nagpur division",
       "towns": ["Ballarpur", "Warora", "Bhadravati", "Rajura", "Brahmapuri"],
-      "intro": "Chandrapur CAs, contractors and industrial suppliers can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Book an online demo, ask for a free trial and get support in Marathi or Hindi.",
+      "intro": "Chandrapur CAs, contractors and industrial suppliers can buy TaxPower GST, Billing and TDS software from Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha. Book an online demo, ask for a free trial and get support in Hindi, Marathi or English.",
       "context": "Chandrapur district has coal, power, cement and paper industries around Chandrapur, Ballarpur, Warora and Bhadravati. The suppliers, transporters and contractors that work with them make a lot of payments that attract TDS, and issue many invoices, so TDS returns, challan checks and GST billing are everyday work.",
       "gst": "Reconcile GSTR-2B, track return status for all dealers and export reports section-wise, party-wise and rate-wise for Chandrapur clients.",
       "billing": "Generate GST invoices, e-invoices and e-way bills in bulk for suppliers and transporters serving Chandrapur industries.",
       "tds": "Check tax payable, challan utilisation, short deductions and invalid PANs, then prepare 26Q returns for contractor payments and issue Form 16A.",
       "faq_q": "Is TaxPower TDS suitable for contractors and suppliers in Chandrapur?",
-      "faq_a": "Yes. TaxPower TDS supports regular and correction returns, PAN and FVU validation, challan management and certificates. We will walk through the workflow online, in Marathi or Hindi, before you decide.",
+      "faq_a": "Yes. TaxPower TDS supports regular and correction returns, PAN and FVU validation, challan management and certificates. We will walk through the workflow online, in Hindi, Marathi or English, before you decide.",
       "nearby": ["nagpur", "gadchiroli", "wardha", "yavatmal", "bhandara"]
     },
     {
       "slug": "gst-tds-software-gadchiroli", "name": "Gadchiroli", "division": "Nagpur division",
       "towns": ["Armori", "Desaiganj", "Aheri", "Chamorshi", "Sironcha"],
-      "intro": "Gadchiroli district is spread out, so an online demo and phone support matter. Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, offers a free trial, online demo and training in Marathi or Hindi for CAs, contractors and businesses in Gadchiroli.",
+      "intro": "Gadchiroli district is spread out, so an online demo and phone support matter. Siddharth Enterprises, the authorized TaxPower dealer for Vidarbha, offers a free trial, online demo and training in Hindi, Marathi or English for CAs, contractors and businesses in Gadchiroli.",
       "context": "Business in Gadchiroli district includes contractors, forest-produce traders and cooperative bodies in towns such as Gadchiroli, Armori, Desaiganj, Aheri and Chamorshi. Contractor payments need TDS returns and certificates, and traders need GST returns and billing, often without a large accounts team.",
       "gst": "Download GSTR-1, 2A and 2B data in one click and prepare returns from a single dashboard, which saves time when you serve clients across a wide area.",
       "billing": "Keep billing, customer masters and item records in one workspace and generate e-invoices and e-way bills when needed.",
       "tds": "Prepare TDS returns, import challans, check PAN and challan problems before filing and email certificates to deductees.",
       "faq_q": "Gadchiroli is far from Nagpur. How do I get support?",
-      "faq_a": "Support is by phone and online. Call 9145073173 or 7755912821, or send an enquiry, and we will arrange the demo, installation help and training remotely in Marathi or Hindi.",
+      "faq_a": "Support is by phone and online. Call 9145073173 or 7755912821, or send an enquiry, and we will arrange the demo, installation help and training remotely in Hindi, Marathi or English.",
       "nearby": ["chandrapur", "gondia", "nagpur"]
     }
   ],
@@ -186,7 +186,7 @@
       "faq": [
         {"q": "What does GSTR-2B reconciliation compare?", "a": "It compares the purchase invoices in your books with the invoices in your auto-drafted GSTR-2B and highlights matches and differences."},
         {"q": "Can I also reconcile sales invoices?", "a": "Yes. GSTR-1 data can be compared with e-invoice data to find missing invoices and tax differences."},
-        {"q": "Can I see this on my own data?", "a": "Book a demo and tell us your type of work. We will walk through the reconciliation flow online in English, Hindi or Marathi."}
+        {"q": "Can I see this on my own data?", "a": "Book a demo and tell us your type of work. We will walk through the reconciliation flow online in Hindi, Marathi or English, whichever you prefer."}
       ],
       "related": ["gst-return-filing-software", "e-invoice-e-way-bill-software", "gst-billing-software"],
       "product": "TaxPower GST Return"
@@ -249,7 +249,7 @@
       "faq": [
         {"q": "Does TaxPower TDS support correction returns?", "a": "Yes. It manages regular and correction returns, with correction revisions visible in the return dashboard."},
         {"q": "Can I handle several deductors?", "a": "Yes. The client dashboard and return register are organised so you can track returns across deductors."},
-        {"q": "Who supports TaxPower TDS in Maharashtra?", "a": "Siddharth Enterprises, Nagpur, the authorized TaxPower dealer for Vidarbha, with support in Marathi and Hindi."}
+        {"q": "Who supports TaxPower TDS in Maharashtra?", "a": "Siddharth Enterprises, Nagpur, the authorized TaxPower dealer for Vidarbha, with support in Hindi, Marathi or English."}
       ],
       "related": ["form-16-form-16a-certificate-software", "gst-return-filing-software", "gst-billing-software"],
       "product": "TaxPower TDS"
