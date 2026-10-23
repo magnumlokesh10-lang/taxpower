@@ -5247,13 +5247,10 @@ body.demo-form-open {
 .back-to-top:hover { background:#f47a22; transform:translateY(-2px); }
 .back-to-top:focus-visible { outline:3px solid #f47a22; outline-offset:3px; }
 
-/* Dropdown hint: a small round chevron badge on the corner of tabs that open a menu. */
+/* Dropdown hint: a small orange tab under items that open a menu. */
 @media(min-width:1101px) {
  .header.nav-gradient-depth .nav-dropdown > .nav-item .nav-dropdown-caret,
- .header.nav-gradient-depth .nav-dropdown > .nav-item.nav-item-always .nav-dropdown-caret { display:block; position:absolute; top:auto; right:-3px; bottom:-3px; width:16px; height:16px; border:1px solid #c5d6df; border-radius:50%; background:#fff; box-shadow:0 1px 4px #0b3b3b26; transform:none; opacity:1; z-index:3; pointer-events:none; }
- .header.nav-gradient-depth .nav-dropdown > .nav-item .nav-dropdown-caret::after { content:""; position:absolute; left:50%; top:50%; width:4px; height:4px; border-right:1.8px solid #405d6b; border-bottom:1.8px solid #405d6b; transform:translate(-50%,-72%) rotate(45deg); }
- .header.nav-gradient-depth .nav-dropdown > .nav-item.is-pinned-open .nav-dropdown-caret,
- .header.nav-gradient-depth .nav-dropdown > .nav-item.h-current:not(.nav-item-always) .nav-dropdown-caret,
- .header.nav-gradient-depth .nav-dropdown > .nav-item:is(:hover,:focus-visible) .nav-dropdown-caret,
- .header.nav-gradient-depth .nav-dropdown:focus-within > .nav-item .nav-dropdown-caret { opacity:0; }
+ .header.nav-gradient-depth .nav-dropdown > .nav-item.nav-item-always .nav-dropdown-caret { display:block; position:absolute; top:auto; right:auto; left:50%; bottom:-4px; width:18px; height:3px; border:0; border-radius:0 0 3px 3px; background:#ed8b42; box-shadow:none; transform:translateX(-50%); opacity:1; z-index:3; pointer-events:none; transition:width .2s ease; }
+ .header.nav-gradient-depth .nav-dropdown > .nav-item .nav-dropdown-caret::after { content:none; }
+ .header.nav-gradient-depth .nav-dropdown:hover > .nav-item .nav-dropdown-caret { width:28px; }
 }
