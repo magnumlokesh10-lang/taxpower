@@ -1,0 +1,830 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TaxPower//Due dates FY 2026-27//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:GST and TDS due dates FY 2026-27
+BEGIN:VEVENT
+UID:due-2026-04-07-0@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260407
+DTEND;VALUE=DATE:20260408
+SUMMARY:TDS: TCS deposit for March
+DESCRIPTION:Deposit of tax collected at source in March (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-10-1@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260411
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for March 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-11-2@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20260412
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for March 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-13-3@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+SUMMARY:GST: GSTR-1 (QRMP quarterly filers)
+DESCRIPTION:Outward supplies for January–March 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-13-4@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for March 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-18-5@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260418
+DTEND;VALUE=DATE:20260419
+SUMMARY:GST: CMP-08 (composition taxpayers)
+DESCRIPTION:Quarterly payment statement for January–March. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-20-6@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260420
+DTEND;VALUE=DATE:20260421
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for March 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-22-7@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260422
+DTEND;VALUE=DATE:20260423
+SUMMARY:GST: GSTR-3B (QRMP\, 22nd-category states)
+DESCRIPTION:Quarterly return for January–March. Includes Maharashtra\, Madhya Pradesh\, Chhattisgarh\, Gujarat\, Karnataka\, Goa\, Kerala\, Tamil Nadu\, Telangana and Andhra Pradesh. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-24-8@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260424
+DTEND;VALUE=DATE:20260425
+SUMMARY:GST: GSTR-3B (QRMP\, 24th-category states)
+DESCRIPTION:Quarterly return for January–March for the remaining states and union territories\, such as Delhi\, Uttar Pradesh and Rajasthan. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-30-9@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20260501
+SUMMARY:GST: GSTR-4 (composition taxpayers)
+DESCRIPTION:Annual return for FY 2025-26. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-04-30-10@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20260501
+SUMMARY:TDS: TDS deposit for March
+DESCRIPTION:Deposit of tax deducted in March\, other than by government offices. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-07-11@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260508
+SUMMARY:TDS: TDS and TCS deposit for April
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-10-12@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260510
+DTEND;VALUE=DATE:20260511
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for April 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-11-13@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260511
+DTEND;VALUE=DATE:20260512
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for April 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-13-14@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for April 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-13-15@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of April. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-20-16@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260520
+DTEND;VALUE=DATE:20260521
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for April 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-25-17@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for April. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-05-31-18@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+SUMMARY:TDS: TDS statements\, Q4 FY 2025-26
+DESCRIPTION:Forms 24Q\, 26Q and 27Q for January–March 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-07-19@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260608
+SUMMARY:TDS: TDS and TCS deposit for May
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-10-20@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for May 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-11-21@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260612
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for May 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-13-22@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260614
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for May 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-13-23@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260614
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of May. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-15-24@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260616
+SUMMARY:TDS: Form 16 and Form 16A
+DESCRIPTION:Form 16 for FY 2025-26 and Form 16A for the January–March 2026 quarter. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-20-25@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260621
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for May 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-06-25-26@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260625
+DTEND;VALUE=DATE:20260626
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for May. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-07-27@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260708
+SUMMARY:TDS: TDS and TCS deposit for June
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-10-28@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for June 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-11-29@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260712
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for June 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-13-30@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260713
+DTEND;VALUE=DATE:20260714
+SUMMARY:GST: GSTR-1 (QRMP quarterly filers)
+DESCRIPTION:Outward supplies for April–June 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-13-31@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260713
+DTEND;VALUE=DATE:20260714
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for June 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-18-32@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260719
+SUMMARY:GST: CMP-08 (composition taxpayers)
+DESCRIPTION:Quarterly payment statement for April–June. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-20-33@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for June 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-22-34@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260723
+SUMMARY:GST: GSTR-3B (QRMP\, 22nd-category states)
+DESCRIPTION:Quarterly return for April–June. Includes Maharashtra\, Madhya Pradesh\, Chhattisgarh\, Gujarat\, Karnataka\, Goa\, Kerala\, Tamil Nadu\, Telangana and Andhra Pradesh. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-24-35@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:GST: GSTR-3B (QRMP\, 24th-category states)
+DESCRIPTION:Quarterly return for April–June for the remaining states and union territories\, such as Delhi\, Uttar Pradesh and Rajasthan. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-07-31-36@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:TDS: TDS statements\, Q1 FY 2026-27
+DESCRIPTION:Forms 138\, 140 and 144 for April–June 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-07-37@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:TDS: TDS and TCS deposit for July
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-10-38@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for July 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-11-39@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260811
+DTEND;VALUE=DATE:20260812
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for July 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-13-40@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for July 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-13-41@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of July. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-15-42@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:TDS: Form 131 (Form 16A)
+DESCRIPTION:Non-salary TDS certificates for April–June 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-20-43@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for July 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-08-25-44@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for July. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-09-07-45@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:TDS: TDS and TCS deposit for August
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-09-10-46@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for August 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-09-11-47@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for August 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-09-13-48@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for August 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-09-13-49@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of August. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-09-20-50@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for August 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-09-25-51@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for August. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-07-52@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:TDS: TDS and TCS deposit for September
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-10-53@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for September 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-11-54@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for September 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-13-55@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:GST: GSTR-1 (QRMP quarterly filers)
+DESCRIPTION:Outward supplies for July–September 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-13-56@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for September 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-18-57@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:GST: CMP-08 (composition taxpayers)
+DESCRIPTION:Quarterly payment statement for July–September. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-20-58@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for September 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-22-59@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:GST: GSTR-3B (QRMP\, 22nd-category states)
+DESCRIPTION:Quarterly return for July–September. Includes Maharashtra\, Madhya Pradesh\, Chhattisgarh\, Gujarat\, Karnataka\, Goa\, Kerala\, Tamil Nadu\, Telangana and Andhra Pradesh. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-24-60@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:GST: GSTR-3B (QRMP\, 24th-category states)
+DESCRIPTION:Quarterly return for July–September for the remaining states and union territories\, such as Delhi\, Uttar Pradesh and Rajasthan. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-10-31-61@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:TDS: TDS statements\, Q2 FY 2026-27
+DESCRIPTION:Forms 138\, 140 and 144 for July–September 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-07-62@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:TDS: TDS and TCS deposit for October
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-10-63@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for October 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-11-64@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for October 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-13-65@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for October 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-13-66@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of October. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-15-67@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:TDS: Form 131 (Form 16A)
+DESCRIPTION:Non-salary TDS certificates for July–September 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-20-68@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for October 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-11-25-69@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for October. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-07-70@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:TDS: TDS and TCS deposit for November
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-10-71@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for November 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-11-72@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for November 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-13-73@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for November 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-13-74@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of November. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-20-75@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for November 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-25-76@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for November. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2026-12-31-77@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:GST: GSTR-9 and GSTR-9C
+DESCRIPTION:Annual return and reconciliation statement for FY 2025-26\, unless extended. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-07-78@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:TDS: TDS and TCS deposit for December
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-10-79@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for December 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-11-80@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for December 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-13-81@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:GST: GSTR-1 (QRMP quarterly filers)
+DESCRIPTION:Outward supplies for October–December 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-13-82@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for December 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-18-83@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:GST: CMP-08 (composition taxpayers)
+DESCRIPTION:Quarterly payment statement for October–December. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-20-84@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for December 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-22-85@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:GST: GSTR-3B (QRMP\, 22nd-category states)
+DESCRIPTION:Quarterly return for October–December. Includes Maharashtra\, Madhya Pradesh\, Chhattisgarh\, Gujarat\, Karnataka\, Goa\, Kerala\, Tamil Nadu\, Telangana and Andhra Pradesh. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-24-86@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:GST: GSTR-3B (QRMP\, 24th-category states)
+DESCRIPTION:Quarterly return for October–December for the remaining states and union territories\, such as Delhi\, Uttar Pradesh and Rajasthan. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-01-31-87@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:TDS: TDS statements\, Q3 FY 2026-27
+DESCRIPTION:Forms 138\, 140 and 144 for October–December 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-07-88@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:TDS: TDS and TCS deposit for January
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-10-89@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for January 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-11-90@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for January 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-13-91@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for January 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-13-92@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of January. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-15-93@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:TDS: Form 131 (Form 16A)
+DESCRIPTION:Non-salary TDS certificates for October–December 2026. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-20-94@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for January 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-02-25-95@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for January. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-03-07-96@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:TDS: TDS and TCS deposit for February
+DESCRIPTION:Deposit of tax deducted or collected in the previous month (challan ITNS 281). Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-03-10-97@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:GST: GSTR-7 and GSTR-8
+DESCRIPTION:GST TDS and e-commerce TCS returns for February 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-03-11-98@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:GST: GSTR-1 (monthly filers)
+DESCRIPTION:Outward supplies for February 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-03-13-99@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:GST: GSTR-6 (Input Service Distributors)
+DESCRIPTION:Return for February 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-03-13-100@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:GST: IFF (optional\, QRMP filers)
+DESCRIPTION:Invoice furnishing facility for B2B invoices of February. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-03-20-101@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:GST: GSTR-3B (monthly filers)
+DESCRIPTION:Summary return and tax payment for February 2027. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+BEGIN:VEVENT
+UID:due-2027-03-25-102@taxpower.co
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:GST: PMT-06 (QRMP monthly tax payment)
+DESCRIPTION:Tax payment for February. Confirm on the official portal; due dates may be extended.
+END:VEVENT
+END:VCALENDAR

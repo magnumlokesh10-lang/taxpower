@@ -1,0 +1,219 @@
+{
+  "published": "2026-10-23",
+  "pages": [
+    {
+      "slug": "free-trial",
+      "title": "TaxPower Free Trial: 30 Days for GST, Billing & TDS",
+      "description": "Try TaxPower GST, Billing and TDS software free for 30 days. Request a trial and get installation help and training in Hindi, Marathi or English.",
+      "h1": "30-day free trial of TaxPower GST, Billing and TDS",
+      "kicker": "FREE TRIAL",
+      "lead": "Try TaxPower on your own system for 30 days before you buy. Request the trial, and the Siddharth Enterprises team will help you install it and show you the workflows you use most.",
+      "product": "TaxPower Software",
+      "cta_label": "Request free trial",
+      "blocks": [
+        {"t": "h2", "v": "What you can try"},
+        {"t": "list", "v": ["TaxPower GST: prepare and upload GST returns, download GSTR-1, 2A and 2B data, reconcile ITC and track filing status", "TaxPower GST Billing: invoices, e-invoices, e-way bills, masters and reports", "TaxPower TDS: 24Q, 26Q, 27Q and 27EQ returns (Forms 138, 140, 144 and 143), PAN and FVU validation, challans, TRACES and Form 16/16A certificates"]},
+        {"t": "h2", "v": "How the trial works"},
+        {"t": "steps", "v": ["Request the trial from the form. Tell us which product you want to try and the kind of work you do.", "Check the system requirements page so that your computer is ready.", "We call you, help with installation and show you how to start. Help is available in Hindi, Marathi or English.", "Use TaxPower for 30 days. Call or message us if you get stuck.", "If it suits your work, choose an edition and buy. Prices are on the pricing page."]},
+        {"t": "note", "v": "Trial terms such as the number of GSTINs or TANs that can be used are confirmed when you request the trial."},
+        {"t": "faq", "v": [
+          {"q": "Is the trial really free?", "a": "Yes. TaxPower GST, Billing and TDS each have a 30-day free trial."},
+          {"q": "Which product should I try first?", "a": "CAs and tax consultants usually start with TaxPower GST or TDS. Businesses that raise many invoices often start with GST Billing. Tell us your work and we will suggest a starting point."},
+          {"q": "Do I need to be in Vidarbha?", "a": "No. Siddharth Enterprises is authorized to sell TaxPower across Vidarbha and also sells across India. The trial and training are online."},
+          {"q": "What happens after 30 days?", "a": "You can buy an edition, ask for guidance or stop using the software. See the pricing page for installation and renewal prices."}
+        ]},
+        {"t": "links", "v": [["System requirements", "system-requirements"], ["TaxPower prices", "pricing"], ["Book a live demo", "demo-enquiry"], ["GST & TDS due dates", "gst-tds-due-dates"]]}
+      ]
+    },
+    {
+      "slug": "system-requirements",
+      "title": "TaxPower System Requirements | Windows, Internet, DSC",
+      "description": "What you need to run TaxPower GST, Billing and TDS: Windows desktop, internet for portal filing, DSC or OTP, and options for multi-user LAN setups.",
+      "h1": "TaxPower system requirements",
+      "kicker": "BEFORE YOU INSTALL",
+      "lead": "TaxPower is desktop software for Windows. This page lists what you need before installing it, so that your trial or purchase starts smoothly.",
+      "product": "TaxPower Software",
+      "cta_label": "Ask about installation",
+      "blocks": [
+        {"t": "h2", "v": "The basics"},
+        {"t": "table", "head": ["Item", "What you need"], "rows": [
+          ["Operating system", "Windows desktop. Windows 10 or Windows 11 is the usual choice. For server setups, ask us which version fits your case."],
+          ["Internet", "Needed for activation, updates, GST portal and Income Tax portal filing, TRACES downloads and e-invoice or e-way bill generation."],
+          ["Database", "TaxPower TDS stores its data in a PostgreSQL database that is set up during installation. We help you with this step."],
+          ["Authentication", "EVC/OTP or a Digital Signature Certificate (DSC), depending on the filing you are doing. Keep your DSC token and its driver ready."],
+          ["Email", "Needed if you want to email Form 16/16A certificates and reports directly from the software."],
+          ["Hardware", "Needs depend on how much data you handle and how many users work at the same time. Call us with your number of clients and users and we will advise."]
+        ]},
+        {"t": "h2", "v": "One computer or many"},
+        {"t": "p", "v": "TaxPower can run on a single computer. For an office with several users, multi-user access over a local network (LAN) is available at an additional charge. If you want to work from more than one location, speak to us before you buy so that the right setup is chosen."},
+        {"t": "h2", "v": "What to keep ready for installation"},
+        {"t": "list", "v": ["Administrator access to the Windows computer", "Your product key (for purchased licences) or the details you gave when you requested the trial", "Portal logins for the GST or Income Tax accounts you will file from", "DSC token and driver, if you file with DSC", "A stable internet connection for the first-time setup"]},
+        {"t": "faq", "v": [
+          {"q": "Is TaxPower cloud software?", "a": "No. TaxPower is a desktop application for Windows. It connects to the GST and Income Tax portals for filing and downloads."},
+          {"q": "Will it run on Mac?", "a": "TaxPower is built for Windows. Ask us if you want to know the options for running Windows on your computer."},
+          {"q": "Can you install it for me?", "a": "Installation help is available online. Call 9145073173 or 7755912821, or send a trial request."}
+        ]},
+        {"t": "links", "v": [["Request a free trial", "free-trial"], ["Downloads", "downloads"], ["Support", "support"], ["TaxPower prices", "pricing"]]}
+      ]
+    },
+    {
+      "slug": "blog",
+      "type": "blog-index",
+      "title": "TaxPower Blog | GST and TDS Guides for CAs & Businesses",
+      "description": "Plain-language GST and TDS guides: GSTR-1 vs GSTR-3B, GSTR-2B reconciliation, TDS forms 138/140/144/143, Form 16 and choosing GST software.",
+      "h1": "TaxPower blog: GST and TDS guides",
+      "kicker": "GUIDES",
+      "lead": "Practical guides on GST returns, ITC reconciliation, TDS returns and tax software, written for CAs, tax consultants and business owners. Rules change often, so each guide shows when it was last updated and links to the official portal.",
+      "product": "TaxPower Software"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "blog/gstr-1-vs-gstr-3b-difference",
+      "title": "GSTR-1 vs GSTR-3B: Differences and How They Should Match",
+      "description": "GSTR-1 reports your sales invoice by invoice; GSTR-3B is the summary return where tax is paid. See how they differ, their due dates and why they must match.",
+      "h1": "GSTR-1 vs GSTR-3B: what each return reports and how they should match",
+      "category": "GST",
+      "minutes": 4,
+      "summary": "GSTR-1 lists your outward supplies invoice by invoice. GSTR-3B is the summary return in which you declare liability, claim input tax credit (ITC) and pay tax. The sales figures in the two returns should agree.",
+      "blocks": [
+        {"t": "h2", "v": "The short difference"},
+        {"t": "table", "head": ["", "GSTR-1", "GSTR-3B"], "rows": [
+          ["What it reports", "Outward supplies (sales), invoice-wise and by type", "Summary of outward supplies, ITC claimed and tax payable"],
+          ["Purpose", "Gives your buyers their GSTR-2A/2B data and the department your sales detail", "Declares liability and is the return through which tax is paid"],
+          ["Monthly due date", "11th of the next month", "20th of the next month"],
+          ["Quarterly (QRMP) due date", "13th of the month after the quarter", "22nd or 24th of the month after the quarter, by state category"],
+          ["Who it affects", "Your customers, because their ITC depends on it", "You, because tax is paid with it"]
+        ]},
+        {"t": "h2", "v": "Why your customers care about GSTR-1"},
+        {"t": "p", "v": "The invoices you report in GSTR-1 flow into your buyers' auto-drafted GSTR-2B. If an invoice is missed or reported with the wrong GSTIN or value, your buyer may not see the credit they expect. That leads to calls from customers asking you to correct the return."},
+        {"t": "h2", "v": "Why the two returns must agree"},
+        {"t": "p", "v": "GSTR-1 and GSTR-3B are compared by the system. In recent years GSTN has moved towards auto-populating GSTR-3B from GSTR-1, so an error in GSTR-1 can carry into GSTR-3B. A mismatch between sales in the two returns can lead to a notice, so it is worth checking before you file."},
+        {"t": "h2", "v": "A quick pre-filing check"},
+        {"t": "list", "v": ["Compare total taxable value and tax in GSTR-1 with the outward supply table in GSTR-3B", "Check that credit notes and amendments are included in the right period", "Look at invoices reported in the wrong month or under the wrong GSTIN", "Confirm that e-invoices match what you report in GSTR-1", "Keep a note of the reason for any difference you decide to carry forward"]},
+        {"t": "h2", "v": "How TaxPower GST helps"},
+        {"t": "p", "v": "TaxPower GST lets you compare GSTR-3B with GSTR-1 in one preview, download GSTR-1 data and compare GSTR-1 with e-invoices to find missing invoices and tax differences before you file."}
+      ],
+      "related": ["blog/gstr-2b-itc-reconciliation-checklist", "gst-return-filing-software"]
+    },
+    {
+      "slug": "blog/gstr-2b-itc-reconciliation-checklist",
+      "title": "GSTR-2B ITC Reconciliation Checklist for CAs and Businesses",
+      "description": "A step-by-step checklist to reconcile your purchase register with GSTR-2B: match invoices, sort differences, follow up suppliers and claim ITC with confidence.",
+      "h1": "GSTR-2B ITC reconciliation: a step-by-step checklist",
+      "category": "GST",
+      "minutes": 5,
+      "summary": "ITC reconciliation compares the purchase invoices in your books with the invoices your suppliers have reported, which appear in your GSTR-2B. Work through the differences before you claim credit in GSTR-3B.",
+      "blocks": [
+        {"t": "h2", "v": "Step 1: get both sets of data"},
+        {"t": "p", "v": "Download GSTR-2B for the month and export your purchase register from your accounts. Check that both cover the same period and the same GSTIN."},
+        {"t": "h2", "v": "Step 2: match invoices"},
+        {"t": "p", "v": "Match on supplier GSTIN and invoice number first, then compare date, taxable value and tax. Small differences such as extra spaces or prefixes in invoice numbers are a common reason for false mismatches, so a good tool normalises them."},
+        {"t": "h2", "v": "Step 3: sort the differences"},
+        {"t": "table", "head": ["Result", "What it usually means", "What to do"], "rows": [
+          ["Matched", "Invoice is in both books and GSTR-2B", "Claim ITC, subject to the usual conditions"],
+          ["Value or tax differs", "Data entry difference or supplier error", "Confirm with the invoice and the supplier"],
+          ["In books, not in GSTR-2B", "Supplier has not filed or reported it yet", "Follow up with the supplier; do not rush to claim"],
+          ["In GSTR-2B, not in books", "Purchase not booked, or booked in another period", "Check and book the invoice if it is yours"]
+        ]},
+        {"t": "h2", "v": "Step 4: check what ITC you are allowed to claim"},
+        {"t": "p", "v": "Matching an invoice does not by itself make the credit eligible. Credits that are blocked or conditional under the GST law still need your review, and your CA can advise on the treatment."},
+        {"t": "h2", "v": "Step 5: handle IMS actions"},
+        {"t": "p", "v": "With the Invoice Management System (IMS), the recipient can accept, reject or keep pending invoices before GSTR-2B is generated. Decide on each invoice, keep a record of why, and revisit pending ones in later months."},
+        {"t": "h2", "v": "Step 6: keep a record"},
+        {"t": "p", "v": "Save the reconciliation report with the return working papers. It is your evidence if a notice later questions the credit you claimed."},
+        {"t": "h2", "v": "How TaxPower GST helps"},
+        {"t": "p", "v": "TaxPower GST imports your purchase register, compares it with GSTR-2B, shows matched invoices and differences and lets you export audit-ready reports to Excel."}
+      ],
+      "related": ["blog/gstr-1-vs-gstr-3b-difference", "gstr-2b-itc-reconciliation-software"]
+    },
+    {
+      "slug": "blog/tds-return-forms-24q-26q-27q-27eq-explained",
+      "title": "TDS Return Forms 24Q, 26Q, 27Q, 27EQ and New Forms 138, 140, 144, 143",
+      "description": "Which TDS/TCS return to file: 24Q (138) for salary, 26Q (140) for other resident payments, 27Q (144) for non-residents and 27EQ (143) for TCS, with due dates.",
+      "h1": "TDS return forms explained: 24Q, 26Q, 27Q, 27EQ and the new form numbers",
+      "category": "TDS",
+      "minutes": 4,
+      "summary": "TDS and TCS statements are filed quarterly. The form depends on what the payment is. From FY 2026-27 the forms have new numbers under the Income-tax Act, 2025.",
+      "blocks": [
+        {"t": "h2", "v": "Which form is for what"},
+        {"t": "table", "head": ["Earlier form", "New form", "Used for"], "rows": [
+          ["24Q", "138", "TDS on salary"],
+          ["26Q", "140", "TDS on payments to residents other than salary, such as contractors and professionals"],
+          ["27Q", "144", "TDS on payments to non-residents"],
+          ["27EQ", "143", "Tax collected at source (TCS)"]
+        ]},
+        {"t": "h2", "v": "Quarterly due dates for TDS statements"},
+        {"t": "table", "head": ["Quarter", "Period", "Due date"], "rows": [
+          ["Q1", "April to June", "31 July"],
+          ["Q2", "July to September", "31 October"],
+          ["Q3", "October to December", "31 January"],
+          ["Q4", "January to March", "31 May"]
+        ]},
+        {"t": "p", "v": "Check the Income Tax portal for the due date of the TCS statement and for any extension notified for the quarter."},
+        {"t": "h2", "v": "Before you file"},
+        {"t": "list", "v": ["Make sure every challan used in the statement is paid and appears in the system", "Verify deductee PANs, because invalid or inoperative PANs can lead to higher deduction and mismatches", "Generate the FVU (File Validation Utility) file and fix every error it reports", "Keep the acknowledgement of the filing for your records"]},
+        {"t": "h2", "v": "Corrections"},
+        {"t": "p", "v": "If a return needs a correction, a correction statement is filed. Downloading the consolidated (Conso) file and Justification Report from TRACES shows what to fix."},
+        {"t": "h2", "v": "How TaxPower TDS helps"},
+        {"t": "p", "v": "TaxPower TDS prepares 24Q, 26Q, 27Q and 27EQ returns (Forms 138, 140, 144 and 143), validates PAN and FVU, maps challans and works with TRACES for Conso files, Justification Reports and certificates."}
+      ],
+      "related": ["blog/form-16-and-form-16a-explained", "tds-return-filing-software"]
+    },
+    {
+      "slug": "blog/form-16-and-form-16a-explained",
+      "title": "Form 16 and Form 16A (Forms 130 and 131) Explained",
+      "description": "What Form 16, Form 16A and Form 27D are, who issues them, how they are generated from TRACES and the new form numbers 130, 131 and 133.",
+      "h1": "Form 16 and Form 16A explained, with the new form numbers",
+      "category": "TDS",
+      "minutes": 3,
+      "summary": "TDS certificates are proof that tax was deducted and deposited. Form 16 is for salary, Form 16A for other TDS and Form 27D for TCS.",
+      "blocks": [
+        {"t": "h2", "v": "The three certificates"},
+        {"t": "table", "head": ["Earlier form", "New form", "Certificate for"], "rows": [
+          ["Form 16", "130", "Salary TDS, issued to the employee"],
+          ["Form 16A", "131", "TDS on non-salary payments, issued to the deductee"],
+          ["Form 27D", "133", "TCS, issued to the collectee"]
+        ]},
+        {"t": "h2", "v": "How they are produced"},
+        {"t": "p", "v": "Certificates are generated from data in TRACES after the quarterly statement has been filed and processed. Form 16 has two parts: Part A comes from TRACES and Part B contains the salary and tax computation. The certificate must be signed, usually digitally."},
+        {"t": "h2", "v": "When to issue them"},
+        {"t": "p", "v": "Form 16 for a year is due by 15 June after the year ends. Form 16A is due within a fixed number of days after the quarterly statement due date, which is usually 15 August, 15 November, 15 February and 15 June. Confirm the dates for your year on the Income Tax portal."},
+        {"t": "h2", "v": "Common problems"},
+        {"t": "list", "v": ["The statement has not been processed, so no certificate is available yet", "PAN of the deductee is wrong or inoperative", "The challan used is unmatched in the statement", "Part B details of the employee are missing"]},
+        {"t": "h2", "v": "How TaxPower TDS helps"},
+        {"t": "p", "v": "TaxPower TDS supports Form 16 (Parts A and B), Form 16A and Form 27D with preview, print, digital signing, PDF save and email delivery to employees and deductees. TRACES Activity tracks your requests for Conso files, certificates and Justification Reports in one place."}
+      ],
+      "related": ["blog/tds-return-forms-24q-26q-27q-27eq-explained", "form-16-form-16a-certificate-software"]
+    },
+    {
+      "slug": "blog/how-to-choose-gst-software",
+      "title": "How to Choose GST Software for a CA Practice: 8 Questions",
+      "description": "Eight practical questions to ask before buying GST software: multi-client work, reconciliation, e-invoicing, portal filing, support, price and trial.",
+      "h1": "How to choose GST software for a CA practice: 8 questions to ask",
+      "category": "Buying guide",
+      "minutes": 4,
+      "summary": "Use these questions to compare GST software on what matters in daily work. Ask for a trial and test them on your own clients' data.",
+      "blocks": [
+        {"t": "h2", "v": "1. Can it manage many GSTINs from one place?"},
+        {"t": "p", "v": "A practice needs a single view of return status and filing dates across all clients, with search and filters."},
+        {"t": "h2", "v": "2. Can it file directly to the portal?"},
+        {"t": "p", "v": "Look for upload and download from inside the software, with EVC/OTP or DSC support, so that you do not log in to the portal client by client."},
+        {"t": "h2", "v": "3. How good is ITC reconciliation?"},
+        {"t": "p", "v": "Test GSTR-2B reconciliation with a messy purchase register. Check how it handles invoice-number differences and whether IMS actions are supported."},
+        {"t": "h2", "v": "4. Does it cover e-invoice and e-way bill?"},
+        {"t": "p", "v": "If your clients raise e-invoices, bulk generation and an e-way bill from an IRN save a lot of time."},
+        {"t": "h2", "v": "5. What reports do you get?"},
+        {"t": "p", "v": "Good reports include form-wise previews, GSTR-3B vs GSTR-1 comparison, party-wise and rate-wise summaries and Excel exports."},
+        {"t": "h2", "v": "6. Who supports you, and in which language?"},
+        {"t": "p", "v": "Ask where the support team is, the hours they work and whether they help in the language your staff are comfortable with."},
+        {"t": "h2", "v": "7. What does it really cost?"},
+        {"t": "p", "v": "Compare the installation fee, the yearly renewal, charges for extra users and the GST on top. Ask what is included in the first year."},
+        {"t": "h2", "v": "8. Can you try it first?"},
+        {"t": "p", "v": "A free trial lets you test the questions above on your own work. TaxPower GST has a 30-day free trial."},
+        {"t": "links", "v": [["Request a free trial", "free-trial"], ["TaxPower GST features", "gst-return-filing-software"], ["TaxPower prices", "pricing"]]}
+      ],
+      "related": ["gst-return-filing-software", "free-trial"]
+    }
+  ]
+}

@@ -250,11 +250,222 @@ def render(slug, body, meta, trail, extra):
 '''
 
 
-pages = [(hub['slug'],) + hub_page()] + [(c['slug'],) + city_page(c) for c in cities] + [(f['slug'],) + feature_page(f) for f in features]
+
+# ---------------------------------------------------------------- resource pages (trial, requirements, blog, due dates)
+import datetime as dt
+res = json.loads((ROOT / 'scripts/resource-pages.json').read_text())
+PUBLISHED = res['published']
+posts_by_slug = {x['slug']: x for x in res['posts']}
+RES_LINKS = [('Free trial', 'free-trial'), ('System requirements', 'system-requirements'), ('GST & TDS due dates', 'gst-tds-due-dates'), ('Blog', 'blog')]
+NICE = {s_: short_name(f) for s_, f in feature_by_slug.items()}
+
+
+def nice_date(iso):
+    d = dt.date.fromisoformat(iso)
+    return f'{d.day} {d.strftime("%B %Y")}'
+
+
+def table_html(head, rows):
+    th = ''.join(f'<th scope="col">{esc(h)}</th>' for h in head)
+    tr = ''.join('<tr>' + ''.join(f'<td>{esc(c)}</td>' for c in r) + '</tr>' for r in rows)
+    return f'<div class="lp-table-wrap"><table class="lp-table"><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></div>'
+
+
+def blocks_html(blocks):
+    out, buf = [], []
+
+    def flush():
+        if buf:
+            out.append('<section class="lp-panel lp-section">' + ''.join(buf) + '</section>')
+            buf.clear()
+    for b in blocks:
+        t = b['t']
+        if t == 'h2':
+            buf.append(f'<h2>{esc(b["v"])}</h2>')
+        elif t == 'p':
+            buf.append(f'<p>{esc(b["v"])}</p>')
+        elif t == 'list':
+            buf.append(li(b['v']))
+        elif t == 'steps':
+            buf.append('<ol class="lp-bullets">' + ''.join(f'<li>{esc(i)}</li>' for i in b['v']) + '</ol>')
+        elif t == 'table':
+            buf.append(table_html(b['head'], b['rows']))
+        elif t == 'note':
+            buf.append(f'<div class="lp-lang"><p>{esc(b["v"])}</p></div>')
+        elif t == 'faq':
+            flush()
+            out.append(faq_block([(x['q'], x['a']) for x in b['v']]))
+        elif t == 'links':
+            buf.append(chips([(n, h) for n, h in b['v']]))
+    flush()
+    return ''.join(out)
+
+
+def resources_panel():
+    return '<section class="lp-panel" aria-labelledby="lp-res-title"><h2 id="lp-res-title">More from TaxPower</h2>' + chips(RES_LINKS) + '</section>'
+
+
+def static_page(pg):
+    body = (breadcrumb([('Home', 'home'), (pg['h1'].split(':')[0], None)]) +
+            f'<section class="lp-panel lp-hero"><span class="lp-kicker">{esc(pg["kicker"])}</span><h1>{esc(pg["h1"])}</h1><p class="lp-lead">{esc(pg["lead"])}</p>'
+            + cta(pg['product'], pg['cta_label']) + HIGHLIGHTS + '</section>' + blocks_html(pg['blocks']) + contact_block())
+    faqs = []
+    return body, {'title': pg['title'], 'description': pg['description']}, [('Home', 'home'), (pg['h1'], pg['slug'])], {
+        '@type': 'WebPage', '@id': BASE + pg['slug'] + '#page', 'url': BASE + pg['slug']}
+
+
+def post_cards():
+    cards = ''
+    for x in res['posts']:
+        cards += (f'<article class="lp-card"><span class="lp-tag">{esc(x["category"])} · {x["minutes"]} min read</span><h3><a href="{x["slug"]}">{esc(x["h1"])}</a></h3>'
+                  f'<p>{esc(x["summary"])}</p><a class="lp-more" href="{x["slug"]}">Read the guide ↗</a></article>')
+    return cards
+
+
+def blog_index(pg):
+    body = (breadcrumb([('Home', 'home'), ('Blog', None)]) +
+            f'<section class="lp-panel lp-hero"><span class="lp-kicker">{esc(pg["kicker"])}</span><h1>{esc(pg["h1"])}</h1><p class="lp-lead">{esc(pg["lead"])}</p></section>'
+            f'<section class="lp-panel" aria-labelledby="lp-posts-title"><h2 id="lp-posts-title">Latest guides</h2><div class="lp-grid">{post_cards()}</div></section>'
+            + resources_panel() + contact_block())
+    return body, {'title': pg['title'], 'description': pg['description']}, [('Home', 'home'), ('Blog', 'blog')], {
+        '@type': 'Blog', '@id': BASE + 'blog#blog', 'name': 'TaxPower blog', 'url': BASE + 'blog', 'publisher': {'@id': BASE + '#siddharth'},
+        'blogPost': [{'@type': 'BlogPosting', 'headline': x['h1'], 'url': BASE + x['slug'], 'datePublished': PUBLISHED} for x in res['posts']]}
+
+
+def post_page(x):
+    related = []
+    for r in x['related']:
+        if r in posts_by_slug:
+            related.append((posts_by_slug[r]['h1'].split(':')[0], r))
+        elif r in feature_by_slug:
+            related.append((NICE[r] + ' software', r))
+        elif r == 'free-trial':
+            related.append(('Free 30-day trial', r))
+    body = (breadcrumb([('Home', 'home'), ('Blog', 'blog'), (x['h1'].split(':')[0], None)]) +
+            f'<section class="lp-panel lp-hero"><span class="lp-kicker">{esc(x["category"])} · GUIDE</span><h1>{esc(x["h1"])}</h1>'
+            f'<p class="lp-meta">By Siddharth Enterprises · Published {nice_date(PUBLISHED)} · Last updated {nice_date(PUBLISHED)} · {x["minutes"]} min read</p>'
+            f'<p class="lp-lead">{esc(x["summary"])}</p></section>' + blocks_html(x['blocks']) +
+            '<section class="lp-panel"><h2>Check before you act</h2><p>Tax rules, forms and due dates change often and may be extended by notification. Use this guide as a starting point and confirm the current position on the official portals, <a href="https://www.gst.gov.in" rel="noopener">gst.gov.in</a> for GST and <a href="https://www.incometax.gov.in" rel="noopener">incometax.gov.in</a> for TDS, or with your CA.</p></section>'
+            '<section class="lp-panel lp-hero"><h2>Try TaxPower free for 30 days</h2><p>See these workflows on your own work. Installation help and training are available in Hindi, Marathi or English.</p>'
+            + cta('TaxPower Software', 'Request free trial') + '</section>'
+            '<section class="lp-panel"><h2>Related</h2>' + chips(related + [('All guides', 'blog')]) + '</section>' + contact_block())
+    return body, {'title': x['title'], 'description': x['description']}, [('Home', 'home'), ('Blog', 'blog'), (x['h1'], x['slug'])], {
+        '@type': 'BlogPosting', '@id': BASE + x['slug'] + '#article', 'headline': x['h1'], 'description': x['description'], 'url': BASE + x['slug'],
+        'mainEntityOfPage': BASE + x['slug'], 'datePublished': PUBLISHED, 'dateModified': PUBLISHED, 'inLanguage': 'en-IN',
+        'author': {'@id': BASE + '#siddharth'}, 'publisher': {'@id': BASE + '#siddharth'}, 'image': BASE + 'asset/swt_icon/taxpower_icon.png'}
+
+
+# ---- due-date calendar, FY 2026-27 (standard statutory dates; extensions are notified separately)
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+Q_AFTER = {4: 'January–March', 7: 'April–June', 10: 'July–September', 1: 'October–December'}
+IFF_MONTHS = {5, 6, 8, 9, 11, 12, 2, 3}
+
+
+def due_events():
+    ev = []
+
+    def add(y, m, d, kind, title, desc):
+        ev.append((dt.date(y, m, d), kind, title, desc))
+    for y, m in [(2026, k) for k in range(4, 13)] + [(2027, k) for k in range(1, 4)]:
+        prev_i = (m - 2) % 12
+        prev = MONTHS[prev_i] + (' ' + str(y if m > 1 else y - 1))
+        if m == 4:
+            add(y, m, 7, 'TDS', 'TCS deposit for March', 'Deposit of tax collected at source in March (challan ITNS 281).')
+            add(y, m, 30, 'TDS', 'TDS deposit for March', 'Deposit of tax deducted in March, other than by government offices.')
+        else:
+            add(y, m, 7, 'TDS', f'TDS and TCS deposit for {MONTHS[prev_i]}', 'Deposit of tax deducted or collected in the previous month (challan ITNS 281).')
+        add(y, m, 10, 'GST', 'GSTR-7 and GSTR-8', f'GST TDS and e-commerce TCS returns for {prev}.')
+        add(y, m, 11, 'GST', 'GSTR-1 (monthly filers)', f'Outward supplies for {prev}.')
+        if m in Q_AFTER:
+            qy = y if m != 1 else y - 1
+            add(y, m, 13, 'GST', 'GSTR-1 (QRMP quarterly filers)', f'Outward supplies for {Q_AFTER[m]} {qy if m != 4 else y}.')
+            add(y, m, 18, 'GST', 'CMP-08 (composition taxpayers)', f'Quarterly payment statement for {Q_AFTER[m]}.')
+            add(y, m, 22, 'GST', 'GSTR-3B (QRMP, 22nd-category states)', f'Quarterly return for {Q_AFTER[m]}. Includes Maharashtra, Madhya Pradesh, Chhattisgarh, Gujarat, Karnataka, Goa, Kerala, Tamil Nadu, Telangana and Andhra Pradesh.')
+            add(y, m, 24, 'GST', 'GSTR-3B (QRMP, 24th-category states)', f'Quarterly return for {Q_AFTER[m]} for the remaining states and union territories, such as Delhi, Uttar Pradesh and Rajasthan.')
+        if m in IFF_MONTHS:
+            add(y, m, 13, 'GST', 'IFF (optional, QRMP filers)', f'Invoice furnishing facility for B2B invoices of {MONTHS[prev_i]}.')
+            add(y, m, 25, 'GST', 'PMT-06 (QRMP monthly tax payment)', f'Tax payment for {MONTHS[prev_i]}.')
+        add(y, m, 13, 'GST', 'GSTR-6 (Input Service Distributors)', f'Return for {prev}.')
+        add(y, m, 20, 'GST', 'GSTR-3B (monthly filers)', f'Summary return and tax payment for {prev}.')
+    add(2026, 4, 30, 'GST', 'GSTR-4 (composition taxpayers)', 'Annual return for FY 2025-26.')
+    add(2026, 12, 31, 'GST', 'GSTR-9 and GSTR-9C', 'Annual return and reconciliation statement for FY 2025-26, unless extended.')
+    add(2026, 5, 31, 'TDS', 'TDS statements, Q4 FY 2025-26', 'Forms 24Q, 26Q and 27Q for January–March 2026.')
+    add(2026, 7, 31, 'TDS', 'TDS statements, Q1 FY 2026-27', 'Forms 138, 140 and 144 for April–June 2026.')
+    add(2026, 10, 31, 'TDS', 'TDS statements, Q2 FY 2026-27', 'Forms 138, 140 and 144 for July–September 2026.')
+    add(2027, 1, 31, 'TDS', 'TDS statements, Q3 FY 2026-27', 'Forms 138, 140 and 144 for October–December 2026.')
+    add(2026, 6, 15, 'TDS', 'Form 16 and Form 16A', 'Form 16 for FY 2025-26 and Form 16A for the January–March 2026 quarter.')
+    add(2026, 8, 15, 'TDS', 'Form 131 (Form 16A)', 'Non-salary TDS certificates for April–June 2026.')
+    add(2026, 11, 15, 'TDS', 'Form 131 (Form 16A)', 'Non-salary TDS certificates for July–September 2026.')
+    add(2027, 2, 15, 'TDS', 'Form 131 (Form 16A)', 'Non-salary TDS certificates for October–December 2026.')
+    return sorted(ev, key=lambda e: (e[0], e[1], e[2]))
+
+
+ICS_NAME = 'taxpower-gst-tds-due-dates-fy-2026-27.ics'
+
+
+def write_ics(events):
+    lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//TaxPower//Due dates FY 2026-27//EN', 'CALSCALE:GREGORIAN', 'X-WR-CALNAME:GST and TDS due dates FY 2026-27']
+    for i, (d, kind, title, desc) in enumerate(events):
+        nxt = d + dt.timedelta(days=1)
+        lines += ['BEGIN:VEVENT', f'UID:due-{d.isoformat()}-{i}@taxpower.co', 'DTSTAMP:20261023T000000Z', f'DTSTART;VALUE=DATE:{d.strftime("%Y%m%d")}',
+                  f'DTEND;VALUE=DATE:{nxt.strftime("%Y%m%d")}', f'SUMMARY:{kind}: {title}'.replace(',', '\\,'),
+                  f'DESCRIPTION:{desc} Confirm on the official portal; due dates may be extended.'.replace(',', '\\,'), 'END:VEVENT']
+    lines.append('END:VCALENDAR')
+    (ROOT / ICS_NAME).write_text('\r\n'.join(lines) + '\r\n')
+
+
+def due_page():
+    events = due_events()
+    write_ics(events)
+    months = {}
+    for d, kind, title, desc in events:
+        months.setdefault((d.year, d.month), []).append((d, kind, title, desc))
+    cal = ''
+    for (y, m), items in sorted(months.items()):
+        rows = ''.join(
+            f'<li class="lp-due-item" data-kind="{k}" data-date="{d.isoformat()}"><span class="lp-due-date"><strong>{d.day}</strong> {d.strftime("%a")}</span>'
+            f'<span class="lp-due-body"><span class="lp-due-tag lp-due-tag--{k.lower()}">{k}</span><strong>{esc(t)}</strong><small>{esc(ds)}</small></span></li>'
+            for d, k, t, ds in items)
+        cal += f'<section class="lp-month" data-month="{y}-{m:02d}"><h3>{MONTHS[m - 1]} {y}</h3><ul class="lp-due-list">{rows}</ul></section>'
+    gst_rows = [['GSTR-1 (monthly)', '11th of the next month'], ['GSTR-1 (QRMP, quarterly)', '13th of the month after the quarter'], ['IFF (optional)', '13th of the next month, for the first two months of a quarter'],
+                ['GSTR-3B (monthly)', '20th of the next month'], ['GSTR-3B (QRMP, quarterly)', '22nd or 24th of the month after the quarter, by state. Maharashtra: 22nd'],
+                ['PMT-06 (QRMP)', '25th of the next month, for the first two months of a quarter'], ['GSTR-7 and GSTR-8', '10th of the next month'], ['GSTR-6', '13th of the next month'],
+                ['CMP-08', '18th of the month after the quarter'], ['GSTR-4', '30 April after the financial year'], ['GSTR-9 and GSTR-9C', '31 December after the financial year']]
+    tds_rows = [['TDS and TCS deposit', '7th of the next month; TDS for March by 30 April'], ['TDS statements (Forms 138, 140, 144)', '31 July, 31 October, 31 January and 31 May'],
+                ['TCS statement (Form 143)', 'Check the Income Tax portal for the current due date'], ['Form 16 (Form 130)', '15 June after the financial year'],
+                ['Form 16A (Form 131)', 'Usually 15 August, 15 November, 15 February and 15 June']]
+    body = (breadcrumb([('Home', 'home'), ('GST & TDS due dates', None)]) +
+            '<section class="lp-panel lp-hero"><span class="lp-kicker">FY 2026-27 · APRIL 2026 TO MARCH 2027</span><h1>GST and TDS due dates calendar</h1>'
+            '<p class="lp-lead">Month-by-month standard due dates for GST returns, TDS and TCS deposits, TDS statements and certificates. Use the filters, hide dates that have passed and add the calendar to your phone or Outlook.</p>'
+            f'<div class="lp-actions"><a class="lp-button" href="{ICS_NAME}" download>Add to calendar (.ics) <span aria-hidden="true">↓</span></a><a class="lp-link" href="free-trial">Try TaxPower free for 30 days ↗</a></div>'
+            f'<p class="lp-meta">Last checked {nice_date(PUBLISHED)}. Dates are standard statutory dates; extensions are notified separately.</p></section>'
+            '<section class="lp-panel" aria-labelledby="lp-cal-title"><h2 id="lp-cal-title">Due dates by month</h2>'
+            '<div class="lp-filters" role="group" aria-label="Filter due dates"><button type="button" class="lp-filter is-active" data-due-filter="all">All</button><button type="button" class="lp-filter" data-due-filter="GST">GST</button>'
+            '<button type="button" class="lp-filter" data-due-filter="TDS">TDS &amp; TCS</button><label class="lp-toggle"><input type="checkbox" data-due-past> Show dates that have passed</label></div>'
+            f'<div class="lp-calendar">{cal}</div></section>'
+            '<section class="lp-panel"><h2>Quick reference: GST</h2>' + table_html(['Return or payment', 'Standard due date'], gst_rows) + '</section>'
+            '<section class="lp-panel"><h2>Quick reference: TDS and TCS</h2>' + table_html(['Return, payment or certificate', 'Standard due date'], tds_rows) +
+            '<p style="margin-top:14px">Income-tax Act, 2025 applies from 1 April 2026, so TDS and TCS forms and sections have new numbers. Forms 24Q, 26Q, 27Q and 27EQ became Forms 138, 140, 144 and 143. Form 16, 16A and 27D became Forms 130, 131 and 133.</p></section>'
+            '<section class="lp-panel"><h2>Before you rely on a date</h2><p>The government often extends due dates, and some extensions apply only to certain states or taxpayers. Always confirm on <a href="https://www.gst.gov.in" rel="noopener">gst.gov.in</a> and <a href="https://www.incometax.gov.in" rel="noopener">incometax.gov.in</a>. Do not wait for the last day, because the portals are busy near deadlines.</p></section>'
+            + resources_panel() + contact_block())
+    meta = {'title': 'GST & TDS Due Dates Calendar FY 2026-27 | TaxPower',
+            'description': 'Month-by-month GST and TDS due dates for FY 2026-27: GSTR-1, GSTR-3B, QRMP, TDS deposits, statements and certificates. Filter and add to your calendar.'}
+    return body, meta, [('Home', 'home'), ('GST & TDS due dates', 'gst-tds-due-dates')], {'@type': 'WebPage', '@id': BASE + 'gst-tds-due-dates#page', 'url': BASE + 'gst-tds-due-dates'}
+
+
+def wrap(slug, result):
+    body, meta, trail, extra = result
+    return (slug, body, meta, [], trail, extra)
+
+
+pages = [(hub['slug'],) + hub_page()] + [(c['slug'],) + city_page(c) for c in cities] + [(f['slug'],) + feature_page(f) for f in features] \
+    + [wrap(pg['slug'], blog_index(pg) if pg.get('type') == 'blog-index' else static_page(pg)) for pg in res['pages']] \
+    + [wrap(x['slug'], post_page(x)) for x in res['posts']] \
+    + [wrap('gst-tds-due-dates', due_page())]
 for slug, body, meta, faqs, trail, extra in pages:
     out = render(slug, body, meta, trail, extra)
     for filename in (f'{slug}.html', f'{slug}/index.html'):
         path = ROOT / filename
-        path.parent.mkdir(exist_ok=True)
+        path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text('\n'.join(line.rstrip() for line in out.splitlines()) + '\n')
 print('Built', len(pages), 'standalone landing pages.')

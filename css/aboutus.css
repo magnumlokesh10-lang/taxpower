@@ -366,3 +366,10 @@
 /* India coverage: short "sold across India" band. */
 .se-coverage .se-section-header { margin-bottom:0; }
 .se-coverage .se-section-header p { max-width:760px; }
+
+/* Office map. */
+.se-map .se-map-frame { margin-top:22px; border:1px solid #cce4ed; border-radius:16px; overflow:hidden; background:#eef6fa; }
+.se-map iframe { display:block; width:100%; height:340px; border:0; }
+.se-map .se-section-header { margin-bottom:0; }
+.se-map .se-section-header p { max-width:760px; }
+@media(max-width:600px) { .se-map iframe { height:280px; } }

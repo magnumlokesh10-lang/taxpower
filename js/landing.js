@@ -45,3 +45,39 @@
 
   window.addEventListener('resize', () => { if (window.innerWidth > 1100) setMenu(false); });
 })();
+
+/* Due-date calendar: filters and hiding of dates that have passed. */
+(() => {
+  const cal = document.querySelector('.lp-calendar');
+  if (!cal) return;
+  const items = Array.from(cal.querySelectorAll('.lp-due-item'));
+  const months = Array.from(cal.querySelectorAll('.lp-month'));
+  const tabs = Array.from(document.querySelectorAll('[data-due-filter]'));
+  const past = document.querySelector('[data-due-past]');
+  const today = new Date().toISOString().slice(0, 10);
+  let kind = 'all';
+  function apply() {
+    const showPast = past && past.checked;
+    items.forEach((el) => {
+      const hide = (kind !== 'all' && el.dataset.kind !== kind) || (!showPast && el.dataset.date < today);
+      el.classList.toggle('is-hidden', hide);
+    });
+    months.forEach((m) => m.classList.toggle('is-hidden', !m.querySelector('.lp-due-item:not(.is-hidden)')));
+  }
+  tabs.forEach((t) => t.addEventListener('click', () => {
+    kind = t.dataset.dueFilter;
+    tabs.forEach((x) => x.classList.toggle('is-active', x === t));
+    apply();
+  }));
+  past?.addEventListener('change', apply);
+  apply();
+})();
+
+/* Carry the chosen purpose and product to the enquiry form, like the main site does. */
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[data-demo-purpose]');
+  if (!a) return;
+  try {
+    sessionStorage.setItem('taxpower_demo_context', JSON.stringify({ purpose: a.getAttribute('data-demo-purpose'), product: a.getAttribute('data-demo-product') }));
+  } catch (err) { /* storage can be blocked */ }
+});
