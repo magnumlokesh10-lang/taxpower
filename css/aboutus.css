@@ -379,3 +379,5 @@
 .se-state-list b { color:#087ba5; font-weight:700; font-variant-numeric:tabular-nums; }
 .se-state-list li.is-home { border-color:#e3c98f; background:#fff4e0; }
 @media (max-width:760px) { .se-coverage-grid { grid-template-columns:1fr; } .se-state-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .se-state-list li { padding:8px 10px; font-size:12px; } }
+.se-coverage-card a { color:#0a789e; font-weight:600; text-decoration:underline; text-underline-offset:3px; }
+.se-coverage-card a:hover { color:#086b8f; }
