@@ -39,7 +39,7 @@
     position: absolute;
     inset: -18px;
     z-index: -2;
-    background: url('../asset/promo banner/price_banner.jpg') center center / cover no-repeat;
+    background: url('../asset/promo banner/price_banner.webp') center center / cover no-repeat;
     filter: blur(4px) drop-shadow(0 0 24px rgba(56, 189, 248, 0.72));
     transform: scale(1.04);
 }
@@ -764,7 +764,7 @@
 }
 
 /* Light licence illustration and touch-friendly section shortcuts. */
-.pricing-page .pricing-banner-background { background: url('../asset/promo banner/price_banner.jpg') right center / cover no-repeat; }
+.pricing-page .pricing-banner-background { background: url('../asset/promo banner/price_banner.webp') right center / cover no-repeat; }
 .pricing-page .pricing-banner::before { background:linear-gradient(90deg,#f7fbff 0%,#f7fbfff2 42%,#f7fbff8c 70%,#f7fbff18 100%); }
 .pricing-page .pricing-banner { margin-bottom:14px; }
 .pricing-quick-nav { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin:0 0 28px; padding:10px 14px; border:1px solid #dbe8ed; border-radius:12px; background:#ffffffd9; }
