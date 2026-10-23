@@ -363,3 +363,19 @@
   background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpolygon%20points%3D%2212.00%2C2.00%2014.25%2C3.60%2017.00%2C3.34%2018.15%2C5.85%2020.66%2C7.00%2020.40%2C9.75%2022.00%2C12.00%2020.40%2C14.25%2020.66%2C17.00%2018.15%2C18.15%2017.00%2C20.66%2014.25%2C20.40%2012.00%2C22.00%209.75%2C20.40%207.00%2C20.66%205.85%2C18.15%203.34%2C17.00%203.60%2C14.25%202.00%2C12.00%203.60%2C9.75%203.34%2C7.00%205.85%2C5.85%207.00%2C3.34%209.75%2C3.60%22%20fill%3D%22%23168bea%22%20stroke%3D%22%23168bea%22%20stroke-width%3D%221%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22m7.5%2012%203%203%206-6%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E");
   background-position:center; background-size:contain; background-repeat:no-repeat;
 }
+
+/* India coverage: sold across India, based in Nagpur, Maharashtra. */
+.se-coverage-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:26px; }
+.se-coverage-card { padding:23px; border-radius:12px; border:1px solid #dce9ef; background:#ffffffdb; }
+.se-coverage-home { background:#fffaf1; border-color:#eee1ca; }
+.se-about .se-coverage-card h3 { font-size:19px; line-height:1.35; margin:0 0 9px; }
+.se-coverage-card h3 small { display:block; margin-top:4px; font-size:12px; font-weight:600; color:#527386; }
+.se-coverage-card p { margin:0; font-size:13px; }
+.se-coverage-card ul { margin:0; padding-left:18px; color:var(--se-muted); font-size:13px; line-height:1.85; }
+.se-about .se-coverage-list-title { font-size:15px; margin:0 0 12px; }
+.se-coverage-list-title small { font-size:12px; font-weight:500; color:#527386; }
+.se-state-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:8px; margin:0 0 6px; padding:0; list-style:none; }
+.se-state-list li { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:9px 12px; border:1px solid #dce9ef; border-radius:9px; background:#ffffffe6; color:#2b5568; font-size:12.5px; line-height:1.4; }
+.se-state-list b { color:#087ba5; font-weight:700; font-variant-numeric:tabular-nums; }
+.se-state-list li.is-home { border-color:#e3c98f; background:#fff4e0; }
+@media (max-width:760px) { .se-coverage-grid { grid-template-columns:1fr; } .se-state-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .se-state-list li { padding:8px 10px; font-size:12px; } }

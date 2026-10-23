@@ -16,70 +16,70 @@
     downloads: 'downloads', aboutus: 'aboutus', support: 'support',
     'technical-support': 'technical-support', 'demo-enquiry': 'demo-enquiry'};
   const titles = {
-  "home": "TaxPower | GST, Billing & TDS Software",
-  "taxpowergst": "TaxPower GST | GST Return Filing Software",
-  "gst-return": "TaxPower GST | GST Return Filing Software",
-  "gst-billing": "TaxPower Billing | E-Invoice & E-Way Bill Software",
-  "taxpowertds": "TaxPower TDS | TDS Return Filing Software",
-  "pricing": "TaxPower Pricing | GST, Billing & TDS",
-  "downloads": "TaxPower Downloads | GST, Billing & TDS Software",
-  "aboutus": "About TaxPower | GST, Billing & TDS Software Solutions",
-  "support": "TaxPower Customer Support",
-  "technical-support": "TaxPower Technical Support",
+  "home": "TaxPower GST & TDS Software for CAs & Businesses in India",
+  "taxpowergst": "TaxPower GST | GST Return Filing & ITC Reconciliation Software",
+  "gst-return": "GST Return Filing Dashboard & Status Tracker | TaxPower GST",
+  "gst-billing": "E-Invoice & E-Way Bill Software with GST Billing | TaxPower",
+  "taxpowertds": "TDS Return Filing Software: 24Q, 26Q, 27Q, 27EQ | TaxPower TDS",
+  "pricing": "TaxPower GST & TDS Software Price | Installation & Renewal",
+  "downloads": "Download TaxPower GST, TDS & MVAT Software Setup",
+  "aboutus": "TaxPower Dealer in Nagpur, Maharashtra | Siddharth Enterprises",
+  "support": "TaxPower Support & Demo Booking | Siddharth Enterprises",
+  "technical-support": "TaxPower Technical Support | Installation, Updates & Licensing",
   "demo-enquiry": "Book a TaxPower Demo | GST, Billing & TDS Software"
 };
   const routeMetadata = {
   "home": {
     "section": "home",
-    "title": "TaxPower | GST, Billing & TDS Software",
-    "description": "Explore TaxPower GST, Billing and TDS software with Siddharth Enterprises. Compare plans and request a demo, installation assistance, training or renewal support."
+    "title": "TaxPower GST & TDS Software for CAs & Businesses in India",
+    "description": "GST return filing, e-invoice, e-way bill and TDS software for CAs and businesses across India. Authorized TaxPower dealer in Nagpur, Maharashtra. Book a demo."
   },
   "taxpowergst": {
     "section": "taxpowergst",
-    "title": "TaxPower GST | GST Return Filing Software",
-    "description": "Prepare GST returns, reconcile ITC and manage multiple GSTINs with TaxPower GST. Explore features, compare plans and request a demo from Siddharth Enterprises."
+    "title": "TaxPower GST | GST Return Filing & ITC Reconciliation Software",
+    "description": "Prepare and upload GST returns, reconcile GSTR-2A/2B ITC and track filing status for multiple GSTINs. Desktop GST software sold across India. Book a free demo."
   },
   "gst-return": {
     "section": "taxpowergst",
     "canonical": "taxpowergst",
-    "title": "TaxPower GST | GST Return Filing Software",
-    "description": "Explore TaxPower GST return preparation, filing dashboards and reconciliation workflows. Request a guided software demo from Siddharth Enterprises."
+    "title": "GST Return Filing Dashboard & Status Tracker | TaxPower GST",
+    "description": "Track GST return status, ARN and filing dates for all dealers in one dashboard. Download GSTR-1, 2A and 2B data in one click. Request a guided demo."
   },
   "gst-billing": {
     "section": "taxpowergst",
     "heading": "gst-billing-intro-title",
-    "title": "TaxPower Billing | E-Invoice & E-Way Bill Software",
-    "description": "Explore TaxPower Billing for invoices, e-invoices, e-way bills, customer masters and reports. Compare software plans and book a guided demonstration."
+    "title": "E-Invoice & E-Way Bill Software with GST Billing | TaxPower",
+    "description": "Generate e-invoices and e-way bills in bulk with IRN and Excel integration from one GST billing workspace. Desktop software sold across India. Book a demo."
   },
   "taxpowertds": {
     "section": "taxpowertds",
-    "title": "TaxPower TDS | TDS Return Filing Software",
-    "description": "Prepare TDS and TCS returns, manage challans, generate FVU files and work with TRACES using TaxPower TDS. View features and request a software demo."
+    "title": "TDS Return Filing Software: 24Q, 26Q, 27Q, 27EQ | TaxPower TDS",
+    "description": "Prepare TDS and TCS returns, validate PAN and FVU files, manage challans, work with TRACES and email Form 16/16A certificates. Book a free software demo."
   },
   "pricing": {
     "section": "pricing",
-    "title": "TaxPower Pricing | GST, Billing & TDS",
-    "description": "Compare TaxPower GST, Billing and TDS plans for professionals and businesses. View installation fees, annual renewal costs and bundle savings, then request a quotation."
+    "title": "TaxPower GST & TDS Software Price | Installation & Renewal",
+    "description": "Professional and Business edition prices for TaxPower GST, Billing and TDS: installation fee, annual renewal and bundle savings. Request a quotation."
   },
   "downloads": {
     "section": "downloads",
-    "title": "TaxPower Downloads | GST, Billing & TDS Software",
+    "title": "Download TaxPower GST, TDS & MVAT Software Setup",
     "description": "Download TaxPower GST, TDS and MVAT setup files and supporting utilities. Contact Siddharth Enterprises for installation help and software support."
   },
   "aboutus": {
     "section": "aboutus",
-    "title": "About TaxPower | GST, Billing & TDS Software Solutions",
-    "description": "Meet Siddharth Enterprises, an authorized TaxPower dealer in Nagpur, and Magnum Infosystem, the software developer. Find company details and contact information."
+    "title": "TaxPower Dealer in Nagpur, Maharashtra | Siddharth Enterprises",
+    "description": "Siddharth Enterprises, authorized TaxPower dealer in Nagpur, sells GST, Billing and TDS software across India. Meet Magnum Infosystem, the software developer."
   },
   "support": {
     "section": "support",
-    "title": "TaxPower Customer Support",
-    "description": "Get help with TaxPower GST, Billing and TDS demos, installation, software queries and renewals. Contact Siddharth Enterprises or request a callback."
+    "title": "TaxPower Support & Demo Booking | Siddharth Enterprises",
+    "description": "Get help with TaxPower GST, Billing and TDS demos, installation, software queries and renewals from anywhere in India. Request a callback."
   },
   "technical-support": {
     "section": "support",
     "canonical": "support",
-    "title": "TaxPower Technical Support",
+    "title": "TaxPower Technical Support | Installation, Updates & Licensing",
     "description": "Contact the TaxPower support team for installation, updates, licensing and software queries. Keep your customer ID, product version and error details ready."
   },
   "demo-enquiry": {
